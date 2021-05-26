@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Learn संस्कृत</string>
+    <string name="title_activity_letters">letters</string>
+    <string name="tab_text_1">Vowels</string>
+    <string name="tab_text_2">Consonants</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="theme">Theme</string>
+
+</resources>
