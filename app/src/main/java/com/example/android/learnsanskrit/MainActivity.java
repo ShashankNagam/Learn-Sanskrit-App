@@ -17,6 +17,7 @@ import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.nightonke.boommenu.BoomButtons.BoomButton;
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceAlignmentEnum;
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
@@ -154,6 +155,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView birdHS;
+        ImageView alphabets;
+        birdHS = (ImageView) findViewById(R.id.imageButton1);
+        alphabets = (ImageView) findViewById(R.id.imgletter);
+
+        Glide.with(this)
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/mybird.png?alt=media&token=987ee174-c801-4285-8783-29a6d60ad355")
+                .into(birdHS);
+
+        Glide.with(this)
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/alpha.png?alt=media&token=f7551f30-4b1b-4a0f-9493-592c5ef0770d")
+                .into(alphabets);
+
+
+
 
     }
 
