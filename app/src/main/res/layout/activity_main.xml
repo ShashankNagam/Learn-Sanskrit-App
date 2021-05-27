@@ -111,8 +111,8 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginRight="7dp"
                         android:layout_marginBottom="15dp"
-                        android:background="#00FFFFFF"/>
-                        <!--android:background="@drawable/mybird" />-->
+
+                        android:background="@drawable/mybird" />
 
                     <ImageButton
                         android:id="@+id/imageButton2"
@@ -189,7 +189,6 @@
                         android:layout_height="60dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginLeft="30dp"/>
-                        <!--android:src="@drawable/alpha"-->
 
 
 
@@ -317,18 +316,17 @@
                     android:background="@drawable/repple_effect">
 
                     <ImageView
-                        android:id="@+id/imgletter2"
+                        android:id="@+id/words"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:src="@drawable/words" />
+                        android:layout_marginLeft="30dp" />
 
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_toRightOf="@id/imgletter2"
+                        android:layout_toRightOf="@id/words"
                         android:orientation="vertical">
 
                         <TextView
@@ -483,18 +481,17 @@
                     android:background="@drawable/repple_effect">
 
                     <ImageView
-                        android:id="@+id/imgletter3"
+                        android:id="@+id/phrases"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:src="@drawable/phrases" />
+                        android:layout_marginLeft="30dp"/>
 
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_toRightOf="@id/imgletter3"
+                        android:layout_toRightOf="@id/phrases"
                         android:orientation="vertical">
 
                         <TextView
@@ -537,18 +534,17 @@
                     android:background="@drawable/repple_effect">
 
                     <ImageView
-                        android:id="@+id/imgletter4"
+                        android:id="@+id/grammar"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:src="@drawable/grammar" />
+                        android:layout_marginLeft="30dp"/>
 
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_toRightOf="@id/imgletter4"
+                        android:layout_toRightOf="@id/grammar"
                         android:orientation="vertical">
 
                         <TextView
@@ -591,18 +587,17 @@
                     android:background="@drawable/repple_effect">
 
                     <ImageView
-                        android:id="@+id/imgletter5"
+                        android:id="@+id/family"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"
-                        android:src="@drawable/family" />
+                        android:layout_marginLeft="30dp"/>
 
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_toRightOf="@id/imgletter5"
+                        android:layout_toRightOf="@id/family"
                         android:orientation="vertical">
 
                         <TextView

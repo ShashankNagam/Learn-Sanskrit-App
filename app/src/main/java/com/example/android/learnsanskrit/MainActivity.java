@@ -156,20 +156,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView birdHS;
-        ImageView alphabets;
-        birdHS = (ImageView) findViewById(R.id.imageButton1);
+        ImageView alphabets, words, phrases, grammar, family;
+
         alphabets = (ImageView) findViewById(R.id.imgletter);
-
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/mybird.png?alt=media&token=987ee174-c801-4285-8783-29a6d60ad355")
-                .into(birdHS);
-
-        Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/alpha.png?alt=media&token=f7551f30-4b1b-4a0f-9493-592c5ef0770d")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Falpha.png?alt=media&token=af13eca5-be45-4818-8137-1f49a46e4f58")
                 .into(alphabets);
 
+        words = (ImageView)findViewById(R.id.words);
+        Glide.with(this)
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fwords.png?alt=media&token=d7ed3a8f-6e4a-4ac7-8982-8d71fdd94e80")
+                .into(words);
 
+        phrases = (ImageView)findViewById(R.id.phrases);
+        Glide.with(this)
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fphrases.png?alt=media&token=08a08b1e-1dd6-429a-ae4e-bd3d88512a37")
+                .into(phrases);
+
+        grammar = (ImageView)findViewById(R.id.grammar);
+        Glide.with(this)
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fgrammar.png?alt=media&token=03f75b80-acce-4d4f-9855-c23d0d8dd900")
+                .into(grammar);
+
+        family = (ImageView)findViewById(R.id.family);
+        Glide.with(this)
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Ffamily.png?alt=media&token=daa48800-bf8c-45b6-8c49-3c0cf3c8432e")
+                .into(family);
 
 
     }

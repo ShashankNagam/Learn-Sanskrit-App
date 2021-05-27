@@ -69,18 +69,18 @@
 
 
                     <ImageView
-                        android:id="@+id/imgletter1"
+                        android:id="@+id/peacock"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="7.5dp"
-                        android:src="@drawable/peacock" />
+                         />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:layout_toRightOf="@id/imgletter1">
+                        android:layout_toRightOf="@id/peacock">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -127,18 +127,17 @@
 
 
                     <ImageView
-                        android:id="@+id/imgletter2"
+                        android:id="@+id/sparrow"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="7.5dp"
-                        android:src="@drawable/sparrow" />
+                        android:layout_marginTop="7.5dp"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:layout_toRightOf="@id/imgletter2">
+                        android:layout_toRightOf="@id/sparrow">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -185,18 +184,17 @@
 
 
                     <ImageView
-                        android:id="@+id/imgletter3"
+                        android:id="@+id/parrot"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="7.5dp"
-                        android:src="@drawable/parrot" />
+                        android:layout_marginTop="7.5dp"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:layout_toRightOf="@id/imgletter3">
+                        android:layout_toRightOf="@id/parrot">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -243,18 +241,17 @@
 
 
                     <ImageView
-                        android:id="@+id/imgletter4"
+                        android:id="@+id/eagle"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="7.5dp"
-                        android:src="@drawable/eagle" />
+                        android:layout_marginTop="7.5dp"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:layout_toRightOf="@id/imgletter4">
+                        android:layout_toRightOf="@id/eagle">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -301,18 +298,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter5"
+                            android:id="@+id/crow"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/crow" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter5">
+                            android:layout_toRightOf="@id/crow">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -359,18 +355,18 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter5.1"
+                            android:id="@+id/bat"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/bat" />
+                            android:layout_marginTop="7.5dp"/>
+                            <!--android:src="@drawable/bat"-->
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter5.1">
+                            android:layout_toRightOf="@id/bat">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -417,18 +413,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter6"
+                            android:id="@+id/falcon"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/falcon" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter6">
+                            android:layout_toRightOf="@id/falcon">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -475,18 +470,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter7"
+                            android:id="@+id/stork"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/stork" />
+                            android:layout_marginTop="7.5dp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter7">
+                            android:layout_toRightOf="@id/stork">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -533,18 +527,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter8"
+                            android:id="@+id/kite"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/kite" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter8">
+                            android:layout_toRightOf="@id/kite">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -591,18 +584,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter9"
+                            android:id="@+id/cock"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/cock" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter9">
+                            android:layout_toRightOf="@id/cock">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -649,18 +641,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter10"
+                            android:id="@+id/dove"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/dove" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter10">
+                            android:layout_toRightOf="@id/dove">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -708,18 +699,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter11"
+                            android:id="@+id/swan"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/swan" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter11">
+                            android:layout_toRightOf="@id/swan">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -766,18 +756,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter12"
+                            android:id="@+id/vulture"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/vulture" />
+                            android:layout_marginTop="7.5dp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter12">
+                            android:layout_toRightOf="@id/vulture">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -824,18 +813,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter13"
+                            android:id="@+id/crane"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/crane" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter13">
+                            android:layout_toRightOf="@id/crane">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -882,18 +870,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter14"
+                            android:id="@+id/kingfisher"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/kingfisher" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter14">
+                            android:layout_toRightOf="@id/kingfisher">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -940,18 +927,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter15"
+                            android:id="@+id/owl"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/owl" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter15">
+                            android:layout_toRightOf="@id/owl">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -999,18 +985,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter16"
+                            android:id="@+id/duck"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/duck" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter16">
+                            android:layout_toRightOf="@id/duck">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -1057,18 +1042,17 @@
 
 
                         <ImageView
-                            android:id="@+id/imgletter17"
+                            android:id="@+id/hen"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/hen" />
+                            android:layout_marginTop="7.5dp"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter17">
+                            android:layout_toRightOf="@id/hen">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -1097,121 +1081,7 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="vertical"
-                    app:cardBackgroundColor="@color/background"
-                    app:cardCornerRadius="20dp"
-                    tools:layout_editor_absoluteX="5dp"
-                    tools:layout_editor_absoluteY="5dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-
-                        <ImageView
-                            android:id="@+id/imgletter18"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/owl" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter18">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="6dp"
-                                android:text="Owl"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="उलूकः"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="vertical"
-                    app:cardBackgroundColor="@color/background"
-                    app:cardCornerRadius="20dp"
-                    tools:layout_editor_absoluteX="5dp"
-                    tools:layout_editor_absoluteY="5dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-
-                        <ImageView
-                            android:id="@+id/imgletter19"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"
-                            android:src="@drawable/owl" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_toRightOf="@id/imgletter19">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="6dp"
-                                android:text="Owl"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="उलूकः"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
 
 
 
