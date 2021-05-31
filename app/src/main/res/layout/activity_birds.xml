@@ -7,6 +7,8 @@
     android:background="@color/background"
     tools:context=".birds">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,18 +22,20 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/backbirds"
+                android:id="@+id/backbird"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/repple_oval"
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/arrow" />
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/aladin"
                 android:gravity="center"
                 android:padding="5dp"
                 android:text="Birds"

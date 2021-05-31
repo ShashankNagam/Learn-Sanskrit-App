@@ -19,8 +19,7 @@ public class vegetables extends AppCompatActivity {
         vege.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(vegetables.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

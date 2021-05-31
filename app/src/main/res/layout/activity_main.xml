@@ -19,19 +19,13 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/menu_ic"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/ic_baseline_menu_24"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="18dp"/>
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="0.8"
+                android:fontFamily="@font/della_respira"
                 android:gravity="right"
                 android:padding="5dp"
                 android:text="Learn"
@@ -44,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
+                android:fontFamily="cursive"
                 android:gravity="left"
                 android:padding="5dp"
                 android:text="संस्कृत"

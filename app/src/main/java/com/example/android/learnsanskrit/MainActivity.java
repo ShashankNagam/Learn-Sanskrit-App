@@ -38,16 +38,6 @@ public class MainActivity extends AppCompatActivity {
         //overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         setContentView(R.layout.activity_main);
 
-        ImageView mu = (ImageView) findViewById(R.id.menu_ic);
-        mu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(intent);
-            }
-        });
-
 
         ImageView bird = (ImageView) findViewById(R.id.imageButton1);
         ImageView animal = (ImageView) findViewById(R.id.imageButton2);

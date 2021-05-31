@@ -1,11 +1,14 @@
 package com.example.android.learnsanskrit;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -18,13 +21,12 @@ public class birds extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_birds);
 
-        ImageView backbirds = (ImageView) findViewById(R.id.backbirds);
 
-        backbirds.setOnClickListener(new View.OnClickListener() {
+       ImageView back = (ImageView)findViewById(R.id.backbird);
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(birds.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 
@@ -122,4 +124,6 @@ public class birds extends AppCompatActivity {
 
 
     }
+
+
 }
