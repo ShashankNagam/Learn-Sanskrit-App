@@ -146,8 +146,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView alphabets, words, phrases, grammar, family;
+        TextView nouns = (TextView) findViewById(R.id.nouns);
+        nouns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, nouns.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
 
+
+        ImageView alphabets, words, phrases, grammar, family;
         alphabets = (ImageView) findViewById(R.id.imgletter);
         Glide.with(this)
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Falpha.png?alt=media&token=af13eca5-be45-4818-8137-1f49a46e4f58")

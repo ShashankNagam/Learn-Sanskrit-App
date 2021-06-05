@@ -20,5 +20,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_drawer2">DrawerActivity</string>
+    <string name="nounText">Noun is a name of person, place, animal or thing. It can tell who or what</string>
 
 </resources>

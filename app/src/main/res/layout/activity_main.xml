@@ -24,8 +24,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_weight="0.8"
-                android:fontFamily="@font/della_respira"
+                android:layout_weight="1"
                 android:gravity="right"
                 android:padding="5dp"
                 android:text="Learn"
@@ -150,10 +149,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:text="Content to Learn"
+            android:text="Topics"
             android:textColor="#8e54e9"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/allerta"
+            android:textStyle="bold"/>
 
         <ScrollView
             android:id="@+id/scrollView2"
@@ -186,7 +186,6 @@
                         android:layout_marginLeft="30dp"/>
 
 
-
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -198,6 +197,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="5dp"
+                            android:fontFamily="@font/adamina"
                             android:text="Alphabets"
                             android:textColor="@color/text_color"
                             android:textSize="22sp" />
@@ -274,6 +274,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Vowels"
+                                android:fontFamily="@font/adamina"
                                 android:textColor="@color/text_color"
                                 android:textSize="22sp" />
 
@@ -289,6 +290,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Consonants"
+                                android:fontFamily="@font/adamina"
                                 android:textColor="@color/text_color"
                                 android:textSize="22sp" />
 
@@ -409,7 +411,8 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/nouns"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Nouns"
@@ -423,7 +426,8 @@
                                 android:background="#70C0C0C0" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/pronouns"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Pronouns"
@@ -437,7 +441,8 @@
                                 android:background="#70C0C0C0" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/verbs"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Verbs"
@@ -451,7 +456,8 @@
                                 android:background="#70C0C0C0" />
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:id="@+id/conjunction"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Conjunction"

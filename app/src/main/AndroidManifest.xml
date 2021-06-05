@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.learnsanskrit" >
+    package="com.example.android.learnsanskrit">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,15 +10,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LearnSanskrit" >
-
+        android:theme="@style/Theme.LearnSanskrit">
+        <activity android:name=".nouns"></activity>
         <activity android:name=".Consonants_1" />
         <activity android:name=".Vowels_1" />
         <activity android:name=".vegetables" />
         <activity android:name=".fruits" />
         <activity android:name=".animals" />
         <activity android:name=".birds" />
-        <activity android:name=".SplashScreen" >
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
