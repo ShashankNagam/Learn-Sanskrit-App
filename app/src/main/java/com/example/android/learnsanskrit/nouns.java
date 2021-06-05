@@ -3,9 +3,12 @@ package com.example.android.learnsanskrit;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class nouns extends AppCompatActivity {
 
@@ -24,5 +27,10 @@ public class nouns extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView bgn = (ImageView)findViewById(R.id.nounbg);
+        Glide.with(this)
+            .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/bgnoun.png?alt=media&token=7c0b8be6-50cd-4110-b198-360c508c1ec7")
+            .into(bgn);
     }
 }
