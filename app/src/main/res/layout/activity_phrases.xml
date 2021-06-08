@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".animals"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/repple_oval"
+            android:src="@drawable/arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Phrases"
+            android:textColor="#8e54e9"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#50C0C0C0" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Hello!"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="हरिः ॐ !"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Good Morning"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="सुप्रभातम्"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Good night"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="शुभरात्रिः"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Thank you"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="धन्यवादः"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Excuse me"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="क्षम्यताम्"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Welcome"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="स्वागतम्"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Don’t Worry"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="चिन्ता मास्तु"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Let us meet again"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="पुनः मिलामः"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="What is your name?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="भवतः नाम किम् ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="My name is …"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="मम नाम"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="I have heard of them."
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="एतेषां विषये श्रुतवान्"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Which class are you in?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="भवान्  कस्यां कक्ष्यायां पठति ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Where are you from?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="भवतः ग्रामः ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="I am from "
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="मम ग्रामः"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="How are you?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="कुशलं वा ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Are all well at home?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="गृहे सर्वे कुशलिनः वा ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="I am going to the temple"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="अहं विपणिं गच्छामि"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Let it be so"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="तथैव अस्तु"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="I know it"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="जानामि भोः"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Yes, that is right"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="आम्, तत् सत्यम्"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Oh! Is that so?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="ओहो ! तथा वा ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Why can’t that be done?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="किमर्थं तद् न भवति ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Please sit down"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="उपविशन्तु"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="I will try"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="प्रयत्नं करिष्यामि"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="I didn’t know that"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="तद् अहं न ज्ञातवान्"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="There is no doubt about it"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="तत्र कोऽपि सन्देहः नास्ति"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Are you free?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="भवतः समयावकाशः अस्ति वा ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="As you wish"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="यथा भवान् इच्छति तथा"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="Please remind me"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="मां किञ्चित् स्मारयतु"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="I know him well"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="तं अहं सम्यक् जानामि"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="I like that very much"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="तदहं बहु इच्छामि"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="The man and the elephant"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="नरो गजश् च"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="The man or the elephant"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="नरो गजो वा"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="6dp"
+                            android:text="The man is not a hero"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="नरो न वीरः"
+                            android:textColor="@color/text_color"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_volume_up_24"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

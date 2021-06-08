@@ -29,7 +29,7 @@
                 android:fontFamily="@font/allerta"
                 android:gravity="center"
                 android:padding="5dp"
-                android:text="Noun"
+                android:text="Verbs"
                 android:textColor="@color/background"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -37,7 +37,7 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/nounbg"
+            android:id="@+id/verbbg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -82,7 +82,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Water"
+                                android:text="to read"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -91,7 +91,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="वारि"
+                                android:text="पठति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -130,7 +130,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Moon"
+                                android:text="to write"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -139,7 +139,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="चन्द्रमस्"
+                                android:text="लिखति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -184,7 +184,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Sun"
+                                android:text="to speak/say"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -193,7 +193,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="भानु"
+                                android:text="वदति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -231,7 +231,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Tree"
+                                android:text="to go"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -240,7 +240,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=" "
+                                android:text="गच्छति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -284,7 +284,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Stone"
+                                android:text="to come"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -293,7 +293,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=" "
+                                android:text="आगच्छति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -331,7 +331,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="House"
+                                android:text="to fruit"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -340,7 +340,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=" "
+                                android:text="फलति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -384,7 +384,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Cloths"
+                                android:text="to fall (down)"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -393,7 +393,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="भानु"
+                                android:text="पतति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -431,7 +431,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Wind"
+                                android:text="to drink"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -440,7 +440,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="मरुत्"
+                                android:text="पिबति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -484,7 +484,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Pen"
+                                android:text="to eat"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -493,7 +493,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="भानु"
+                                android:text="खादति"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -531,7 +531,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Book"
+                                android:text="to stand"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -540,7 +540,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=" "
+                                android:text="तिष्ठसि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -584,7 +584,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Grass"
+                                android:text="to sit"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -593,7 +593,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=""
+                                android:text="उपविशसि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -631,7 +631,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="School"
+                                android:text="be"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -640,7 +640,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=" "
+                                android:text="भवसि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -684,7 +684,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="The Lord"
+                                android:text="to wander"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -693,7 +693,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="भगवत्"
+                                android:text="अटसि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -731,7 +731,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="God"
+                                android:text="to sing"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -740,7 +740,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="देव "
+                                android:text="गायसि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -784,7 +784,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="River"
+                                android:text="to move/graze"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -793,7 +793,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=""
+                                android:text="चरामि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -831,7 +831,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="World"
+                                android:text="to move"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -840,7 +840,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="जगत्"
+                                android:text="चलामि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -884,7 +884,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Shoes"
+                                android:text="to conquer"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -893,7 +893,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=""
+                                android:text="जयामि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -931,7 +931,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Road"
+                                android:text="to chant"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -940,7 +940,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text=""
+                                android:text="जपामि"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -984,7 +984,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
-                                android:text="Father"
+                                android:text="to wither"
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -993,7 +993,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:text="पितृ"
+                                android:text="म्लयामि "
                                 android:textColor="@color/text_color"
                                 android:textSize="20sp" />
 
@@ -1006,454 +1006,7 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Mother"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="मातृ"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Honey"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="मधु"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Poet"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="कवि"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Birth"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="जन्मन्"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Cow"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="धेनु"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Forest"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="वन"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="River"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="नदी/सरित्"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Self"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="आत्मन्"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical"
-                        app:cardBackgroundColor="@color/background"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp"
-                        tools:layout_editor_absoluteX="5dp"
-                        tools:layout_editor_absoluteY="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:text="Speech"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:text="वणिज्"
-                                android:textColor="@color/text_color"
-                                android:textSize="20sp" />
-
-                            <ImageView
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:layout_gravity="center"
-                                android:layout_marginBottom="5dp"
-                                android:src="@drawable/ic_baseline_volume_up_24" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
 
             </LinearLayout>
         </ScrollView>
@@ -1461,7 +1014,7 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/backnouns"
+        android:id="@+id/backverbs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"

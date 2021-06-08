@@ -156,6 +156,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView con = (TextView) findViewById(R.id.conjunction);
+        con.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, conjunction.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
+
+        TextView ver = (TextView) findViewById(R.id.verbs);
+        ver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, verbs.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
+
+        RelativeLayout phr = (RelativeLayout) findViewById(R.id.phrase);
+        phr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, phrases.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
 
         ImageView alphabets, words, phrases, grammar, family;
         alphabets = (ImageView) findViewById(R.id.imgletter);
