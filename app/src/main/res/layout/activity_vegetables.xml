@@ -75,7 +75,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter1"
+                    android:id="@+id/carrot"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -85,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter1">
+                    android:layout_toRightOf="@id/carrot">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -134,7 +134,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter2"
+                    android:id="@+id/potato"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -144,7 +144,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter2">
+                    android:layout_toRightOf="@id/potato">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter3"
+                    android:id="@+id/brinjal"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -203,7 +203,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter3">
+                    android:layout_toRightOf="@id/brinjal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -250,7 +250,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter4"
+                    android:id="@+id/garlic"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -260,7 +260,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter4">
+                    android:layout_toRightOf="@id/garlic">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -307,7 +307,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter5"
+                    android:id="@+id/cabbage"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -317,7 +317,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter5">
+                    android:layout_toRightOf="@id/cabbage">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -364,7 +364,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter6"
+                    android:id="@+id/onion"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -374,7 +374,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter6">
+                    android:layout_toRightOf="@id/onion">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -423,7 +423,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter7"
+                    android:id="@+id/cauliflower"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -433,7 +433,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter7">
+                    android:layout_toRightOf="@id/cauliflower">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -483,7 +483,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter8"
+                    android:id="@+id/chilli"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -493,7 +493,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter8">
+                    android:layout_toRightOf="@id/chilli">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -542,7 +542,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter9"
+                    android:id="@+id/radish"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -552,7 +552,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter9">
+                    android:layout_toRightOf="@id/radish">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -601,7 +601,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter10"
+                    android:id="@+id/spinach"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -611,7 +611,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter10">
+                    android:layout_toRightOf="@id/spinach">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -660,7 +660,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter11"
+                    android:id="@+id/bittergourd"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -670,7 +670,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter11">
+                    android:layout_toRightOf="@id/bittergourd">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -717,7 +717,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imgletter12"
+                    android:id="@+id/ladyfinger"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
@@ -727,7 +727,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:layout_toRightOf="@id/imgletter12">
+                    android:layout_toRightOf="@id/ladyfinger">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

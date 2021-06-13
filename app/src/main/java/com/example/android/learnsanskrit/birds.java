@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.media.Image;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.SimpleTarget;
 
 public class birds extends AppCompatActivity {
 
@@ -21,8 +23,7 @@ public class birds extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_birds);
 
-
-       ImageView back = (ImageView)findViewById(R.id.backbird);
+        ImageView back = (ImageView)findViewById(R.id.backbird);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,96 +35,92 @@ public class birds extends AppCompatActivity {
 
         peacock = (ImageView) findViewById(R.id.peacock);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fpeacock.png?alt=media&token=9fbe5171-d2cf-48ce-95b8-1daa0863ebcf")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FPeacock.jpg?alt=media&token=370ec4da-10c3-4cf6-bedb-37bc495b93aa")
                 .into(peacock);
 
         sparrow = (ImageView) findViewById(R.id.sparrow);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fsparrow.png?alt=media&token=e93a7731-f92a-407a-b412-46b0d04a37fd")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FSparrow.jpg?alt=media&token=22db7f1d-c54d-4a6e-bfff-08860377677a")
                 .into(sparrow);
 
         parrot = (ImageView) findViewById(R.id.parrot);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fparrot.png?alt=media&token=343ce0ac-c275-46bc-9b4b-e77a62ac5e9a")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FParrot.jpg?alt=media&token=ba1d8c59-0bd3-4dd8-9b1d-b87affb2f98c")
                 .into(parrot);
 
         eagle = (ImageView) findViewById(R.id.eagle);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Feagle.png?alt=media&token=6ee9ad04-09a6-4333-a926-5f3a915e568b")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FEagle.jpg?alt=media&token=adf0686a-8e2e-435a-80ba-c313c873e3f7")
                 .into(eagle);
 
         crow = (ImageView) findViewById(R.id.crow);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fcrow.png?alt=media&token=75fc04fd-d072-499a-b5cc-0cd8077fc0ca")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FCrow.jpg?alt=media&token=919cb913-32af-4e85-9194-8723f3ebb51c")
                 .into(crow);
 
         bat = (ImageView) findViewById(R.id.bat);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FBat.png?alt=media&token=240614f9-ae7a-4859-8c85-76f9fea2fe22")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FBat.jpg?alt=media&token=3785259b-e7d5-455f-985f-c03d3d9132bb")
                 .into(bat);
 
         falcon = (ImageView)findViewById(R.id.falcon);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FFalcon.png?alt=media&token=9dca04e5-8942-473b-903d-983e4e52e555")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FFalcon.jpg?alt=media&token=0b54be80-d26f-464b-8711-6a1c532d9871")
                 .into(falcon);
 
         stork = (ImageView)findViewById(R.id.stork);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fstork.png?alt=media&token=926b564f-6e91-4e79-8125-4aaab14cb6a2")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FStork.jpg?alt=media&token=0c7d6042-09cf-4929-81e5-ca7c619986cf")
                 .into(stork);
 
         kite = (ImageView)findViewById(R.id.kite);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fkite.png?alt=media&token=e92c1b53-8049-4efa-8681-ac39fee4f8d2")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FKite.jpg?alt=media&token=d55dd9a6-d230-4436-a70f-84a06be26ed6")
                 .into(kite);
 
         cock = (ImageView)findViewById(R.id.cock);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fcock.png?alt=media&token=48d792d1-5349-4a8a-85a9-bc14149e8101")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FCock.jpg?alt=media&token=4bea9dcd-a9c8-40a6-9f23-8cedeaba85d3")
                 .into(cock);
 
         dove = (ImageView)findViewById(R.id.dove);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fdove.png?alt=media&token=9aeddf9d-134c-4f02-a2ad-11813de30b0a")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FDove.jpg?alt=media&token=af4c2e6c-6299-42d2-8d74-fc2a176aa14a")
                 .into(dove);
 
         swan = (ImageView)findViewById(R.id.swan);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fswan.png?alt=media&token=f8183d90-f2fe-48e3-8d64-6eda82a2c725")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FSwan.jpg?alt=media&token=dfedc9ce-8972-48c8-beef-c8a36c65be1e")
                 .into(swan);
 
         vulture = (ImageView)findViewById(R.id.vulture);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fvulture.png?alt=media&token=456cfae4-ba1f-4e01-ae61-2f9d37a1c4ee")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FVulture.jpg?alt=media&token=7190a512-3421-40f2-a6d1-2d7b49d47e97")
                 .into(vulture);
 
         crane = (ImageView)findViewById(R.id.crane);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fcrane.png?alt=media&token=79e18b1e-8641-4997-9975-da825455a00f")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FCrane.jpg?alt=media&token=6c9d5de8-a068-4dd2-8233-04f494654bd2")
                 .into(crane);
 
         kingfisher = (ImageView)findViewById(R.id.kingfisher);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fkingfisher.png?alt=media&token=dbd52dce-f04a-4036-883e-9639ae591c7e")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FKingfisher.jpg?alt=media&token=138ff516-a6ee-4f2b-a13b-e25bf2794554")
                 .into(kingfisher);
 
         owl = (ImageView)findViewById(R.id.owl);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fowl.png?alt=media&token=7b575f13-4ae8-49d2-b201-7fa8eefd2782")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FOwl.jpg?alt=media&token=14a66219-5dd7-433b-bab8-e71181ec3290")
                 .into(owl);
 
         duck = (ImageView)findViewById(R.id.duck);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fduck.png?alt=media&token=41f6f6a1-2bbb-481c-9995-7e56e29a95c2")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FDuck.jpg?alt=media&token=c7ea69f4-9543-46b8-ad71-d7f61e666c9b")
                 .into(duck);
 
         hen = (ImageView)findViewById(R.id.hen);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fhen.png?alt=media&token=fd186e65-5ee5-4b61-866b-6048e63701e1")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2FHen.jpg?alt=media&token=ea3293ce-a0cb-425d-bc49-0d8819d1c0a4")
                 .into(hen);
-
-
-    }
-
-
+}
 }

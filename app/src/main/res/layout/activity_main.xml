@@ -149,9 +149,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:text="Topics"
+            android:text="Course Content"
             android:textColor="#8e54e9"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:fontFamily="@font/allerta"
             android:textStyle="bold"/>
 
@@ -200,7 +200,7 @@
                             android:fontFamily="@font/adamina"
                             android:text="Alphabets"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -276,7 +276,7 @@
                                 android:text="Vowels"
                                 android:fontFamily="@font/adamina"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="18sp" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -292,7 +292,7 @@
                                 android:text="Consonants"
                                 android:fontFamily="@font/adamina"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="18sp" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -333,7 +333,7 @@
                             android:layout_marginTop="5dp"
                             android:text="Words"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -417,7 +417,7 @@
                                 android:background="@drawable/repple_expand"
                                 android:text="Nouns"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="18sp" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -432,7 +432,7 @@
                                 android:background="@drawable/repple_expand"
                                 android:text="Pronouns"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="18sp" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -447,7 +447,7 @@
                                 android:background="@drawable/repple_expand"
                                 android:text="Verbs"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="18sp" />
 
                             <View
                                 android:layout_width="match_parent"
@@ -462,7 +462,7 @@
                                 android:background="@drawable/repple_expand"
                                 android:text="Conjunction"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="18sp" />
 
                         </LinearLayout>
                     </RelativeLayout>
@@ -503,7 +503,7 @@
                             android:layout_marginTop="5dp"
                             android:text="Phrases"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -556,7 +556,7 @@
                             android:layout_marginTop="5dp"
                             android:text="Grammar"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -609,7 +609,7 @@
                             android:layout_marginTop="5dp"
                             android:text="Family"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -640,6 +640,18 @@
                     android:textColor="@color/text_color"
                     android:textSize="20dp"
                     android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account" />
 
 
             </LinearLayout>

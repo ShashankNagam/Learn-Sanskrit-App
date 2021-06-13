@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnSanskrit">
-        <activity android:name=".phrases"></activity>
+        <activity android:name=".ForegetPassword"></activity>
+        <activity android:name=".Signup" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".phrases" />
         <activity android:name=".verbs" />
         <activity android:name=".conjunction" />
         <activity android:name=".nouns" />

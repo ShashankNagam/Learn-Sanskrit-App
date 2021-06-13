@@ -1,5 +1,6 @@
 package com.example.android.learnsanskrit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.ButtonBarLayout;
@@ -16,8 +17,14 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.nightonke.boommenu.BoomButtons.BoomButton;
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceAlignmentEnum;
 import com.nightonke.boommenu.BoomButtons.ButtonPlaceEnum;
@@ -32,11 +39,59 @@ import com.nightonke.boommenu.Piece.PiecePlaceEnum;
 import com.nightonke.boommenu.Util;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button sout, da;
+    private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         setContentView(R.layout.activity_main);
+
+        sout = (Button)findViewById(R.id.button3);
+        sout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+                if(currentUser != null)
+                {
+                    FirebaseAuth.getInstance().signOut();
+                    Toast.makeText(getApplicationContext(), "Signed out successfully", Toast.LENGTH_LONG).show();
+                    //mAuth.GoogleSignInApi.signOut(apiClient);
+                    Intent a = new Intent(MainActivity.this, SignIn.class);
+                    startActivity(a);
+                    finish();
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "Not Signed in", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
+
+        da = (Button)findViewById(R.id.button4);
+        da.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+                if(currentUser != null)
+                {
+                    FirebaseUser currentUser1 = mAuth.getInstance().getCurrentUser();
+                    currentUser1.delete();
+                    Toast.makeText(getApplicationContext(), "Account deleted", Toast.LENGTH_LONG).show();
+                    Intent x = new Intent(MainActivity.this, SignIn.class);
+                    startActivity(x);
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "Not Signed in", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
+
 
 
         ImageView bird = (ImageView) findViewById(R.id.imageButton1);

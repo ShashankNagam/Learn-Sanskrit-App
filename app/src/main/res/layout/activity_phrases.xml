@@ -87,14 +87,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Hello!"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="हरिः ॐ !"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -136,14 +136,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Good Morning"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="सुप्रभातम्"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -185,14 +185,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Good night"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="शुभरात्रिः"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -234,14 +234,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Thank you"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="धन्यवादः"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -283,14 +283,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Excuse me"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="क्षम्यताम्"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -332,14 +332,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Welcome"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="स्वागतम्"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="19sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -381,14 +381,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Don’t Worry"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="चिन्ता मास्तु"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -400,6 +400,8 @@
                         android:src="@drawable/ic_baseline_volume_up_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
+
+            <!--
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -414,6 +416,8 @@
                 android:elevation="5dp"
                 tools:layout_editor_absoluteX="5dp"
                 tools:layout_editor_absoluteY="5dp">
+
+
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -448,7 +452,7 @@
                         android:layout_marginRight="10dp"
                         android:src="@drawable/ic_baseline_volume_up_24"/>
                 </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>  -->
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -479,14 +483,14 @@
                             android:layout_marginTop="6dp"
                             android:text="What is your name?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="भवतः नाम किम् ?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -528,14 +532,14 @@
                             android:layout_marginTop="6dp"
                             android:text="My name is …"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="मम नाम"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -547,6 +551,8 @@
                         android:src="@drawable/ic_baseline_volume_up_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
+
+            <!--
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -636,6 +642,8 @@
                             android:textSize="22dp" />
                     </LinearLayout>
 
+
+
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
@@ -645,6 +653,8 @@
                         android:src="@drawable/ic_baseline_volume_up_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
+
+                    -->
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -675,14 +685,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Where are you from?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="भवतः ग्रामः ?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -724,14 +734,14 @@
                             android:layout_marginTop="6dp"
                             android:text="I am from "
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="मम ग्रामः"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -773,14 +783,14 @@
                             android:layout_marginTop="6dp"
                             android:text="How are you?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="कुशलं वा ?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -822,14 +832,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Are all well at home?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="गृहे सर्वे कुशलिनः वा ?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -871,14 +881,14 @@
                             android:layout_marginTop="6dp"
                             android:text="I am going to the temple"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="अहं विपणिं गच्छामि"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -890,6 +900,8 @@
                         android:src="@drawable/ic_baseline_volume_up_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
+
+            <!--
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -940,6 +952,8 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
+            -->
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
@@ -969,14 +983,14 @@
                             android:layout_marginTop="6dp"
                             android:text="I know it"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="जानामि भोः"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1018,14 +1032,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Yes, that is right"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="आम्, तत् सत्यम्"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1067,14 +1081,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Oh! Is that so?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="ओहो ! तथा वा ?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1116,14 +1130,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Why can’t that be done?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="किमर्थं तद् न भवति ?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1165,14 +1179,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Please sit down"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="उपविशन्तु"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1214,14 +1228,14 @@
                             android:layout_marginTop="6dp"
                             android:text="I will try"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="प्रयत्नं करिष्यामि"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1263,14 +1277,14 @@
                             android:layout_marginTop="6dp"
                             android:text="I didn’t know that"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="तद् अहं न ज्ञातवान्"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1312,14 +1326,14 @@
                             android:layout_marginTop="6dp"
                             android:text="There is no doubt about it"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="तत्र कोऽपि सन्देहः नास्ति"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1361,14 +1375,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Are you free?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="भवतः समयावकाशः अस्ति वा ?"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1410,14 +1424,14 @@
                             android:layout_marginTop="6dp"
                             android:text="As you wish"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="यथा भवान् इच्छति तथा"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1459,14 +1473,14 @@
                             android:layout_marginTop="6dp"
                             android:text="Please remind me"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="मां किञ्चित् स्मारयतु"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1508,14 +1522,14 @@
                             android:layout_marginTop="6dp"
                             android:text="I know him well"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="तं अहं सम्यक् जानामि"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1557,14 +1571,14 @@
                             android:layout_marginTop="6dp"
                             android:text="I like that very much"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="तदहं बहु इच्छामि"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1606,14 +1620,14 @@
                             android:layout_marginTop="6dp"
                             android:text="The man and the elephant"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="नरो गजश् च"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1655,14 +1669,14 @@
                             android:layout_marginTop="6dp"
                             android:text="The man or the elephant"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="नरो गजो वा"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
@@ -1704,14 +1718,14 @@
                             android:layout_marginTop="6dp"
                             android:text="The man is not a hero"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="नरो न वीरः"
                             android:textColor="@color/text_color"
-                            android:textSize="22dp" />
+                            android:textSize="18sp" />
                     </LinearLayout>
 
                     <ImageView
