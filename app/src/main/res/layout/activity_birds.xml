@@ -304,6 +304,63 @@
 
 
                         <ImageView
+                            android:id="@+id/duck"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="7.5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_toRightOf="@id/duck">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Duck"
+                                android:textColor="@color/text_color"
+                                android:textSize="22sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="वर्तकः"
+                                android:textColor="@color/text_color"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/backarrow"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="20dp"
+                    tools:layout_editor_absoluteX="5dp"
+                    tools:layout_editor_absoluteY="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
                             android:id="@+id/crow"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
@@ -572,62 +629,7 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="vertical"
-                    app:cardBackgroundColor="@color/background"
-                    app:cardCornerRadius="20dp"
-                    tools:layout_editor_absoluteX="5dp"
-                    tools:layout_editor_absoluteY="5dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-
-                        <ImageView
-                            android:id="@+id/cock"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_toRightOf="@id/cock">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="6dp"
-                                android:text="Cock"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="कुक्कटः"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -973,62 +975,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="vertical"
-                    app:cardBackgroundColor="@color/background"
-                    app:cardCornerRadius="20dp"
-                    tools:layout_editor_absoluteX="5dp"
-                    tools:layout_editor_absoluteY="5dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-
-                        <ImageView
-                            android:id="@+id/duck"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_toRightOf="@id/duck">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="6dp"
-                                android:text="Duck"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="वर्तकः"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -1073,6 +1020,63 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
                                 android:text="कुक्कुटी"
+                                android:textColor="@color/text_color"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/backarrow"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="20dp"
+                    tools:layout_editor_absoluteX="5dp"
+                    tools:layout_editor_absoluteY="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/cock"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="7.5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_toRightOf="@id/cock">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Cock"
+                                android:textColor="@color/text_color"
+                                android:textSize="22sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="कुक्कटः"
                                 android:textColor="@color/text_color"
                                 android:textSize="22sp" />
                         </LinearLayout>
