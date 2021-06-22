@@ -69,6 +69,7 @@
                 tools:layout_editor_absoluteX="5dp"
                 tools:layout_editor_absoluteY="5dp">
 
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -94,8 +95,7 @@
                             android:layout_marginTop="6dp"
                             android:text="Peacock"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp"
-                            />
+                            android:textSize="22sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -105,6 +105,17 @@
                             android:textSize="22sp" />
                     </LinearLayout>
 
+                    <ImageButton
+                        android:id="@+id/peacockA"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="#555555"
+                        android:background="@drawable/ic_baseline_play_arrow_24"/>
+
+                <!--
                     <ImageView
                         android:layout_width="12dp"
                         android:layout_height="12dp"
@@ -112,6 +123,8 @@
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
                         android:src="@drawable/backarrow"/>
+
+                -->
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -162,13 +175,15 @@
                             android:textSize="22sp" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
+                    <ImageButton
+                        android:id="@+id/sparrowA"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/backarrow"/>
+                        android:backgroundTint="#555555"
+                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -219,13 +234,15 @@
                             android:textSize="22sp" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
+                    <ImageButton
+                        android:id="@+id/parrotA"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/backarrow"/>
+                        android:backgroundTint="#555555"
+                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -276,13 +293,15 @@
                             android:textSize="22sp" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
+                    <ImageButton
+                        android:id="@+id/eagleA"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/backarrow"/>
+                        android:backgroundTint="#555555"
+                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -333,13 +352,74 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/duckA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="20dp"
+                    tools:layout_editor_absoluteX="5dp"
+                    tools:layout_editor_absoluteY="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/owl"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="7.5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_toRightOf="@id/owl">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Owl"
+                                android:textColor="@color/text_color"
+                                android:textSize="22sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="उलूकः"
+                                android:textColor="@color/text_color"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/owlA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -390,13 +470,15 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/crowA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -448,17 +530,20 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/batA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -505,13 +590,15 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/falconA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -562,76 +649,24 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/storkA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="vertical"
-                    app:cardBackgroundColor="@color/background"
-                    app:cardCornerRadius="20dp"
-                    tools:layout_editor_absoluteX="5dp"
-                    tools:layout_editor_absoluteY="5dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-
-                        <ImageView
-                            android:id="@+id/kite"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_toRightOf="@id/kite">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="6dp"
-                                android:text="Kite"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="आतायी"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
 
 
+
+
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -678,18 +713,21 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/doveA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
 
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -736,17 +774,20 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/swanA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -793,17 +834,20 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/vultureA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -850,17 +894,20 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/craneA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -907,77 +954,25 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/kingfisherA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:orientation="vertical"
-                    app:cardBackgroundColor="@color/background"
-                    app:cardCornerRadius="20dp"
-                    tools:layout_editor_absoluteX="5dp"
-                    tools:layout_editor_absoluteY="5dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-
-                        <ImageView
-                            android:id="@+id/owl"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="7.5dp"/>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:layout_toRightOf="@id/owl">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="6dp"
-                                android:text="Owl"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="उलूकः"
-                                android:textColor="@color/text_color"
-                                android:textSize="22sp" />
-                        </LinearLayout>
-
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
 
 
 
+
+
                 <androidx.cardview.widget.CardView
+
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -1024,17 +1019,80 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/henA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="20dp"
+                    tools:layout_editor_absoluteX="5dp"
+                    tools:layout_editor_absoluteY="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/kite"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="7.5dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_toRightOf="@id/kite">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Kite"
+                                android:textColor="@color/text_color"
+                                android:textSize="22sp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="आतायी"
+                                android:textColor="@color/text_color"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/kiteA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -1081,13 +1139,15 @@
                                 android:textSize="22sp" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="12dp"
-                            android:layout_height="12dp"
+                        <ImageButton
+                            android:id="@+id/cockA"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/backarrow"/>
+                            android:backgroundTint="#555555"
+                            android:background="@drawable/ic_baseline_play_arrow_24"/>
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -1095,3 +1155,4 @@
         </ScrollView>
 
 </LinearLayout>
+

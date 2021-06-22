@@ -2,21 +2,31 @@ package com.example.android.learnsanskrit;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.media.AudioManager;
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.SimpleTarget;
 
+import java.io.IOException;
+
 public class birds extends AppCompatActivity {
+
+    MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -141,5 +151,187 @@ public class birds extends AppCompatActivity {
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FPhotos%2Fhen.png?alt=media&token=34ccb61a-8b4b-4697-9074-0b1a42b6a567")
                 .placeholder(R.drawable.blankblue)
                 .into(hen);
+
+        ImageButton peacockA, sparrowA, parrotA, eagleA, duckA, owlA, crowA, batA, falconA, storkA, doveA, swanA, vultureA, craneA, kingfisherA, henA, kiteA, cockA;
+        peacockA = findViewById(R.id.peacockA);
+        sparrowA = findViewById(R.id.sparrowA);
+        eagleA = findViewById(R.id.eagleA);
+        parrotA = findViewById(R.id.parrotA);
+        duckA = findViewById(R.id.duckA);
+        owlA = findViewById(R.id.owlA);
+        crowA = findViewById(R.id.crowA);
+        batA = findViewById(R.id.batA);
+        falconA = findViewById(R.id.falconA);
+        storkA = findViewById(R.id.storkA);
+        doveA = findViewById(R.id.doveA);
+        swanA = findViewById(R.id.swanA);
+        vultureA = findViewById(R.id.vultureA);
+        craneA = findViewById(R.id.craneA);
+        kingfisherA = findViewById(R.id.kingfisherA);
+        henA = findViewById(R.id.henA);
+        kiteA = findViewById(R.id.kiteA);
+        cockA = findViewById(R.id.cockA);
+
+        peacockA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2FPeacock_denoised.mp3?alt=media&token=5314681a-77f5-415b-a878-5f75110f8214");
+            }
+        });
+        peacockA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2FPeacock_denoised.mp3?alt=media&token=5314681a-77f5-415b-a878-5f75110f8214");
+            }
+        });
+        peacockA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2FPeacock_denoised.mp3?alt=media&token=5314681a-77f5-415b-a878-5f75110f8214");
+            }
+        });
+        sparrowA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fsparrow_denoised.MP3?alt=media&token=337f931d-fbce-48c4-a7f5-eead17c2371d");
+            }
+        });
+        parrotA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fparoot_denoised.MP3?alt=media&token=80ec9fcd-209b-4ace-9eca-3d03cb5aba51");
+            }
+        });
+        eagleA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Feagle_denoised.MP3?alt=media&token=e344a1a4-d396-4321-a564-93e9dcabd594");
+
+            }
+        });
+        duckA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fduck_denoised.MP3?alt=media&token=3b917e4f-f43e-472b-b97f-262ea11ef1d3");
+            }
+        });
+        owlA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fowl_denoised.MP3?alt=media&token=39135dfa-ed56-4ec6-98b1-42453ca70493");
+            }
+        });
+        crowA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fcrow_denoised.MP3?alt=media&token=12a9091a-f27f-4f18-9ae4-125cf5bf91f6");
+            }
+        });
+        batA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fbat_denoised.MP3?alt=media&token=f61a046e-ed93-4fe9-b9f9-639594849ac1");
+            }
+        });
+        falconA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Ffalcon_denoised.MP3?alt=media&token=2bc7e9d5-39d6-4869-ac53-7fb9bae71e6a");
+            }
+        });
+        storkA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fstork_denoised.MP3?alt=media&token=a3189a3e-969a-4283-adb5-97e7c707bd0c");
+            }
+        });
+        doveA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fdove_denoised.MP3?alt=media&token=86026e00-fc18-4b01-8ba6-2e302220c395");
+            }
+        });
+        swanA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fswan_denoised.MP3?alt=media&token=1c6cb341-b91c-4851-a617-ee82b91651fe");
+            }
+        });
+        vultureA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fvulture_denoised.MP3?alt=media&token=ac60f76b-b36f-42c6-8672-a6e4aba06e52");
+            }
+        });
+        craneA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fcrane_denoised.MP3?alt=media&token=1f920c00-9dc7-4634-b03b-df3d9e8b7d33");
+            }
+        });
+        kingfisherA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fkingfisher_denoised.MP3?alt=media&token=2d7a4652-b463-4d06-b7f7-37b9a892d6f2");
+            }
+        });
+        henA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fhen_denoised.MP3?alt=media&token=11714b78-6659-4889-a7c6-be52e1865b54");
+            }
+        });
+        kiteA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fkite_denoised.MP3?alt=media&token=40b46c59-8838-42b1-af88-f20cae1aa1a4");
+            }
+        });
+
+        cockA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fcock_denoised.MP3?alt=media&token=f6309d78-2885-497f-8f8b-0e5f558ead90");
+            }
+        });
+
+
+
     }
+
+    private void playAudio(String audioUrl)
+    {
+        mediaPlayer = new MediaPlayer();
+        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        try{
+            mediaPlayer.setDataSource(audioUrl);
+            mediaPlayer.prepare();
+            mediaPlayer.start();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
 }
