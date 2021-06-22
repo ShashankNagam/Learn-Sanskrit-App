@@ -93,6 +93,29 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        RelativeLayout abc = (RelativeLayout) findViewById(R.id.abc);
+        ImageView menu = (ImageView) findViewById(R.id.menu);
+        abc.setVisibility(View.GONE);
+        menu.setImageResource(R.drawable.ic_baseline_menu_24);
+        menu.setOnClickListener(new View.OnClickListener() {
+            Boolean z = false;
+            public void onClick(View v) {
+                if (!z){
+                    menu.setImageResource(R.drawable.arrow);
+                    abc.setVisibility(View.VISIBLE);
+                    z = true;
+
+                }
+                else {
+                    menu.setImageResource(R.drawable.ic_baseline_menu_24);
+                    abc.setVisibility(View.GONE);
+                    z = false;
+                }
+            }
+        });
+
+
+
 
         ImageView bird = (ImageView) findViewById(R.id.imageButton1);
         ImageView animal = (ImageView) findViewById(R.id.imageButton2);

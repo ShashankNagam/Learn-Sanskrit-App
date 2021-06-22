@@ -19,7 +19,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -51,6 +50,120 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#50C0C0C0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/abc"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_drawable3">
+
+          <ImageView
+              android:id="@+id/home"
+              android:layout_width="35dp"
+              android:layout_height="35dp"
+              android:src="@drawable/nev_home"
+              android:layout_marginTop="10dp"
+              android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/texthome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="15dp"
+                android:layout_below="@+id/home"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/background"/>
+
+            <ImageView
+                android:id="@+id/about"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/nev_about"
+                android:layout_below="@+id/texthome"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textabout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textSize="15dp"
+                android:layout_below="@+id/about"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/background"/>
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/nev_share"
+                android:layout_below="@+id/textabout"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textshare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textSize="15dp"
+                android:layout_below="@+id/share"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/background"/>
+
+            <ImageView
+                android:id="@+id/exit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/nev_exit"
+                android:layout_below="@+id/textshare"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textexit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textSize="15dp"
+                android:layout_below="@+id/exit"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/background"/>
+
+
+            <ImageView
+                android:id="@+id/signout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/nev_signout"
+                android:layout_below="@+id/textexit"
+                android:layout_marginTop="10dp"
+                android:rotation="180"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignOut"
+                android:textSize="15dp"
+                android:layout_below="@+id/signout"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/background"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/abc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -657,8 +770,21 @@
             </LinearLayout>
         </ScrollView>
 
+        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/repple_ovalexpand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
