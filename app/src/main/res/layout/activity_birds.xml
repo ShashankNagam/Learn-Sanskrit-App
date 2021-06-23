@@ -107,8 +107,8 @@
 
                     <ImageButton
                         android:id="@+id/peacockA"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -177,8 +177,8 @@
 
                     <ImageButton
                         android:id="@+id/sparrowA"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -236,8 +236,8 @@
 
                     <ImageButton
                         android:id="@+id/parrotA"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -295,8 +295,8 @@
 
                     <ImageButton
                         android:id="@+id/eagleA"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -354,8 +354,8 @@
 
                         <ImageButton
                             android:id="@+id/duckA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -413,8 +413,8 @@
 
                         <ImageButton
                             android:id="@+id/owlA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -472,8 +472,8 @@
 
                         <ImageButton
                             android:id="@+id/crowA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -532,8 +532,8 @@
 
                         <ImageButton
                             android:id="@+id/batA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -592,8 +592,8 @@
 
                         <ImageButton
                             android:id="@+id/falconA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -651,8 +651,8 @@
 
                         <ImageButton
                             android:id="@+id/storkA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -715,8 +715,8 @@
 
                         <ImageButton
                             android:id="@+id/doveA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -776,8 +776,8 @@
 
                         <ImageButton
                             android:id="@+id/swanA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -836,8 +836,8 @@
 
                         <ImageButton
                             android:id="@+id/vultureA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -896,8 +896,8 @@
 
                         <ImageButton
                             android:id="@+id/craneA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -956,8 +956,8 @@
 
                         <ImageButton
                             android:id="@+id/kingfisherA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -967,12 +967,7 @@
                 </androidx.cardview.widget.CardView>
 
 
-
-
-
-
                 <androidx.cardview.widget.CardView
-
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginLeft="20dp"
@@ -1021,8 +1016,8 @@
 
                         <ImageButton
                             android:id="@+id/henA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -1081,8 +1076,8 @@
 
                         <ImageButton
                             android:id="@+id/kiteA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -1141,8 +1136,8 @@
 
                         <ImageButton
                             android:id="@+id/cockA"
-                            android:layout_width="24dp"
-                            android:layout_height="24dp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
