@@ -3,18 +3,31 @@ package com.example.android.learnsanskrit;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import java.io.IOException;
 
 public class animals extends AppCompatActivity {
+    MediaPlayer mediaPlayer;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animals);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
 
         ImageView backanimals = (ImageView) findViewById(R.id.backanimals);
 
@@ -129,5 +142,62 @@ public class animals extends AppCompatActivity {
                 .placeholder(R.drawable.blankblue)
                 .into(bear);
 
+        ImageButton aCow = findViewById(R.id.aCow);
+        ImageButton aHorse = findViewById(R.id.aHorse);
+        ImageButton aLion = findViewById(R.id.aLion);
+        ImageButton aTiger = findViewById(R.id.aTiger);
+        ImageButton aGoat = findViewById(R.id.aGoat);
+        ImageButton aDog = findViewById(R.id.aDog);
+        ImageButton aCat = findViewById(R.id.aCat);
+        ImageButton aJackal = findViewById(R.id.aJackal);
+        ImageButton aLeopard = findViewById(R.id.aLeopard);
+        ImageButton aWolf = findViewById(R.id.aWolf);
+        ImageButton aDeer = findViewById(R.id.aDeer);
+        ImageButton aElephant = findViewById(R.id.aElephant);
+        ImageButton aPig = findViewById(R.id.aPig);
+        ImageButton aBuffalo = findViewById(R.id.aBuffalo);
+        ImageButton aBull = findViewById(R.id.aBull);
+        ImageButton aCamel = findViewById(R.id.aCamel);
+        ImageButton aBear = findViewById(R.id.aBear);
+
+        aCow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fcow_denoised.MP3?alt=media&token=f7c76219-d434-4636-902e-e2bfe7c00a89");
+            }
+        });
+
+        aHorse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fhorse_denoised.MP3?alt=media&token=50d9968a-2156-494a-a298-b407753b3a8c");
+            }
+        });
+
+
+    }
+
+    private void playAudio(String audioUrl)
+    {
+        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+        if(currentUser != null)
+        {
+            Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+            mediaPlayer = new MediaPlayer();
+            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+            try{
+                mediaPlayer.setDataSource(audioUrl);
+                mediaPlayer.prepare();
+                mediaPlayer.start();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        else
+        {
+            Toast.makeText(getApplicationContext(), "Sign In to access audio", Toast.LENGTH_LONG).show();
+        }
     }
 }

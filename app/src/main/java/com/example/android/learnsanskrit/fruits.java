@@ -1,19 +1,37 @@
 package com.example.android.learnsanskrit;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.bumptech.glide.Glide;
 
+import java.io.IOException;
+
 public class fruits extends AppCompatActivity {
+
+    MediaPlayer mediaPlayer;
+    private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fruits);
 
+        //Prevent User from Taking screenshots or recording screen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
+
+        //Add image from database
         ImageView backfruit = (ImageView) findViewById(R.id.backfruit);
         backfruit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,5 +132,152 @@ public class fruits extends AppCompatActivity {
                 .placeholder(R.drawable.blankblue)
                 .into(fig);
 
+
+        //add audio from database
+        ImageButton aCoconut = findViewById(R.id.aCoconut);
+        ImageButton aOrange = findViewById(R.id.aOrange);
+        ImageButton aGrape = findViewById(R.id.aGrape);
+        ImageButton aApple = findViewById(R.id.aApple);
+        ImageButton aCherry = findViewById(R.id.aCherry);
+        ImageButton aBanana = findViewById(R.id.aBanana);
+        ImageButton aPineapple = findViewById(R.id.aPineapple);
+        ImageButton aMango = findViewById(R.id.aMango);
+        ImageButton aPomegranate = findViewById(R.id.aPomegranate);
+        ImageButton aJackfruit = findViewById(R.id.aJackfruit);
+        ImageButton aDates = findViewById(R.id.aDates);
+        ImageButton aLemon = findViewById(R.id.aLemon);
+        ImageButton aGuava = findViewById(R.id.aGuava);
+        ImageButton aStrawberry = findViewById(R.id.aStrawberry);
+        ImageButton aFig = findViewById(R.id.aFig);
+
+        aCoconut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fcoconut_denoised.MP3?alt=media&token=d73a541b-7d95-4d37-99ec-26ee01cfd442");
+            }
+        });
+
+        aOrange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Forange_denoised.MP3?alt=media&token=27a12b75-80bf-41c7-b57f-2b5ec97fabf2");
+            }
+        });
+
+        aGrape.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fgrapes_denoised.MP3?alt=media&token=8cd7402c-ae95-42b0-ab92-3482fdacb03a");
+            }
+        });
+
+        aApple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fapple_denoised.MP3?alt=media&token=42b37a27-26ab-4c74-ba24-46a806a8ee71");
+            }
+        });
+
+        aCherry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fapple_denoised.MP3?alt=media&token=42b37a27-26ab-4c74-ba24-46a806a8ee71");
+            }
+        });
+
+        aBanana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fbanana_denoised.MP3?alt=media&token=4776cbe0-f592-4742-a001-f825dd2eb6d5");
+            }
+        });
+
+        aPineapple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fpineapple_denoised.MP3?alt=media&token=33ebcfd3-9b70-4a22-a3fc-6258f022939e");
+            }
+        });
+
+        aMango.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fmango_denoised.MP3?alt=media&token=ae9b264a-142f-483a-87d9-1ce5124d5ed6");
+            }
+        });
+
+        aPomegranate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fpromegrante_denoised.MP3?alt=media&token=b0f86ada-52ed-4e2b-9691-6161c00e34bd");
+            }
+        });
+
+        aJackfruit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fjackfruit_denoised.MP3?alt=media&token=793de005-6da0-43cb-8e7b-112b0087c0a1");
+            }
+        });
+
+        aDates.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fdates_denoised.MP3?alt=media&token=83d80f88-b259-4268-9c39-731635625d7f");
+            }
+        });
+
+        aLemon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Flemon_denoised.MP3?alt=media&token=403b40ba-0563-4c26-b7bc-8efbe363d4df");
+            }
+        });
+
+        aGuava.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fguava_denoised.MP3?alt=media&token=ec40ae07-86f4-4435-b31e-dba3aaee0dfb");
+            }
+        });
+
+        aStrawberry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Fstrawberry_denoised.MP3?alt=media&token=0fdbb9df-9421-4833-ad83-386ab81737ee");
+            }
+        });
+
+        aFig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FAudio%2Ffig_denoised_1.MP3?alt=media&token=fc1a5e66-dd02-4a49-a08e-1bc6e6cd7231");
+            }
+        });
+
+    }
+
+    private void playAudio(String audioUrl)
+    {
+        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+        if(currentUser != null)
+        {
+            Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+            mediaPlayer = new MediaPlayer();
+            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+            try{
+                mediaPlayer.setDataSource(audioUrl);
+                mediaPlayer.prepare();
+                mediaPlayer.start();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        else
+        {
+            Toast.makeText(getApplicationContext(), "Sign In to access audio", Toast.LENGTH_LONG).show();
+        }
     }
 }

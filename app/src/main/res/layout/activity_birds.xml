@@ -95,20 +95,20 @@
                             android:layout_marginTop="6dp"
                             android:text="Peacock"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:text="मयूरः"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                     <ImageButton
                         android:id="@+id/peacockA"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -164,7 +164,7 @@
                             android:layout_marginTop="6dp"
                             android:text="Sparrow"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp"
+                            android:textSize="20sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -172,13 +172,13 @@
                             android:layout_marginLeft="20dp"
                             android:text="चटकाः"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                     <ImageButton
                         android:id="@+id/sparrowA"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -223,7 +223,7 @@
                             android:layout_marginTop="6dp"
                             android:text="Parrot"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp"
+                            android:textSize="20sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -231,13 +231,13 @@
                             android:layout_marginLeft="20dp"
                             android:text="शुकः"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                     <ImageButton
                         android:id="@+id/parrotA"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -282,7 +282,7 @@
                             android:layout_marginTop="6dp"
                             android:text="Eagle"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp"
+                            android:textSize="20sp"
                             />
                         <TextView
                             android:layout_width="wrap_content"
@@ -290,13 +290,13 @@
                             android:layout_marginLeft="20dp"
                             android:text="श्येनः"
                             android:textColor="@color/text_color"
-                            android:textSize="22sp" />
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                     <ImageButton
                         android:id="@+id/eagleA"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
@@ -341,7 +341,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Duck"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -349,13 +349,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="वर्तकः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/duckA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -400,7 +400,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Owl"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -408,13 +408,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="उलूकः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/owlA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -459,7 +459,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Crow"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -467,13 +467,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="काकः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/crowA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -519,7 +519,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Bat"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -527,13 +527,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="जतुका"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/batA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -579,7 +579,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Falcon"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -587,13 +587,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="श्येनः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/falconA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -638,7 +638,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Stork"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -646,13 +646,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="वकः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/storkA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -702,7 +702,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Dove"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -710,13 +710,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="कपोतः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/doveA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -763,7 +763,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Swan"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -771,13 +771,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="मरालः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/swanA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -823,7 +823,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Vulture"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -831,13 +831,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="गृधः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/vultureA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -883,7 +883,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Crane"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -891,13 +891,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="सारसः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/craneA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -943,7 +943,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Kingfisher"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -951,13 +951,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="मीनरङ्गः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/kingfisherA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -1003,7 +1003,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Hen"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1011,13 +1011,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="कुक्कुटी"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/henA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -1063,7 +1063,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Kite"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1071,13 +1071,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="आतायी"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/kiteA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"
@@ -1123,7 +1123,7 @@
                                 android:layout_marginTop="6dp"
                                 android:text="Cock"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp"
+                                android:textSize="20sp"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
@@ -1131,13 +1131,13 @@
                                 android:layout_marginLeft="20dp"
                                 android:text="कुक्कटः"
                                 android:textColor="@color/text_color"
-                                android:textSize="22sp" />
+                                android:textSize="20sp" />
                         </LinearLayout>
 
                         <ImageButton
                             android:id="@+id/cockA"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_alignParentEnd="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="10dp"

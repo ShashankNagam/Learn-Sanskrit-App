@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,11 +25,29 @@ public class Signup extends AppCompatActivity {
     private Button reg;
     private String mail, pass1, pass2;
     private FirebaseAuth mAuth;
+    private TextView sgnin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        //Prevent User from Taking screenshots or recording screen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
+
+
+        sgnin = findViewById(R.id.sign_in);
+        sgnin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(Signup.this, SignIn.class);
+                startActivity(a);
+                finish();
+            }
+        });
+
+        String str = "Already have account?<b> Sign In</b>";
+        sgnin.setText(Html.fromHtml(str));
 
         reg = (Button)findViewById(R.id.button2);
         reg.setOnClickListener(new View.OnClickListener()

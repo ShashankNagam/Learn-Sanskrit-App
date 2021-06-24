@@ -14,30 +14,19 @@
         android:background="@drawable/bgsi"
         android:orientation="vertical">
 
-
-
         <ImageView
             android:id="@+id/bg"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
-
-
-
+            android:layout_weight="1.3"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.3"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:orientation="vertical">
-
-
-
-
-
-
 
             <EditText
                 android:id="@+id/editTextTextEmailAddress2"
@@ -108,16 +97,10 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.3"
+            android:layout_weight="0.2"
             android:gravity="center_horizontal"
-
             android:textColor="#555555"
             android:textSize="20sp" />
 
-
-
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -95,7 +95,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Cow"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -103,16 +103,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="धेनुः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aCow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -152,7 +154,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Horse"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -160,16 +162,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="अश्वः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aHorse"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -209,7 +213,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Lion"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -217,16 +221,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="सिंहः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aLion"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -267,7 +273,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Tiger"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -275,16 +281,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="व्याघ्रः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aTiger"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -324,7 +332,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Goat"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -332,16 +340,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="अजः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aGoat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -382,7 +392,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Dog"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -390,16 +400,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="कुक्कुरः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aDog"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -440,7 +452,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Cat"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -448,16 +460,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="बिडालः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aCat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -498,7 +512,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Jackal"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -506,16 +520,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="श्रृगालः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aJackal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -555,7 +571,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Leopard"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -563,16 +579,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="चित्रकः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aLeopard"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -612,7 +630,7 @@
                         android:layout_marginTop="6dp"
                         android:text="wolf"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -620,16 +638,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="वृकः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aWolf"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -670,7 +690,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Deer"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -678,19 +698,19 @@
                         android:layout_marginLeft="20dp"
                         android:text="हरिणः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aDeer"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
-
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -728,7 +748,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Elephant"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -736,16 +756,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="गजः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aElephant"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -786,7 +808,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Pig"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -794,16 +816,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="वराहः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aPig"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -844,7 +868,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Buffalo"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -852,16 +876,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="महिषः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aBuffalo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -902,7 +928,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Bull"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -910,16 +936,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="वृषभः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aBull"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -961,7 +989,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Camel"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -969,16 +997,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="उष्ट्रः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aCamel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -1019,7 +1049,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Bear"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -1027,16 +1057,18 @@
                         android:layout_marginLeft="20dp"
                         android:text="भल्लूकः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                <ImageButton
+                    android:id="@+id/aBear"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_baseline_volume_up_24"/>
+                    android:backgroundTint="#555555"
+                    android:background="@drawable/ic_baseline_play_arrow_24"/>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 

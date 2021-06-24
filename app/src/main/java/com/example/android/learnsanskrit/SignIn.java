@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -34,6 +35,9 @@ public class SignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+        //Prevent User from Taking screenshots or recording screen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
 
 
 
@@ -64,7 +68,6 @@ public class SignIn extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(SignIn.this, Signup.class);
                 startActivity(a);
-                finish();
             }
         });
 
