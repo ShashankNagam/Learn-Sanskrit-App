@@ -138,7 +138,7 @@
 
 
             <ImageView
-                android:id="@+id/signout"
+                android:id="@+id/sign"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:src="@drawable/nev_signout"
@@ -153,7 +153,37 @@
                 android:layout_height="wrap_content"
                 android:text="SignOut"
                 android:textSize="15dp"
-                android:layout_below="@+id/signout"
+                android:layout_below="@+id/sign"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/background"/>
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/nev_delete"
+                android:layout_below="@+id/textout"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="15dp"
+                android:layout_below="@+id/delete"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/background"/>
+
+            <TextView
+                android:id="@+id/textdelete1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="15dp"
+                android:layout_marginTop="-2dp"
+                android:layout_below="@+id/textdelete"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
 
@@ -250,6 +280,20 @@
                         android:layout_marginRight="27dp"
                         android:layout_marginBottom="15dp"
                         android:background="@drawable/vegi" />
+
+                    <Button
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="colors"/>
+
+                    <Button
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Family"/>
+
+
 
                 </LinearLayout>
             </HorizontalScrollView>

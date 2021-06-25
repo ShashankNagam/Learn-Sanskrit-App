@@ -76,6 +76,54 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView nevsign = (ImageView) findViewById(R.id.sign);
+        TextView textout = (TextView) findViewById(R.id.textout);
+        nevsign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+                if(currentUser != null)
+                {
+                    nevsign.setImageResource(R.drawable.nev_signout);
+                    textout.setText("SignOut");
+                    FirebaseAuth.getInstance().signOut();
+                    Toast.makeText(getApplicationContext(), "Signed out successfully", Toast.LENGTH_LONG).show();
+                    //mAuth.GoogleSignInApi.signOut(apiClient);
+                    Intent a = new Intent(MainActivity.this, SignIn.class);
+                    startActivity(a);
+                    finish();
+                }
+                else
+                {
+                    Intent a = new Intent(MainActivity.this, SignIn.class);
+                    a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    startActivity(a);
+                }
+            }
+        });
+
+        ImageView delete = (ImageView) findViewById(R.id.delete);
+        TextView del = (TextView) findViewById(R.id.textdelete);
+        TextView acc = (TextView) findViewById(R.id.textdelete1);
+        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+        if(currentUser != null)
+        {
+            nevsign.setImageResource(R.drawable.nev_signout);
+            textout.setText("SignOut");
+            delete.setVisibility(View.VISIBLE);
+            del.setVisibility(View.VISIBLE);
+            acc.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            nevsign.setImageResource(R.drawable.nev_signout);
+            nevsign.setRotation(360);
+            textout.setText("SignIn");
+            delete.setVisibility(View.GONE);
+            del.setVisibility(View.GONE);
+            acc.setVisibility(View.GONE);
+        }
+
         da = (Button)findViewById(R.id.button4);
         da.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,12 +169,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
         ImageView bird = (ImageView) findViewById(R.id.imageButton1);
         ImageView animal = (ImageView) findViewById(R.id.imageButton2);
         ImageView fruit = (ImageView) findViewById(R.id.imageButton3);
         ImageView vegetable = (ImageView) findViewById(R.id.imageButton4);
+        Button color = (Button) findViewById(R.id.imageButton5);
+        Button familyrelation = (Button) findViewById(R.id.imageButton6);
 
         bird.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,6 +211,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        color.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, colors.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
+
+        familyrelation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, family_relation.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
+
 
         RelativeLayout Alfa = (RelativeLayout) findViewById(R.id.Alfa);
         LinearLayout Ex1 = (LinearLayout) findViewById(R.id.alfaexpand);
@@ -269,6 +336,44 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView nevbhome = (ImageView) findViewById(R.id.home);
+        nevbhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                abc.setVisibility(View.GONE);
+                Ex1.setVisibility(View.GONE);
+                Ex2.setVisibility(View.GONE);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        ImageView nevshare = (ImageView) findViewById(R.id.share);
+        nevshare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "Please download this app : www.google.com");
+                sendIntent.setType("text/plain");
+                Intent.createChooser(sendIntent,"Share via");
+                startActivity(sendIntent);
+                Toast.makeText(getApplicationContext(), "Share this app", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        ImageView nevexit = (ImageView) findViewById(R.id.exit);
+        nevexit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity.this.finish();
+                System.exit(0);
+            }
+        });
+
 
         ImageView alphabets, words, phrases, grammar, family;
         alphabets = (ImageView) findViewById(R.id.imgletter);
