@@ -9,6 +9,8 @@ import android.graphics.Bitmap;
 import android.media.AudioManager;
 import android.media.Image;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.Menu;
@@ -37,8 +39,8 @@ public class birds extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_birds);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
-                WindowManager.LayoutParams.FLAG_SECURE);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         ImageView back = (ImageView)findViewById(R.id.backbird);
         back.setOnClickListener(new View.OnClickListener() {
@@ -212,7 +214,6 @@ public class birds extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Feagle_denoised.MP3?alt=media&token=e344a1a4-d396-4321-a564-93e9dcabd594");
-
             }
         });
         duckA.setOnClickListener(new View.OnClickListener() {
@@ -291,7 +292,6 @@ public class birds extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fkite_denoised.MP3?alt=media&token=40b46c59-8838-42b1-af88-f20cae1aa1a4");
-
             }
         });
 
@@ -299,12 +299,8 @@ public class birds extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Birds%2FAudio%2Fcock_denoised.MP3?alt=media&token=f6309d78-2885-497f-8f8b-0e5f558ead90");
-
             }
         });
-
-
-
     }
 
     private void playAudio(String audioUrl)
@@ -312,17 +308,24 @@ public class birds extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
         if(currentUser != null)
         {
-            Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
-            mediaPlayer = new MediaPlayer();
-            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-            try{
-                mediaPlayer.setDataSource(audioUrl);
-                mediaPlayer.prepare();
-                mediaPlayer.start();
-            }
-            catch (IOException e)
+            if(haveNetwork())
             {
-                e.printStackTrace();
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                mediaPlayer = new MediaPlayer();
+                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                try{
+                    mediaPlayer.setDataSource(audioUrl);
+                    mediaPlayer.prepare();
+                    mediaPlayer.start();
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Check your internet connection", Toast.LENGTH_LONG).show();
             }
         }
         else
@@ -331,4 +334,15 @@ public class birds extends AppCompatActivity {
         }
     }
 
+    private boolean haveNetwork(){
+        boolean have_WIFI= false;
+        boolean have_MobileData = false;
+        ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo[] networkInfos = connectivityManager.getAllNetworkInfo();
+        for(NetworkInfo info:networkInfos){
+            if (info.getTypeName().equalsIgnoreCase("WIFI"))if (info.isConnected())have_WIFI=true;
+            if (info.getTypeName().equalsIgnoreCase("MOBILE DATA"))if (info.isConnected())have_MobileData=true;
+        }
+        return have_WIFI||have_MobileData;
+    }
 }

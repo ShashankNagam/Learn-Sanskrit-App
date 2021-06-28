@@ -61,10 +61,12 @@
             android:layout_height="match_parent"
             android:background="@drawable/gradient_drawable3">
 
+
+
           <ImageView
               android:id="@+id/home"
-              android:layout_width="35dp"
-              android:layout_height="35dp"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
               android:src="@drawable/nev_home"
               android:layout_marginTop="10dp"
               android:layout_centerHorizontal="true"/>
@@ -74,15 +76,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_below="@+id/home"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
 
+
+
             <ImageView
                 android:id="@+id/about"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/nev_about"
                 android:layout_below="@+id/texthome"
                 android:layout_marginTop="10dp"
@@ -93,26 +97,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="About"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_below="@+id/about"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
 
+
+
             <ImageView
                 android:id="@+id/share"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/nev_share"
                 android:layout_below="@+id/textabout"
                 android:layout_marginTop="10dp"
                 android:layout_centerHorizontal="true"/>
+
+
+
 
             <TextView
                 android:id="@+id/textshare"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Share"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_below="@+id/share"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
@@ -121,7 +130,7 @@
                 android:id="@+id/exit"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/nev_exit"
+                android:src="@drawable/ic_baseline_power_settings_new_24"
                 android:layout_below="@+id/textshare"
                 android:layout_marginTop="10dp"
                 android:layout_centerHorizontal="true"/>
@@ -131,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Close"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_below="@+id/exit"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
@@ -139,8 +148,8 @@
 
             <ImageView
                 android:id="@+id/sign"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/nev_signout"
                 android:layout_below="@+id/textexit"
                 android:layout_marginTop="10dp"
@@ -152,15 +161,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SignOut"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_below="@+id/sign"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
 
             <ImageView
                 android:id="@+id/delete"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/nev_delete"
                 android:layout_below="@+id/textout"
                 android:layout_marginTop="10dp"
@@ -171,7 +180,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Delete"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_below="@+id/delete"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
@@ -181,7 +190,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Account"
-                android:textSize="15dp"
+                android:textSize="13dp"
                 android:layout_marginTop="-2dp"
                 android:layout_below="@+id/textdelete"
                 android:layout_centerHorizontal="true"
@@ -386,7 +395,6 @@
                     android:layout_marginRight="33dp"
                     android:background="#10C0C0C0" />
 
-
                 <LinearLayout
                     android:id="@+id/alfaexpand"
                     android:layout_width="match_parent"
@@ -394,7 +402,6 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:orientation="vertical">
-
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -797,19 +804,6 @@
                     android:textColor="@color/text_color"
                     android:textSize="20dp"
                     android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sign Out" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Delete Account" />
-
 
             </LinearLayout>
         </ScrollView>

@@ -50,31 +50,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Prevent User from Taking screenshots or recording screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
-                WindowManager.LayoutParams.FLAG_SECURE);
-
-
-        sout = (Button)findViewById(R.id.button3);
-        sout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
-                if(currentUser != null)
-                {
-                    FirebaseAuth.getInstance().signOut();
-                    Toast.makeText(getApplicationContext(), "Signed out successfully", Toast.LENGTH_LONG).show();
-                    //mAuth.GoogleSignInApi.signOut(apiClient);
-                    Intent a = new Intent(MainActivity.this, SignIn.class);
-                    startActivity(a);
-                    finish();
-                }
-                else
-                {
-                    Toast.makeText(getApplicationContext(), "Not Signed in", Toast.LENGTH_LONG).show();
-                }
-
-            }
-        });
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         ImageView nevsign = (ImageView) findViewById(R.id.sign);
         TextView textout = (TextView) findViewById(R.id.textout);
@@ -124,29 +100,6 @@ public class MainActivity extends AppCompatActivity {
             acc.setVisibility(View.GONE);
         }
 
-        da = (Button)findViewById(R.id.button4);
-        da.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
-                if(currentUser != null)
-                {
-                    FirebaseUser currentUser1 = mAuth.getInstance().getCurrentUser();
-                    currentUser1.delete();
-                    Toast.makeText(getApplicationContext(), "Account deleted", Toast.LENGTH_LONG).show();
-                    Intent x = new Intent(MainActivity.this, SignIn.class);
-                    startActivity(x);
-                }
-                else
-                {
-                    Toast.makeText(getApplicationContext(), "Not Signed in", Toast.LENGTH_LONG).show();
-                }
-
-            }
-        });
-
-
         RelativeLayout abc = (RelativeLayout) findViewById(R.id.abc);
         ImageView menu = (ImageView) findViewById(R.id.menu);
         abc.setVisibility(View.GONE);
@@ -167,7 +120,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
 
         ImageView bird = (ImageView) findViewById(R.id.imageButton1);
         ImageView animal = (ImageView) findViewById(R.id.imageButton2);
@@ -229,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
         RelativeLayout Alfa = (RelativeLayout) findViewById(R.id.Alfa);
         LinearLayout Ex1 = (LinearLayout) findViewById(R.id.alfaexpand);
@@ -374,7 +325,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         ImageView alphabets, words, phrases, grammar, family;
         alphabets = (ImageView) findViewById(R.id.imgletter);
         Glide.with(this)
@@ -400,11 +350,5 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(this)
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Ffamily.png?alt=media&token=daa48800-bf8c-45b6-8c49-3c0cf3c8432e")
                 .into(family);
-
-
     }
-
-
 }
-
-//Adding comment

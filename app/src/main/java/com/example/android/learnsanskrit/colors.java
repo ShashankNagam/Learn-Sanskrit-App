@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 
 public class colors extends AppCompatActivity {
@@ -13,6 +14,8 @@ public class colors extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colors);
+        //Prevent User from Taking screenshots or recording screen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         ImageButton color = findViewById(R.id.backcolor);
         color.setOnClickListener(new View.OnClickListener() {

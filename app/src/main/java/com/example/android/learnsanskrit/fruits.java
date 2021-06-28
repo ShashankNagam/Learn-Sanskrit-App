@@ -4,6 +4,8 @@ package com.example.android.learnsanskrit;
 import androidx.appcompat.app.AppCompatActivity;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -262,22 +264,41 @@ public class fruits extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
         if(currentUser != null)
         {
-            Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
-            mediaPlayer = new MediaPlayer();
-            mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-            try{
-                mediaPlayer.setDataSource(audioUrl);
-                mediaPlayer.prepare();
-                mediaPlayer.start();
-            }
-            catch (IOException e)
+            if(haveNetwork())
             {
-                e.printStackTrace();
+                Toast.makeText(getApplicationContext(), "Loading Audio", Toast.LENGTH_LONG).show();
+                mediaPlayer = new MediaPlayer();
+                mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+                try{
+                    mediaPlayer.setDataSource(audioUrl);
+                    mediaPlayer.prepare();
+                    mediaPlayer.start();
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+            else
+            {
+                Toast.makeText(getApplicationContext(), "Check your internet connection", Toast.LENGTH_LONG).show();
             }
         }
         else
         {
             Toast.makeText(getApplicationContext(), "Sign In to access audio", Toast.LENGTH_LONG).show();
         }
+    }
+
+    private boolean haveNetwork(){
+        boolean have_WIFI= false;
+        boolean have_MobileData = false;
+        ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo[] networkInfos = connectivityManager.getAllNetworkInfo();
+        for(NetworkInfo info:networkInfos){
+            if (info.getTypeName().equalsIgnoreCase("WIFI"))if (info.isConnected())have_WIFI=true;
+            if (info.getTypeName().equalsIgnoreCase("MOBILE DATA"))if (info.isConnected())have_MobileData=true;
+        }
+        return have_WIFI||have_MobileData;
     }
 }
