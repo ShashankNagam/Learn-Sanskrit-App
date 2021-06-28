@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.ButtonBarLayout;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -41,16 +43,53 @@ import com.nightonke.boommenu.Util;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button sout, da;
+    private Button sout, da, button;
+    Dialog dialog;
     private FirebaseAuth mAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         setContentView(R.layout.activity_main);
 
+        dialog = new Dialog(MainActivity.this);
+        dialog.setContentView(R.layout.delete_popup);
+        dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.delete_background));
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(true);
+        TextView cancle = dialog.findViewById(R.id.cancle_popup);
+        TextView delete1 = dialog.findViewById(R.id.delete_popup);
+
+        cancle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        delete1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+                if(currentUser != null)
+                {
+                    FirebaseUser currentUser1 = mAuth.getInstance().getCurrentUser();
+                    currentUser1.delete();
+                    Toast.makeText(getApplicationContext(), "Account deleted", Toast.LENGTH_LONG).show();
+                    Intent x = new Intent(MainActivity.this, SignIn.class);
+                    startActivity(x);
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "Not Signed in", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+
         //Prevent User from Taking screenshots or recording screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         ImageView nevsign = (ImageView) findViewById(R.id.sign);
         TextView textout = (TextView) findViewById(R.id.textout);
@@ -288,6 +327,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        RelativeLayout parag = (RelativeLayout) findViewById(R.id.paragraph);
+        parag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, paragraphs.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
+
         ImageView nevbhome = (ImageView) findViewById(R.id.home);
         nevbhome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -324,6 +373,16 @@ public class MainActivity extends AppCompatActivity {
                 System.exit(0);
             }
         });
+
+        ImageView dele = (ImageView) findViewById(R.id.delete);
+        dele.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.show();
+            }
+        });
+
+
 
         ImageView alphabets, words, phrases, grammar, family;
         alphabets = (ImageView) findViewById(R.id.imgletter);

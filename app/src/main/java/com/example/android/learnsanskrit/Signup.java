@@ -3,11 +3,13 @@ package com.example.android.learnsanskrit;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,6 +28,7 @@ public class Signup extends AppCompatActivity {
     private String mail, pass1, pass2;
     private FirebaseAuth mAuth;
     private TextView sgnin;
+    Dialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +125,7 @@ public class Signup extends AppCompatActivity {
                             Intent a = new Intent(Signup.this, MainActivity.class);
                             startActivity(a);
                             finish();
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Toast.makeText(getApplicationContext(), "Couldn't Sign-up", Toast.LENGTH_LONG).show();
