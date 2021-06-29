@@ -97,6 +97,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/aand"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -144,6 +145,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/aor"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -198,6 +200,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/anot"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -245,6 +248,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/abut"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -298,6 +302,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/acoz"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -345,6 +350,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/abefore"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -398,6 +404,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/aafter"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -445,6 +452,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/awhen"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -498,6 +506,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/awhenever"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -545,6 +554,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/auntil"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"
@@ -598,6 +608,7 @@
                                 android:textSize="20sp" />
 
                             <ImageView
+                                android:id="@+id/aonce"
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
                                 android:layout_gravity="center"

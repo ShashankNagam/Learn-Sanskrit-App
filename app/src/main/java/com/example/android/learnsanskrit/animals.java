@@ -165,16 +165,124 @@ public class animals extends AppCompatActivity {
         aCow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fcow_denoised.MP3?alt=media&token=f7c76219-d434-4636-902e-e2bfe7c00a89");
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fcow_denoised-incre.mp3?alt=media&token=2edc9681-8336-4d60-9e18-7aa268ec8413");
             }
         });
 
         aHorse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fhorse_denoised.MP3?alt=media&token=50d9968a-2156-494a-a298-b407753b3a8c");
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fhorse_denoised-incre.mp3?alt=media&token=f78d11fb-303b-4bf9-8801-f3ce11f6e1cb");
             }
         });
+
+        aLion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Flion_denoised-incre.mp3?alt=media&token=86cbbf02-a949-4ff1-9fc6-d92bbba652be");
+            }
+        });
+
+        aTiger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Ftiger_denoised-incre.mp3?alt=media&token=55fae740-fbcd-4978-9cac-4e92477ee1a0");
+            }
+        });
+
+        aGoat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fgoat_denoised-incre.mp3?alt=media&token=164f2b9a-f95c-4766-ba6e-b58550baa209");
+            }
+        });
+
+        aDog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fdog_denoised-incre.mp3?alt=media&token=b7c0477c-a22e-40e4-ab1b-d156d172e8b6");
+            }
+        });
+
+        aCat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fcat_denoised-incre.mp3?alt=media&token=52dea491-2cfe-444d-ab1c-0945fd3b043e");
+            }
+        });
+
+        aJackal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fjackal_denoised-incre.mp3?alt=media&token=f50c2e46-0a7a-4d1c-a338-6d64b7e125c4");
+            }
+        });
+
+        aLeopard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fleopard_denoised-incre.mp3?alt=media&token=858b7767-a335-4137-b061-65f9a9e50799");
+            }
+        });
+
+        aWolf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fwolf_denoised-incre.mp3?alt=media&token=6059799c-ea99-4129-be09-5f42e2e47870");
+            }
+        });
+
+        aDeer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fdeer_denoised-incre.mp3?alt=media&token=6985fe17-3dff-4706-be9a-4a7df0f78511");
+            }
+        });
+
+        aElephant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Felephant_denoised-incre.mp3?alt=media&token=3c8b4d4e-bdd7-4d39-bddf-83365925f492");
+            }
+        });
+
+        aPig.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fpig_denoised-incre.mp3?alt=media&token=5b914f8a-baca-4c19-8ed2-831c8e3d2311");
+            }
+        });
+
+        aBuffalo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fbuffalo_denoised-incre.mp3?alt=media&token=8295e85c-d887-4c5f-9635-23ffffb7448a");
+            }
+        });
+
+        aBull.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fbull_denoised-incre.mp3?alt=media&token=61f7951b-89ae-4b81-b0d4-d2c51b18241d");
+            }
+        });
+
+        aCamel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fcamel_denoised-incre.mp3?alt=media&token=bef17c94-3884-4a52-9b0a-efc90dae92f3");
+            }
+        });
+
+        aBear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Animals%2FAudio%2Fbear_denoised-incre.mp3?alt=media&token=be88ea88-5a1e-418b-8493-d9b40a9bd50b");
+
+            }
+        });
+
+
 
 
     }

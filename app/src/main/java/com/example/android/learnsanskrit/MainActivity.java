@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -164,8 +165,8 @@ public class MainActivity extends AppCompatActivity {
         ImageView animal = (ImageView) findViewById(R.id.imageButton2);
         ImageView fruit = (ImageView) findViewById(R.id.imageButton3);
         ImageView vegetable = (ImageView) findViewById(R.id.imageButton4);
-        Button color = (Button) findViewById(R.id.imageButton5);
-        Button familyrelation = (Button) findViewById(R.id.imageButton6);
+        ImageButton color = (ImageButton) findViewById(R.id.imageButton5);
+        ImageButton familyrelation = (ImageButton) findViewById(R.id.imageButton6);
 
         bird.setOnClickListener(new View.OnClickListener() {
             @Override

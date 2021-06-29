@@ -289,17 +289,26 @@
                         android:layout_marginBottom="15dp"
                         android:background="@drawable/vegi" />
 
-                    <Button
+                    <ImageButton
                         android:id="@+id/imageButton5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="colors"/>
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/colours" />
 
-                    <Button
+                    <ImageButton
                         android:id="@+id/imageButton6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Family"/>
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="27dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/family" />
+
 
 
 
