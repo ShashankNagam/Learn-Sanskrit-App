@@ -113,21 +113,86 @@
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
                     </LinearLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:background="#F5F5F5"
-                    android:orientation="horizontal">
-                    <ImageButton
-                        android:id="@+id/para1"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="2dp"
-                        android:layout_marginBottom="2dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
-                </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="English traslation"
+                            android:textColor="@color/text_color"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/parax2e"
+                            android:layout_weight="0"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginRight="40dp"
+                            android:elevation="15dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:rotation="90"
+                                android:layout_gravity="center"
+                                android:src="@drawable/backarrow"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parax2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5F5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Raj - What is your name ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laxmi - My name is Laxmi. What is your name ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Raj - My name is Raj. How are you ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laxmi - Im fine. How are you ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Raj - Im fine."
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -136,7 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical"
                 app:cardBackgroundColor="@color/background"
@@ -167,21 +232,65 @@
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
                     </LinearLayout>
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="#F5F5F5"
+                        android:background="#e5e4e2"
                         android:orientation="horizontal">
-                        <ImageButton
-                            android:id="@+id/para2"
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="English traslation"
+                            android:textColor="@color/text_color"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/parax3e"
+                            android:layout_weight="0"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:backgroundTint="#555555"
-                            android:background="@drawable/ic_baseline_play_arrow_24"/>
-                    </RelativeLayout>
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginRight="40dp"
+                            android:elevation="15dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:rotation="90"
+                                android:layout_gravity="center"
+                                android:src="@drawable/backarrow"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parax3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5F5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Teacher - Do you finished your homework ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Student - yes, my homework is completed."
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -190,7 +299,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical"
                 app:cardBackgroundColor="@color/background"
@@ -205,26 +314,26 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:id="@+id/paraa"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="vertical">
-                        <TextView
+                        <LinearLayout
+                            android:id="@+id/paraa"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Person 1 - तस्य नाम किम ?"
-                            android:textColor="@color/text_color"
-                            android:textSize="20dp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Person 2 - तस्य नाम राहुल।"
-                            android:textColor="@color/text_color"
-                            android:textSize="20dp"
-                            android:layout_marginTop="5dp"/>
-                    </LinearLayout>
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Person 1 - तस्य नाम किम ?"
+                                android:textColor="@color/text_color"
+                                android:textSize="20dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Person 2 - तस्य नाम राहुल।"
+                                android:textColor="@color/text_color"
+                                android:textSize="20dp"
+                                android:layout_marginTop="5dp"/>
+                        </LinearLayout>
 
                         <RelativeLayout
                             android:layout_toRightOf="@+id/paraa"
@@ -240,21 +349,65 @@
                                 android:src="@drawable/delete_img"/>
                         </RelativeLayout>
                     </RelativeLayout>
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="#F5F5F5"
+                        android:background="#e5e4e2"
                         android:orientation="horizontal">
-                        <ImageButton
-                            android:id="@+id/para3"
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="English traslation"
+                            android:textColor="@color/text_color"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/parax4e"
+                            android:layout_weight="0"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:backgroundTint="#555555"
-                            android:background="@drawable/ic_baseline_play_arrow_24"/>
-                    </RelativeLayout>
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginRight="40dp"
+                            android:elevation="15dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:rotation="90"
+                                android:layout_gravity="center"
+                                android:src="@drawable/backarrow"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parax4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5F5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Person 1 - What is his name ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Person 2 - his name is Rahul."
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -263,7 +416,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical"
                 app:cardBackgroundColor="@color/background"
@@ -313,21 +466,65 @@
                                 android:src="@drawable/delete_img"/>
                         </RelativeLayout>
                     </RelativeLayout>
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="#F5F5F5"
+                        android:background="#e5e4e2"
                         android:orientation="horizontal">
-                        <ImageButton
-                            android:id="@+id/para4"
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="English traslation"
+                            android:textColor="@color/text_color"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/parax5e"
+                            android:layout_weight="0"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:backgroundTint="#555555"
-                            android:background="@drawable/ic_baseline_play_arrow_24"/>
-                    </RelativeLayout>
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginRight="40dp"
+                            android:elevation="15dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:rotation="90"
+                                android:layout_gravity="center"
+                                android:src="@drawable/backarrow"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parax5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5F5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Person 1 - What is her name ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Person 2 - Her name is Sharada."
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -369,33 +566,91 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="कुणाल : भवान ग्राम: किम ?"
+                            android:text="कुणाल : भवान ग्राम: नाम किम ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="श्याम : मम ग्राम:"
+                            android:text="श्याम : मम ग्राम: नाम सातारा."
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
                     </LinearLayout>
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="#F5F5F5"
+                        android:background="#e5e4e2"
                         android:orientation="horizontal">
-                        <ImageButton
-                            android:id="@+id/para5"
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="English traslation"
+                            android:textColor="@color/text_color"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/parax6e"
+                            android:layout_weight="0"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:backgroundTint="#555555"
-                            android:background="@drawable/ic_baseline_play_arrow_24"/>
-                    </RelativeLayout>
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginRight="40dp"
+                            android:elevation="15dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:rotation="90"
+                                android:layout_gravity="center"
+                                android:src="@drawable/backarrow"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parax6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5F5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kunal - Where are you going ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shyam - I'm going to my native village."
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kunal - What is your village name ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shyam - My village name is Satara."
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -404,7 +659,203 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="शशांक - नमस्ते । सुप्रभातम् ।"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="हर्ष - नमस्ते । सुप्रभातम् ।"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="शशांक - कथमस्ति भवान् ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="हर्ष - अह कुशली।  च भवतः विषये किम् ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="शशांक  - अह कुशली। , भवतः ग्रामः ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="हर्ष - मम ग्रामः मुंबई च भवान् ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="शशांक - मम ग्रामः पुणे.भवान् कस्यां कक्श्यायां पठति ? "
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="हर्ष - अहं दशमःकक्श्यायां पठामि । च भवान् ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="शशांक - अहं नवमकक्श्यायां पठामि ।"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="English traslation"
+                            android:textColor="@color/text_color"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/parax1e"
+                            android:layout_weight="0"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginRight="40dp"
+                            android:elevation="15dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:rotation="90"
+                                android:layout_gravity="center"
+                                android:src="@drawable/backarrow"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parax1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5F5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shashank - Hello,Good morning"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harsh - Hello,Good morning"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shashank - How are you ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harsh - Im fine and what about you ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shashsnk - Im good, where are you from ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harsh - Im from mumbai and you ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shashank - Im from pune. Which class are you in ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Harsh - I am in standard X and you ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shashank - I am in standard XI."
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical"
                 app:cardBackgroundColor="@color/background"
@@ -455,21 +906,65 @@
                         </LinearLayout>
 
                     </RelativeLayout>
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:background="#F5F5F5"
+                        android:background="#e5e4e2"
                         android:orientation="horizontal">
-                        <ImageButton
-                            android:id="@+id/para6"
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="English traslation"
+                            android:textColor="@color/text_color"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/parax7e"
+                            android:layout_weight="0"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:backgroundTint="#555555"
-                            android:background="@drawable/ic_baseline_play_arrow_24"/>
-                    </RelativeLayout>
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginRight="40dp"
+                            android:elevation="15dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:rotation="90"
+                                android:layout_gravity="center"
+                                android:src="@drawable/backarrow"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parax7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5F5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="What is this ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This is School."
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
