@@ -26,6 +26,7 @@
                 android:layout_weight="1"
                 android:gravity="right"
                 android:padding="5dp"
+                android:fontFamily="@font/adamina"
                 android:text="Learn"
                 android:textColor="#8e54e9"
                 android:textSize="30sp"
@@ -111,8 +112,6 @@
                 android:layout_below="@+id/textabout"
                 android:layout_marginTop="10dp"
                 android:layout_centerHorizontal="true"/>
-
-
 
 
             <TextView
@@ -256,7 +255,6 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginRight="7dp"
                         android:layout_marginBottom="15dp"
-
                         android:background="@drawable/mybird" />
 
                     <ImageButton
@@ -285,7 +283,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="15dp"
-                        android:layout_marginRight="27dp"
+                        android:layout_marginRight="7dp"
                         android:layout_marginBottom="15dp"
                         android:background="@drawable/vegi" />
 
@@ -295,7 +293,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="7dp"
                         android:layout_marginTop="15dp"
-                        android:layout_marginRight="27dp"
+                        android:layout_marginRight="7dp"
                         android:layout_marginBottom="15dp"
                         android:background="@drawable/colours" />
 
@@ -308,8 +306,6 @@
                         android:layout_marginRight="27dp"
                         android:layout_marginBottom="15dp"
                         android:background="@drawable/family" />
-
-
 
 
                 </LinearLayout>
@@ -371,7 +367,6 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="5dp"
-                            android:fontFamily="@font/adamina"
                             android:text="Alphabets"
                             android:textColor="@color/text_color"
                             android:textSize="20sp" />
@@ -407,7 +402,7 @@
                     android:id="@+id/alfaexpand"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="100dp"
                     android:layout_marginRight="30dp"
                     android:orientation="vertical"
                     android:visibility="gone">
@@ -417,28 +412,8 @@
                         android:layout_height="wrap_content">
 
                         <LinearLayout
-                            android:id="@+id/aaa"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/list" />
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/list" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@id/aaa"
                             android:orientation="vertical">
 
                             <TextView
@@ -447,7 +422,6 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Vowels"
-                                android:fontFamily="@font/adamina"
                                 android:textColor="@color/text_color"
                                 android:textSize="18sp" />
 
@@ -463,7 +437,6 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Consonants"
-                                android:fontFamily="@font/adamina"
                                 android:textColor="@color/text_color"
                                 android:textSize="18sp" />
 
@@ -539,7 +512,7 @@
                     android:id="@+id/alfaexpand2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="100dp"
                     android:layout_marginRight="30dp"
                     android:orientation="vertical"
                     android:visibility="gone">
@@ -549,38 +522,8 @@
                         android:layout_height="wrap_content">
 
                         <LinearLayout
-                            android:id="@+id/bbb"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/list" />
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/list" />
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/list" />
-
-                            <ImageView
-                                android:layout_width="50dp"
-                                android:layout_height="40dp"
-                                android:src="@drawable/list" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/bbb"
                             android:orientation="vertical">
 
                             <TextView

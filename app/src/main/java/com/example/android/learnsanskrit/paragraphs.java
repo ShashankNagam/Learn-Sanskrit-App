@@ -158,5 +158,24 @@ public class paragraphs extends AppCompatActivity {
                 }
             }
         });
+
+        LinearLayout parax8 = (LinearLayout) findViewById(R.id.parax8);
+        CardView parax8e = (CardView) findViewById(R.id.parax8e);
+        parax8.setVisibility(View.GONE);
+        parax8e.setOnClickListener(new View.OnClickListener() {
+            Boolean m = false;
+            public void onClick(View v) {
+                if (!m){
+                    parax8e.setRotation(180);
+                    parax8.setVisibility(View.VISIBLE);
+                    m = true;
+                }
+                else {
+                    parax8e.setRotation(360);
+                    parax8.setVisibility(View.GONE);
+                    m = false;
+                }
+            }
+        });
     }
 }

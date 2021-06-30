@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ///*android:fontFamily="@font/adamina"*/
+
         delete1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

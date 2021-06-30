@@ -78,13 +78,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="राज : भवत्या: नाम किम ?"
+                            android:text="राज : भवत्या: नाम किम् ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="लक्ष्मी - मम नाम लक्ष्म। भवत: नाम किम ?"
+                            android:text="लक्ष्मी - मम नाम लक्ष्म। भवत: नाम किम् ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
@@ -98,7 +98,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="लक्ष्मी - अह कुशलिनी। कथमस्ति भवान ?"
+                            android:text="लक्ष्मी - अह कुशलिनी। कथमस्ति भवान् ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
@@ -241,7 +241,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="छात्रः : आम, मम गृहपाठ समाप्त: अस्ती।"
+                            android:text="छात्रः : आम्, मम गृहपाठ समाप्त: अस्ती।"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
@@ -337,7 +337,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Person 1 - तस्य नाम किम ?"
+                                android:text="Person 1 - तस्य नाम किम् ?"
                                 android:textColor="@color/text_color"
                                 android:textSize="20dp"/>
                             <TextView
@@ -463,7 +463,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Person 1 - तस्या: नाम किम ?"
+                                android:text="Person 1 - तस्या: नाम किम् ?"
                                 android:textColor="@color/text_color"
                                 android:textSize="20dp"/>
                             <TextView
@@ -602,7 +602,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="तत किम ?"
+                                android:text="तत किम् ?"
                                 android:textColor="@color/text_color"
                                 android:textSize="20dp"/>
                             <TextView
@@ -702,7 +702,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="कुणाल : भवान कुत्र गच्छति ?"
+                            android:text="कुणाल : भवान् कुत्र गच्छति ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"/>
                         <TextView
@@ -715,7 +715,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="कुणाल : भवान ग्राम: नाम किम ?"
+                            android:text="कुणाल : भवान् नाम ग्राम: किम ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
@@ -848,21 +848,21 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="हर्ष - अह कुशली।  च भवतः विषये किम् ?"
+                            android:text="हर्ष - अह कुशली।  भवतः विषये किम् ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="शशांक  - अह कुशली। , भवतः ग्रामः ?"
+                            android:text="शशांक  - अह कुशली। भवतः ग्रामः ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="हर्ष - मम ग्रामः मुंबई च भवान् ?"
+                            android:text="हर्ष - मम ग्रामः मुंबई. भवतः ग्रामः ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
@@ -876,7 +876,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="हर्ष - अहं दशमःकक्श्यायां पठामि । च भवान् ?"
+                            android:text="हर्ष - अहं दशमःकक्श्यायां पठामि । भवान् कस्यां कक्श्यायां पठति ? "
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
@@ -956,7 +956,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Harsh - Im fine and what about you ?"
+                            android:text="Harsh : Im fine. what about you ?"
                             android:textColor="@color/text_color"
                             android:textSize="18dp"
                             android:layout_marginTop="5dp"/>
@@ -970,7 +970,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Harsh - Im from mumbai and you ?"
+                            android:text="Harsh : Im from mumbai. Where are you from ?"
                             android:textColor="@color/text_color"
                             android:textSize="18dp"
                             android:layout_marginTop="5dp"/>
@@ -984,7 +984,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Harsh - I am in standard X and you ?"
+                            android:text="Harsh : I am in standard X. Which class are you in ?"
                             android:textColor="@color/text_color"
                             android:textSize="20dp"
                             android:layout_marginTop="5dp"/>
@@ -999,6 +999,111 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@color/background"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="राघव - राजेश भवत: मम पुस्तकम् दृष्टवती वा ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="राजेश - आम् । पुस्तकम् उत्पी उत्पीठिका उपरि एव अस्ती।  "
+                            android:textColor="@color/text_color"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="English traslation"
+                            android:textColor="@color/text_color"
+                            android:paddingLeft="10dp"
+                            android:textStyle="italic"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"/>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/parax8e"
+                            android:layout_weight="0"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:cardBackgroundColor="#fff"
+                            app:cardCornerRadius="50dp"
+                            android:layout_marginRight="40dp"
+                            android:elevation="15dp"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:rotation="90"
+                                android:layout_gravity="center"
+                                android:src="@drawable/backarrow"/>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/parax8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F5F5F5"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Raghav - Rajesh, Have you seen my book ?"
+                            android:textColor="@color/text_color"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rajesh - Yes. Book is on the table."
+                            android:textColor="@color/text_color"
+                            android:textSize="18dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:text="(While referring to a male we use the word  भवत:)"
+                            android:textColor="@color/text_color"
+                            android:textSize="18dp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
