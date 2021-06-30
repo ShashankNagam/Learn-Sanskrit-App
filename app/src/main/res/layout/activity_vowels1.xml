@@ -55,6 +55,15 @@
 
                 </FrameLayout>
 
+                <Button
+                    android:id="@+id/playVidV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play Video"
+                    android:backgroundTint="#4776e6"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="12dp"/>
+
                 <ImageView
                     android:id="@+id/vol"
                     android:layout_width="match_parent"

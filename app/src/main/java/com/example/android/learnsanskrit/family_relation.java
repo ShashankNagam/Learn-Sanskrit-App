@@ -35,9 +35,7 @@ public class family_relation extends AppCompatActivity {
         backff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(family_relation.this, MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(intent);
+                finish();
             }
         });
 

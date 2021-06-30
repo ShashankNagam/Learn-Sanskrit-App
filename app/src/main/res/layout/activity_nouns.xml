@@ -16,30 +16,10 @@
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="5dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gradient_drawable2"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="7"
-                android:fontFamily="@font/allerta"
-                android:gravity="center"
-                android:padding="5dp"
-                android:text="Noun"
-                android:textColor="@color/background"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
         <ImageView
-            android:id="@+id/nounbg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="230dp"
+            android:background="@drawable/noun"/>
 
 
         <ScrollView
@@ -1467,6 +1447,7 @@
         android:layout_weight="1"
         android:background="@drawable/repple_ovalexpand"
         android:src="@drawable/arrow_white"
+        android:layout_margin="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

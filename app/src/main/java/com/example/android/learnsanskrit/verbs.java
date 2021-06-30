@@ -34,16 +34,11 @@ public class verbs extends AppCompatActivity {
         verb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(verbs.this, MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(intent);
+                finish();
             }
         });
 
-        ImageView bgn = (ImageView)findViewById(R.id.verbbg);
-        Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/bgnoun.png?alt=media&token=7c0b8be6-50cd-4110-b198-360c508c1ec7")
-                .into(bgn);
+
 
         ImageView read, write, speak, go, come, fruit, fall, drink, eat, stand, sit, be, wander, sing, graze, move, conquer, chant, wither;
 
