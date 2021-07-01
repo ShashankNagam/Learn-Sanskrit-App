@@ -15,8 +15,7 @@ public class phrases extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
         //Prevent User from Taking screenshots or recording screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
-                WindowManager.LayoutParams.FLAG_SECURE);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         ImageView backph = (ImageView) findViewById(R.id.backph);
         backph.setOnClickListener(new View.OnClickListener() {
