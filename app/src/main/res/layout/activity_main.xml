@@ -60,7 +60,7 @@
             android:id="@+id/abc"
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:visibility="gone"
+            android:visibility="visible"
             android:background="@drawable/gradient_drawable3">
 
           <ImageView
@@ -80,8 +80,6 @@
                 android:layout_below="@+id/home"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
-
-
 
             <ImageView
                 android:id="@+id/about"
@@ -145,31 +143,11 @@
 
 
             <ImageView
-                android:id="@+id/sign"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/nev_signout"
-                android:layout_below="@+id/textexit"
-                android:layout_marginTop="10dp"
-                android:rotation="180"
-                android:layout_centerHorizontal="true"/>
-
-            <TextView
-                android:id="@+id/textout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SignOut"
-                android:textSize="13dp"
-                android:layout_below="@+id/sign"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/background"/>
-
-            <ImageView
                 android:id="@+id/delete"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/nev_delete"
-                android:layout_below="@+id/textout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/nev_account"
+                android:layout_below="@+id/textexit"
                 android:layout_marginTop="10dp"
                 android:layout_centerHorizontal="true"/>
 
@@ -177,7 +155,7 @@
                 android:id="@+id/textdelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Delete"
+                android:text="My"
                 android:textSize="13dp"
                 android:layout_below="@+id/delete"
                 android:layout_centerHorizontal="true"
@@ -191,6 +169,26 @@
                 android:textSize="13dp"
                 android:layout_marginTop="-2dp"
                 android:layout_below="@+id/textdelete"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/background"/>
+
+            <ImageView
+                android:id="@+id/sign"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nev_signout"
+                android:layout_below="@+id/textdelete1"
+                android:layout_marginTop="10dp"
+                android:rotation="180"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/textout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignIn"
+                android:textSize="13dp"
+                android:layout_below="@+id/sign"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/background"/>
 
@@ -306,7 +304,6 @@
                         android:layout_marginRight="27dp"
                         android:layout_marginBottom="15dp"
                         android:background="@drawable/family" />
-
 
                 </LinearLayout>
             </HorizontalScrollView>

@@ -45,7 +45,7 @@ import com.nightonke.boommenu.Util;
 public class MainActivity extends AppCompatActivity {
 
     private Button sout, da, button;
-    Dialog dialog;
+    //Dialog dialog;
     private FirebaseAuth mAuth;
 
     @Override
@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         setContentView(R.layout.activity_main);
+
+
+        /*
 
         dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.delete_popup);
@@ -69,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ///*android:fontFamily="@font/adamina"*/
 
         delete1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,37 +90,24 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Not Signed in", Toast.LENGTH_LONG).show();
                 }
             }
-        });
+        });*/
 
 
         //Prevent User from Taking screenshots or recording screen
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+
 
         ImageView nevsign = (ImageView) findViewById(R.id.sign);
         TextView textout = (TextView) findViewById(R.id.textout);
         nevsign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
-                if(currentUser != null)
-                {
-                    nevsign.setImageResource(R.drawable.nev_signout);
-                    textout.setText("SignOut");
-                    FirebaseAuth.getInstance().signOut();
-                    Toast.makeText(getApplicationContext(), "Signed out successfully", Toast.LENGTH_LONG).show();
-                    //mAuth.GoogleSignInApi.signOut(apiClient);
-                    Intent a = new Intent(MainActivity.this, SignIn.class);
-                    startActivity(a);
-                    finish();
-                }
-                else
-                {
-                    Intent a = new Intent(MainActivity.this, SignIn.class);
-                    a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                    startActivity(a);
-                }
+                Intent a = new Intent(MainActivity.this, SignIn.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(a);
             }
         });
+
 
         ImageView delete = (ImageView) findViewById(R.id.delete);
         TextView del = (TextView) findViewById(R.id.textdelete);
@@ -126,21 +115,22 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
         if(currentUser != null)
         {
-            nevsign.setImageResource(R.drawable.nev_signout);
-            textout.setText("SignOut");
             delete.setVisibility(View.VISIBLE);
             del.setVisibility(View.VISIBLE);
             acc.setVisibility(View.VISIBLE);
+            nevsign.setVisibility(View.GONE);
+            textout.setVisibility(View.GONE);
         }
         else
         {
-            nevsign.setImageResource(R.drawable.nev_signout);
-            nevsign.setRotation(360);
-            textout.setText("SignIn");
             delete.setVisibility(View.GONE);
             del.setVisibility(View.GONE);
             acc.setVisibility(View.GONE);
+            nevsign.setVisibility(View.VISIBLE);
+            textout.setVisibility(View.VISIBLE);
         }
+
+
 
         RelativeLayout abc = (RelativeLayout) findViewById(R.id.abc);
         ImageView menu = (ImageView) findViewById(R.id.menu);
@@ -381,7 +371,9 @@ public class MainActivity extends AppCompatActivity {
         dele.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.show();
+                Intent intent = new Intent(MainActivity.this, account_user.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
             }
         });
 

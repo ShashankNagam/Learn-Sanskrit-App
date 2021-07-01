@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".account_user">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/repple_oval"
+            android:src="@drawable/arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="My Account"
+            android:textColor="#8e54e9"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#50C0C0C0" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email id : "
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="20dp"/>
+
+                    <HorizontalScrollView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/account_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#555555"
+                        android:textSize="20dp"/>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password : "
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:layout_marginRight="5dp"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:id="@+id/account_pa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="******"
+                        android:textColor="#555555"
+                        android:textSize="20dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/forget_acc_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password ?"
+                android:textColor="#4776e6"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/SignOutA"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8e54e9"
+                    android:drawableLeft="@drawable/nev_signout"
+                    android:onClick="signoutacc"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="SignOut"
+                    android:textColor="@color/background"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/DeleteA"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8e54e9"
+                    android:drawableLeft="@drawable/nev_delete"
+                    android:onClick="deleteacc"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Delete Account"
+                    android:textColor="@color/background"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
