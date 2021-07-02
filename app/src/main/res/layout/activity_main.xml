@@ -63,52 +63,13 @@
             android:visibility="visible"
             android:background="@drawable/gradient_drawable3">
 
-          <ImageView
-              android:id="@+id/home"
-              android:layout_width="30dp"
-              android:layout_height="30dp"
-              android:src="@drawable/nev_home"
-              android:layout_marginTop="10dp"
-              android:layout_centerHorizontal="true"/>
-
-            <TextView
-                android:id="@+id/texthome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"
-                android:textSize="13dp"
-                android:layout_below="@+id/home"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/background"/>
-
-            <ImageView
-                android:id="@+id/about"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/nev_about"
-                android:layout_below="@+id/texthome"
-                android:layout_marginTop="10dp"
-                android:layout_centerHorizontal="true"/>
-
-            <TextView
-                android:id="@+id/textabout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="About"
-                android:textSize="13dp"
-                android:layout_below="@+id/about"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/background"/>
-
-
 
             <ImageView
                 android:id="@+id/share"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/nev_share"
-                android:layout_below="@+id/textabout"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_centerHorizontal="true"/>
 
 
@@ -146,7 +107,7 @@
                 android:id="@+id/delete"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/nev_account"
+                android:src="@drawable/nev_delete"
                 android:layout_below="@+id/textexit"
                 android:layout_marginTop="10dp"
                 android:layout_centerHorizontal="true"/>
@@ -155,7 +116,7 @@
                 android:id="@+id/textdelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My"
+                android:text="Delete"
                 android:textSize="13dp"
                 android:layout_below="@+id/delete"
                 android:layout_centerHorizontal="true"
@@ -668,7 +629,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="5dp"
-                            android:text="Grammar"
+                            android:text="Conversation"
                             android:textColor="@color/text_color"
                             android:textSize="20sp" />
 
@@ -676,65 +637,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:text="व्याकरणम्"
+                            android:text="सम्भाषण"
                             android:textColor="@color/text_color"
                             android:textSize="17sp" />
                     </LinearLayout>
 
                     <ImageView
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="30dp"
-                        android:src="@drawable/backarrow" />
-                </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="33dp"
-                    android:layout_marginRight="33dp"
-                    android:background="#C0C0C0" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/repple_effect">
-
-                    <ImageView
-                        android:id="@+id/family"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="30dp"/>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_toRightOf="@id/family"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="5dp"
-                            android:text="Family"
-                            android:textColor="@color/text_color"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="20dp"
-                            android:text="वर्णमाला"
-                            android:textColor="@color/text_color"
-                            android:textSize="17sp" />
-                    </LinearLayout>
-
-                    <ImageView
                         android:layout_width="12dp"
                         android:layout_height="12dp"
                         android:layout_alignParentEnd="true"

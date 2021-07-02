@@ -45,7 +45,7 @@ import com.nightonke.boommenu.Util;
 public class MainActivity extends AppCompatActivity {
 
     private Button sout, da, button;
-    //Dialog dialog;
+    Dialog dialog;
     private FirebaseAuth mAuth;
 
     @Override
@@ -54,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
         //overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         setContentView(R.layout.activity_main);
 
-
-        /*
 
         dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.delete_popup);
@@ -90,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Not Signed in", Toast.LENGTH_LONG).show();
                 }
             }
-        });*/
+        });
 
 
         //Prevent User from Taking screenshots or recording screen
@@ -102,9 +100,22 @@ public class MainActivity extends AppCompatActivity {
         nevsign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(MainActivity.this, SignIn.class);
-                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(a);
+                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+                if(currentUser != null)
+                {
+                    FirebaseAuth.getInstance().signOut();
+                    Toast.makeText(getApplicationContext(), "Signed out successfully", Toast.LENGTH_LONG).show();
+                    //mAuth.GoogleSignInApi.signOut(apiClient);
+                    Intent a = new Intent(MainActivity.this, SignIn.class);
+                    startActivity(a);
+                    finish();
+                }
+                else
+                {
+                    Intent a = new Intent(MainActivity.this, SignIn.class);
+                    a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    startActivity(a);
+                }
             }
         });
 
@@ -118,18 +129,17 @@ public class MainActivity extends AppCompatActivity {
             delete.setVisibility(View.VISIBLE);
             del.setVisibility(View.VISIBLE);
             acc.setVisibility(View.VISIBLE);
-            nevsign.setVisibility(View.GONE);
-            textout.setVisibility(View.GONE);
+            nevsign.setImageResource(R.drawable.nev_signout);
+            textout.setText("SignOut");
         }
         else
         {
             delete.setVisibility(View.GONE);
             del.setVisibility(View.GONE);
             acc.setVisibility(View.GONE);
-            nevsign.setVisibility(View.VISIBLE);
-            textout.setVisibility(View.VISIBLE);
+            nevsign.setImageResource(R.drawable.nev_signout);
+            textout.setText("SignIn");
         }
-
 
 
         RelativeLayout abc = (RelativeLayout) findViewById(R.id.abc);
@@ -330,6 +340,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /*
         ImageView nevbhome = (ImageView) findViewById(R.id.home);
         nevbhome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -342,7 +353,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
         ImageView nevshare = (ImageView) findViewById(R.id.share);
         nevshare.setOnClickListener(new View.OnClickListener() {
@@ -371,11 +382,11 @@ public class MainActivity extends AppCompatActivity {
         dele.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, account_user.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(intent);
+                dialog.show();
             }
         });
+
+
 
 
 
@@ -400,9 +411,9 @@ public class MainActivity extends AppCompatActivity {
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fgrammar.png?alt=media&token=03f75b80-acce-4d4f-9855-c23d0d8dd900")
                 .into(grammar);
 
-        family = (ImageView)findViewById(R.id.family);
+        /*family = (ImageView)findViewById(R.id.family);
         Glide.with(this)
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Ffamily.png?alt=media&token=daa48800-bf8c-45b6-8c49-3c0cf3c8432e")
-                .into(family);
+                .into(family);*/
     }
 }
