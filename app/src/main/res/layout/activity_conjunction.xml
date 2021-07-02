@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/newconjuction"
     android:orientation="vertical"
     tools:context=".nouns">
 
@@ -18,8 +18,8 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@drawable/conjuctions"/>
+            android:layout_height="260dp"
+            />
 
         <ScrollView
             android:layout_width="match_parent"

@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnSanskrit">
-        <activity android:name=".account_user"></activity>
+        <activity android:name=".account_user" />
         <activity android:name=".paragraphs" />
         <activity android:name=".family_relation" />
         <activity android:name=".colors" />
@@ -32,7 +32,6 @@
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -394,21 +394,25 @@ public class MainActivity extends AppCompatActivity {
         alphabets = (ImageView) findViewById(R.id.imgletter);
         Glide.with(this)
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Falpha.png?alt=media&token=af13eca5-be45-4818-8137-1f49a46e4f58")
+                .placeholder(R.drawable.blankblue)
                 .into(alphabets);
 
         words = (ImageView)findViewById(R.id.words);
         Glide.with(this)
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fwords.png?alt=media&token=d7ed3a8f-6e4a-4ac7-8982-8d71fdd94e80")
+                .placeholder(R.drawable.blankblue)
                 .into(words);
 
         phrases = (ImageView)findViewById(R.id.phrases);
         Glide.with(this)
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fphrases.png?alt=media&token=08a08b1e-1dd6-429a-ae4e-bd3d88512a37")
+                .placeholder(R.drawable.blankblue)
                 .into(phrases);
 
         grammar = (ImageView)findViewById(R.id.grammar);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fgrammar.png?alt=media&token=03f75b80-acce-4d4f-9855-c23d0d8dd900")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fconvericon.png?alt=media&token=517df6d9-05a0-4aca-8392-6f94d2cc14fc")
+                .placeholder(R.drawable.blankblue)
                 .into(grammar);
 
         /*family = (ImageView)findViewById(R.id.family);

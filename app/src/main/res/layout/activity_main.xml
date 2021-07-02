@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -24,9 +24,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
+                android:fontFamily="cursive"
                 android:gravity="right"
+                android:includeFontPadding="true"
                 android:padding="5dp"
-                android:fontFamily="@font/adamina"
                 android:text="Learn"
                 android:textColor="#8e54e9"
                 android:textSize="30sp"
@@ -42,8 +43,7 @@
                 android:padding="5dp"
                 android:text="संस्कृत"
                 android:textColor="#4776e6"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textSize="30sp" />
 
         </LinearLayout>
 
@@ -380,6 +380,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Vowels"
+                                android:layout_margin="3dp"
                                 android:textColor="@color/text_color"
                                 android:textSize="18sp" />
 
@@ -395,6 +396,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Consonants"
+                                android:layout_margin="3dp"
                                 android:textColor="@color/text_color"
                                 android:textSize="18sp" />
 
@@ -490,6 +492,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Nouns"
+                                android:layout_margin="3dp"
                                 android:textColor="@color/text_color"
                                 android:textSize="18sp" />
 
@@ -505,6 +508,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Pronouns"
+                                android:layout_margin="3dp"
                                 android:textColor="@color/text_color"
                                 android:textSize="18sp" />
 
@@ -520,6 +524,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Verbs"
+                                android:layout_margin="3dp"
                                 android:textColor="@color/text_color"
                                 android:textSize="18sp" />
 
@@ -535,6 +540,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/repple_expand"
                                 android:text="Conjunction"
+                                android:layout_margin="3dp"
                                 android:textColor="@color/text_color"
                                 android:textSize="18sp" />
 
@@ -679,9 +685,8 @@
         android:layout_gravity="center_vertical"
         android:layout_weight="1"
         android:background="@drawable/repple_ovalexpand"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
