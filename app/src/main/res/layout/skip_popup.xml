@@ -7,25 +7,14 @@
     android:orientation="vertical"
     android:background="#FFFFFF">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        app:cardBackgroundColor="#D10000"
-        app:cardCornerRadius="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp">
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/nev_delete"
-            android:layout_gravity="center"/>
-    </androidx.cardview.widget.CardView>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Are you sure\n You want to Delete this Account ?"
-        android:textSize="20dp"
+        android:text="To access audio and video files you must be SignIn \n Are you sure you want to Skip this step ?"
+        android:textSize="18dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="15dp"
         android:textColor="@color/text_color"
         android:gravity="center"/>
@@ -46,7 +35,7 @@
             android:background="#908e54e9"/>
 
         <TextView
-            android:id="@+id/cancle_popup"
+            android:id="@+id/cancle_popup1"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -63,11 +52,11 @@
             android:background="#908e54e9"/>
 
         <TextView
-            android:id="@+id/delete_popup"
+            android:id="@+id/delete_popup1"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="Delete"
+            android:text="Skip"
             android:textSize="18dp"
             android:gravity="center"
             android:background="@drawable/repple_effect"

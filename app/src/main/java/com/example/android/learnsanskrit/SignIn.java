@@ -3,10 +3,12 @@ package com.example.android.learnsanskrit;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +22,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import android.text.Html;
 public class SignIn extends AppCompatActivity {
 
@@ -28,7 +32,7 @@ public class SignIn extends AppCompatActivity {
     private TextView fgp, sgnup, skip;
     private FirebaseAuth mAuth;
     private String mail, pass;
-
+    Dialog dialog;
 
 
     @Override
@@ -36,10 +40,33 @@ public class SignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
         //Prevent User from Taking screenshots or recording screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
-                WindowManager.LayoutParams.FLAG_SECURE);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+
+        dialog = new Dialog(SignIn.this);
+        dialog.setContentView(R.layout.skip_popup);
+        dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.delete_background));
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(true);
+        TextView cancle1 = dialog.findViewById(R.id.cancle_popup1);
+        TextView delete11 = dialog.findViewById(R.id.delete_popup1);
+
+        cancle1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
 
 
+        delete11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent c = new Intent(SignIn.this, MainActivity.class);
+                c.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(c);
+                finish();
+            }
+        });
 
 
         sgnin = (Button)findViewById(R.id.button2);
@@ -67,6 +94,7 @@ public class SignIn extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent a = new Intent(SignIn.this, Signup.class);
+                a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
             }
         });
@@ -74,13 +102,12 @@ public class SignIn extends AppCompatActivity {
         String str = "New here?<b> Sign Up</b>";
         sgnup.setText(Html.fromHtml(str));
 
+
         skip = findViewById(R.id.skip);
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent c = new Intent(SignIn.this, MainActivity.class);
-                startActivity(c);
-                finish();
+                dialog.show();
             }
         });
 
@@ -89,6 +116,7 @@ public class SignIn extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent d = new Intent(SignIn.this, ForegetPassword.class);
+                d.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(d);
             }
         });
@@ -130,6 +158,7 @@ public class SignIn extends AppCompatActivity {
                         {
                             Toast.makeText(getApplicationContext(), "Signed in successfully", Toast.LENGTH_LONG).show();
                             Intent b = new Intent(SignIn.this, MainActivity.class);
+                            b.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                             startActivity(b);
                             finish();
                         } else
