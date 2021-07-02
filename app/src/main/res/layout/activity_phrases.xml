@@ -92,19 +92,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:text="हरिः ॐ !"
+                            android:text="नमस्ते"
                             android:textColor="@color/text_color"
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -147,14 +139,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -197,14 +181,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -247,14 +223,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -297,14 +265,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -347,14 +307,6 @@
                             android:textSize="19sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -397,14 +349,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -500,14 +444,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -550,14 +486,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -704,14 +632,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -754,14 +674,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -804,14 +716,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -854,14 +758,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -904,14 +800,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1007,14 +895,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1057,14 +937,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1107,14 +979,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1157,14 +1021,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1207,14 +1063,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1257,14 +1105,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1307,14 +1147,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1357,14 +1189,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1407,14 +1231,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1457,14 +1273,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1507,14 +1315,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1557,14 +1357,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1607,14 +1399,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1657,14 +1441,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1707,14 +1483,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -1757,14 +1525,6 @@
                             android:textSize="18sp" />
                     </LinearLayout>
 
-                    <ImageButton
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="10dp"
-                        android:backgroundTint="#555555"
-                        android:background="@drawable/ic_baseline_play_arrow_24"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 

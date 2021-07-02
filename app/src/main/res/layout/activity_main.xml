@@ -60,9 +60,8 @@
             android:id="@+id/abc"
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:visibility="visible"
+            android:visibility="gone"
             android:background="@drawable/gradient_drawable3">
-
 
             <ImageView
                 android:id="@+id/share"
@@ -71,7 +70,6 @@
                 android:src="@drawable/nev_share"
                 android:layout_marginTop="15dp"
                 android:layout_centerHorizontal="true"/>
-
 
             <TextView
                 android:id="@+id/textshare"
