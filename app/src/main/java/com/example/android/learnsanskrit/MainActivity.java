@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.delete_popup);
         dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.delete_background));
-        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog.setCancelable(true);
         TextView cancle = dialog.findViewById(R.id.cancle_popup);
         TextView delete1 = dialog.findViewById(R.id.delete_popup);

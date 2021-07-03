@@ -45,7 +45,7 @@ public class SignIn extends AppCompatActivity {
         dialog = new Dialog(SignIn.this);
         dialog.setContentView(R.layout.skip_popup);
         dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.delete_background));
-        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog.setCancelable(true);
         TextView cancle1 = dialog.findViewById(R.id.cancle_popup1);
         TextView delete11 = dialog.findViewById(R.id.delete_popup1);
