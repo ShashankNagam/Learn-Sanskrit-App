@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -29,7 +30,7 @@ public class colors extends AppCompatActivity {
         //Prevent User from Taking screenshots or recording screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
-        ImageButton color = findViewById(R.id.backcolor);
+        ImageView color = findViewById(R.id.backcolor);
         color.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

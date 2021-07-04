@@ -2,14 +2,11 @@ package com.example.android.learnsanskrit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -17,32 +14,21 @@ import android.widget.VideoView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class phrases extends AppCompatActivity {
-
+public class pronouns extends AppCompatActivity {
     FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phrases);
-        //Prevent User from Taking screenshots or recording screen
-        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        setContentView(R.layout.activity_pronouns);
 
-        ImageView backph = (ImageView) findViewById(R.id.backph);
-        backph.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        VideoView videoView = findViewById(R.id.videoViewPhr);
-        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2FPhrases.mp4?alt=media&token=a9acc8f0-ef87-4a36-96b0-5970c203f0be");
+        VideoView videoView = findViewById(R.id.videoViewPro);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2Fpronoun1.mp4?alt=media&token=9770a83a-f2a5-4111-ba28-a36caa76c54c");
 
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);
         mediaController.setAnchorView(videoView);
 
-        Button play = (Button) findViewById(R.id.playVidPhr);
+        Button play = (Button) findViewById(R.id.playVidPro);
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +69,6 @@ public class phrases extends AppCompatActivity {
             if (info.getTypeName().equalsIgnoreCase("MOBILE DATA"))if (info.isConnected())have_MobileData=true;
         }
         return have_WIFI||have_MobileData;
+
     }
-
-
 }

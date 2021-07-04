@@ -340,6 +340,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView pr = (TextView) findViewById(R.id.pronouns);
+        pr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, pronouns.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
+
         /*
         ImageView nevbhome = (ImageView) findViewById(R.id.home);
         nevbhome.setOnClickListener(new View.OnClickListener() {
@@ -411,7 +421,7 @@ public class MainActivity extends AppCompatActivity {
 
         grammar = (ImageView)findViewById(R.id.grammar);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fconvericon.png?alt=media&token=517df6d9-05a0-4aca-8392-6f94d2cc14fc")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fcoverpurp.png?alt=media&token=35d740b9-2fcf-4851-99d2-70409486a5e8")
                 .placeholder(R.drawable.blankblue)
                 .into(grammar);
 

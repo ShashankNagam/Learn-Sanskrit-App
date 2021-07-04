@@ -88,7 +88,7 @@ public class nouns extends AppCompatActivity {
         stone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playAudio("");
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Words%2FNouns%2Fstone_denoised.MP3?alt=media&token=ff2da848-4faa-4380-9898-74643753ae42");
             }
         });
         house.setOnClickListener(new View.OnClickListener() {
@@ -148,13 +148,13 @@ public class nouns extends AppCompatActivity {
         shoes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playAudio("");
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Words%2FNouns%2Fshoe_denoised.MP3?alt=media&token=133174ff-9f21-47ef-ac24-1008060390aa");
             }
         });
         road.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Words%2FNouns%2Froad_denoised.MP3?alt=media&token=1ad17b96-f361-4527-b98d-315b0d7c08ef");
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Words%2FNouns%2FRoad_denoised.MP3?alt=media&token=fb511dd4-b443-4b53-a03c-2eb45cba87b5");
             }
         });
         honey.setOnClickListener(new View.OnClickListener() {
