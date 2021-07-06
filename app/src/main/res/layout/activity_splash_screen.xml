@@ -14,7 +14,7 @@
         android:text="Learn संस्कृत"
         android:textColor="#7D2CB3"
         android:textSize="45sp"
-        android:fontFamily="@font/allerta"
+        android:fontFamily="cursive"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

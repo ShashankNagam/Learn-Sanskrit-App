@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pronouns"
-    android:background="@drawable/bgphrases">
+    android:background="@drawable/pronoun_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="120dp"/>
+            android:layout_height="200dp"/>
 
         <LinearLayout
             android:paddingTop="15dp"
