@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -34,6 +36,27 @@ public class phrases extends AppCompatActivity {
                 finish();
             }
         });
+
+        TextView phrase_video_button = (TextView) findViewById(R.id.phrase_video_button);
+        LinearLayout phrase_video = (LinearLayout) findViewById(R.id.phrase_video);
+        phrase_video.setVisibility(View.GONE);
+        phrase_video_button.setOnClickListener(new View.OnClickListener() {
+            Boolean z = false;
+            public void onClick(View v) {
+                if (!z){
+                    phrase_video_button.setText("Hide Video");
+                    phrase_video.setVisibility(View.VISIBLE);
+                    z = true;
+
+                }
+                else {
+                    phrase_video_button.setText("Show Video");
+                    phrase_video.setVisibility(View.GONE);
+                    z = false;
+                }
+            }
+        });
+
 
         VideoView videoView = findViewById(R.id.videoViewPhr);
         videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2FPhrases.mp4?alt=media&token=a9acc8f0-ef87-4a36-96b0-5970c203f0be");

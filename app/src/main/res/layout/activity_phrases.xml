@@ -29,11 +29,24 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/phrase_video_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Show Video"
+        android:textColor="#4776e6"
+        android:textSize="16dp"
+        android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/phrase_video"
         android:paddingTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:orientation="vertical">
         <FrameLayout
             android:layout_width="wrap_content"

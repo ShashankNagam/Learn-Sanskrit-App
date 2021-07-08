@@ -8,7 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.MediaController;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -29,6 +32,30 @@ public class pronouns extends AppCompatActivity {
                 finish();
             }
         });
+
+        TextView pronoun_video_button = (TextView) findViewById(R.id.pronoun_video_button);
+        LinearLayout pronoun_video = (LinearLayout) findViewById(R.id.pronoun_video);
+        pronoun_video.setVisibility(View.GONE);
+        pronoun_video_button.setOnClickListener(new View.OnClickListener() {
+            Boolean z = false;
+            public void onClick(View v) {
+                if (!z){
+                    pronoun_video_button.setText("Hide Video");
+                    pronoun_video.setVisibility(View.VISIBLE);
+                    z = true;
+
+                }
+                else {
+                    pronoun_video_button.setText("Show Video");
+                    pronoun_video.setVisibility(View.GONE);
+                    z = false;
+                }
+            }
+        });
+
+
+
+
 
         VideoView videoView = findViewById(R.id.videoViewPro);
         videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2Fpronoun1.mp4?alt=media&token=9770a83a-f2a5-4111-ba28-a36caa76c54c");
@@ -61,6 +88,7 @@ public class pronouns extends AppCompatActivity {
                 }
             }
         });
+
         videoView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

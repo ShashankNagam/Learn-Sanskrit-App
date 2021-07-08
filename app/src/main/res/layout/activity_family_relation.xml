@@ -5,20 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bgfamily"
+    android:background="@color/background"
     tools:context=".family_relation">
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/backff"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_margin="8dp"
-        android:background="@drawable/arrow_white"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/familyr"
+            android:layout_marginBottom="10dp"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="120dp"/>
+        <ImageView
+            android:id="@+id/backff"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/arrow_white"/>
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"

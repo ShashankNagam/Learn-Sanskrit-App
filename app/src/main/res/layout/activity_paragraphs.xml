@@ -341,12 +341,12 @@
                             android:layout_height="wrap_content">
                             <ImageView
                                 android:id="@+id/parab"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
                                 android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
                                 android:layout_marginRight="10dp"
-                                android:src="@drawable/delete_img"/>
+                                android:src="@drawable/boy"/>
                         </RelativeLayout>
                     </RelativeLayout>
                     <LinearLayout
@@ -467,12 +467,12 @@
                             android:layout_height="wrap_content">
                             <ImageView
                                 android:id="@+id/parabb"
-                                android:layout_width="80dp"
-                                android:layout_height="80dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
                                 android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
                                 android:layout_marginRight="10dp"
-                                android:src="@drawable/delete_img"/>
+                                android:src="@drawable/girl"/>
                         </RelativeLayout>
                     </RelativeLayout>
                     <LinearLayout
@@ -574,8 +574,8 @@
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:layout_centerVertical="true"
-                                android:layout_marginRight="10dp"
-                                android:src="@drawable/delete_img"/>
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/school"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_toRightOf="@+id/parag"

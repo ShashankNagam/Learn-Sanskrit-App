@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".animals"
-    android:background="@drawable/bganimals"
+    android:background="@color/background"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,19 +13,26 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/backanimals"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_margin="8dp"
-            android:background="@drawable/arrow_white"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/animal"
+                android:layout_marginBottom="10dp"/>
 
+            <ImageView
+                android:id="@+id/backanimals"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/arrow_white"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="120dp"/>
-
+        </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"

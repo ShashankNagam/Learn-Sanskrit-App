@@ -4,20 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgbirds"
+    android:background="@color/background"
     tools:context=".birds"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/backbird"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_margin="8dp"
-        android:background="@drawable/arrow_white"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="120dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/birds"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/backbird"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/arrow_white"/>
+
+    </RelativeLayout>
 
         <ScrollView
             android:layout_width="match_parent"
