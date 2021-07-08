@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newconjuction"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".nouns">
 
@@ -16,10 +16,27 @@
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="5dp">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="260dp"
-            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/bgconjuction"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/backcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/arrow_white"/>
+
+        </RelativeLayout>
+
 
         <ScrollView
             android:layout_width="match_parent"
@@ -643,16 +660,5 @@
         </ScrollView>
 
     </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/backcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="1"
-        android:background="@drawable/repple_ovalexpand"
-        android:src="@drawable/arrow_white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

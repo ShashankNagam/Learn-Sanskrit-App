@@ -5,19 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bgconversation"
+    android:background="#FFFFFF"
     tools:context=".paragraphs">
 
-    <ImageView
-        android:id="@+id/backpara"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_margin="8dp"
-        android:background="@drawable/arrow_white"/>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="120dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/bgconversation"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/backpara"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/arrow_white"/>
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
