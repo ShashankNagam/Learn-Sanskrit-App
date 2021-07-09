@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -30,6 +32,26 @@ public class Vowels_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        TextView vowel_video_button = (TextView) findViewById(R.id.vowel_video_button);
+        LinearLayout vowel_video = (LinearLayout) findViewById(R.id.vowel_video);
+        vowel_video.setVisibility(View.VISIBLE);
+        vowel_video_button.setOnClickListener(new View.OnClickListener() {
+            Boolean z = false;
+            public void onClick(View v) {
+                if (!z){
+                    vowel_video_button.setText("Show Video");
+                    vowel_video.setVisibility(View.GONE);
+                    z = true;
+
+                }
+                else {
+                    vowel_video_button.setText("Hide Video");
+                    vowel_video.setVisibility(View.VISIBLE);
+                    z = false;
+                }
             }
         });
 

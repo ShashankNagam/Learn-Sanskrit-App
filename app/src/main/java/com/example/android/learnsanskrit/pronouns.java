@@ -35,19 +35,19 @@ public class pronouns extends AppCompatActivity {
 
         TextView pronoun_video_button = (TextView) findViewById(R.id.pronoun_video_button);
         LinearLayout pronoun_video = (LinearLayout) findViewById(R.id.pronoun_video);
-        pronoun_video.setVisibility(View.GONE);
+        pronoun_video.setVisibility(View.VISIBLE);
         pronoun_video_button.setOnClickListener(new View.OnClickListener() {
             Boolean z = false;
             public void onClick(View v) {
                 if (!z){
-                    pronoun_video_button.setText("Hide Video");
-                    pronoun_video.setVisibility(View.VISIBLE);
+                    pronoun_video_button.setText("Show Video");
+                    pronoun_video.setVisibility(View.GONE);
                     z = true;
 
                 }
                 else {
-                    pronoun_video_button.setText("Show Video");
-                    pronoun_video.setVisibility(View.GONE);
+                    pronoun_video_button.setText("Hide Video");
+                    pronoun_video.setVisibility(View.VISIBLE);
                     z = false;
                 }
             }

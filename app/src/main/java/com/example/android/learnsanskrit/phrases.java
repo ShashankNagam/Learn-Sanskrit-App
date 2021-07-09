@@ -39,19 +39,19 @@ public class phrases extends AppCompatActivity {
 
         TextView phrase_video_button = (TextView) findViewById(R.id.phrase_video_button);
         LinearLayout phrase_video = (LinearLayout) findViewById(R.id.phrase_video);
-        phrase_video.setVisibility(View.GONE);
+        phrase_video.setVisibility(View.VISIBLE);
         phrase_video_button.setOnClickListener(new View.OnClickListener() {
             Boolean z = false;
             public void onClick(View v) {
                 if (!z){
-                    phrase_video_button.setText("Hide Video");
-                    phrase_video.setVisibility(View.VISIBLE);
+                    phrase_video_button.setText("Show Video");
+                    phrase_video.setVisibility(View.GONE);
                     z = true;
 
                 }
                 else {
-                    phrase_video_button.setText("Show Video");
-                    phrase_video.setVisibility(View.GONE);
+                    phrase_video_button.setText("Hide Video");
+                    phrase_video.setVisibility(View.VISIBLE);
                     z = false;
                 }
             }

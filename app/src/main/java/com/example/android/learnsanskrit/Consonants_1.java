@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -29,6 +31,26 @@ public class Consonants_1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        TextView consonant_video_button = (TextView) findViewById(R.id.consonant_video_button);
+        LinearLayout consonant_video = (LinearLayout) findViewById(R.id.consonant_video);
+        consonant_video.setVisibility(View.VISIBLE);
+        consonant_video_button.setOnClickListener(new View.OnClickListener() {
+            Boolean z = false;
+            public void onClick(View v) {
+                if (!z){
+                    consonant_video_button.setText("Show Video");
+                    consonant_video.setVisibility(View.GONE);
+                    z = true;
+
+                }
+                else {
+                    consonant_video_button.setText("Hide Video");
+                    consonant_video.setVisibility(View.VISIBLE);
+                    z = false;
+                }
             }
         });
 

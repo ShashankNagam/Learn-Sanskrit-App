@@ -75,7 +75,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Carrot"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -83,7 +83,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="गृञ्जनकम्"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -136,7 +136,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Potato"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -197,7 +197,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Brinjal"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -205,7 +205,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="वृन्ताकम्"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -256,7 +256,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Garlic"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -264,7 +264,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="लशुनम्"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -315,7 +315,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Cabbage"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -323,7 +323,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="केम्बुकम्"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -374,7 +374,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Onion"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -382,7 +382,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="पलाण्डुः"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -435,7 +435,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Cauliflower"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -443,7 +443,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="पुष्पशाकम्"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -497,7 +497,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Chilli"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -505,7 +505,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="मरीचिका"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -558,7 +558,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Radish"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -566,7 +566,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="मूलकम्"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -619,7 +619,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Spinach"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -627,7 +627,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="पालक्या"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -680,7 +680,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Bitter-gourd"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -688,7 +688,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="कारबेल्लम्"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
@@ -739,7 +739,7 @@
                         android:layout_marginTop="6dp"
                         android:text="Lady Finger"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp"
+                        android:textSize="20dp"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -747,7 +747,7 @@
                         android:layout_marginLeft="20dp"
                         android:text="भिण्डिका"
                         android:textColor="@color/text_color"
-                        android:textSize="22dp" />
+                        android:textSize="20dp" />
                 </LinearLayout>
 
                 <ImageButton
