@@ -99,7 +99,7 @@ public class fruits extends AppCompatActivity {
 
         orange  = (ImageView)findViewById(R.id.orange);
         Glide.with(this)
-                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FImages%2Fjackfruit.png?alt=media&token=c1f3d28e-2cec-47af-9632-d3a4098917cf")
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FImages%2Forange.png?alt=media&token=c36da645-bc88-4507-a414-4fb99004850c")
                 .placeholder(R.drawable.blankblue)
                 .into(orange);
 

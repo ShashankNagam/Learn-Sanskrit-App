@@ -64,6 +64,7 @@ public class vegetables extends AppCompatActivity {
         garlic = (ImageView)findViewById(R.id.garlic);
         Glide.with(this)
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Vegetables%2FGarlic.jpg?alt=media&token=e629fa6a-b8e6-47f5-93d7-c6d6ae9f4598")
+                .placeholder(R.drawable.blankblue)
                 .into(garlic);
 
         cabbage = (ImageView)findViewById(R.id.cabbage);
