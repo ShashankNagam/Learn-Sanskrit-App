@@ -30,8 +30,7 @@ public class fruits extends AppCompatActivity {
         setContentView(R.layout.activity_fruits);
 
         //Prevent User from Taking screenshots or recording screen
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
-                WindowManager.LayoutParams.FLAG_SECURE);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
 
         //Add image from database
         ImageView backfruit = (ImageView) findViewById(R.id.backfruit);

@@ -40,7 +40,7 @@ public class birds extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_birds);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         ImageView back = (ImageView)findViewById(R.id.backbird);
         back.setOnClickListener(new View.OnClickListener() {
