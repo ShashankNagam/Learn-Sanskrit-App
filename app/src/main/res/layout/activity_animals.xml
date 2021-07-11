@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".animals"
-    android:background="@color/background"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <LinearLayout
@@ -20,7 +20,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@drawable/animal"
+                android:background="@drawable/pngani"
                 android:layout_marginBottom="10dp"/>
 
             <ImageView

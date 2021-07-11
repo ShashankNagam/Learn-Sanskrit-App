@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     android:orientation="vertical"
+    android:background="#FFFFFF"
     tools:context=".nouns">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
-                android:background="@drawable/bgconjuction"
+                android:background="@drawable/pngnewconjuction"
                 android:layout_marginBottom="10dp"/>
 
             <ImageView

@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@drawable/bgconversation"
+            android:background="@drawable/pngconversation"
             android:layout_marginBottom="10dp"/>
 
         <ImageView

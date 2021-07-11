@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".animals"
-    android:background="#FBFAFB"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -15,7 +15,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@drawable/bgphrases"
+            android:background="@drawable/pngphrases"
             android:layout_marginBottom="10dp"/>
 
         <ImageView
