@@ -141,7 +141,7 @@
                     android:id="@+id/conso"
                     android:layout_width="match_parent"
                     android:layout_height="550dp"
-                    android:src="@drawable/consonant"
+                    android:src="@drawable/btconso1"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
