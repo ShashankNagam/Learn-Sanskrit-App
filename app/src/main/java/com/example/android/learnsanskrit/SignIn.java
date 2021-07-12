@@ -85,7 +85,6 @@ public class SignIn extends AppCompatActivity {
                 {
                     sign_in(mail,pass);
                 }
-
             }
         });
 
@@ -96,6 +95,7 @@ public class SignIn extends AppCompatActivity {
                 Intent a = new Intent(SignIn.this, Signup.class);
                 a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(a);
+                finish();
             }
         });
 
