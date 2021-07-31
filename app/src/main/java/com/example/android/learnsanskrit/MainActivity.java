@@ -373,7 +373,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, "Please download this app : www.google.com");
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "Install this app : https://drive.google.com/drive/folders/1YSSIEwGbgN0DF7-iqKVK6eo8USrHa5Pw?usp=sharing");
                 sendIntent.setType("text/plain");
                 Intent.createChooser(sendIntent,"Share via");
                 startActivity(sendIntent);
