@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,6 +44,18 @@ public class Test extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
+        LinearLayout que1 = (LinearLayout) findViewById(R.id.que1);
+        LinearLayout que2 = (LinearLayout) findViewById(R.id.que2);
+        LinearLayout que3 = (LinearLayout) findViewById(R.id.que3);
+        LinearLayout que4 = (LinearLayout) findViewById(R.id.que4);
+        LinearLayout que5 = (LinearLayout) findViewById(R.id.que5);
+        LinearLayout que6 = (LinearLayout) findViewById(R.id.que6);
+        LinearLayout que7 = (LinearLayout) findViewById(R.id.que7);
+        LinearLayout que8 = (LinearLayout) findViewById(R.id.que8);
+        LinearLayout que9 = (LinearLayout) findViewById(R.id.que9);
+        LinearLayout que10 = (LinearLayout) findViewById(R.id.que10);
+
+
         TextView cScore = (TextView) findViewById(R.id.cScore);
 
         Button ans1 = (Button) findViewById(R.id.correct1);
@@ -54,6 +67,8 @@ public class Test extends AppCompatActivity {
                 playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Words%2FNouns%2Fwater_denoised.MP3?alt=media&token=8c5b1f40-12dd-4759-895b-57dddfd4bf21");
             }
         });
+
+
         ans1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +77,7 @@ public class Test extends AppCompatActivity {
                 ans1.setEnabled(false);
                 answ1.setEnabled(false);
                 cScore.setText("Current score: " + String.valueOf(temp));
+                que1.setBackgroundColor(Color.parseColor("#50008000"));
                 ans1.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -73,6 +89,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans1.setEnabled(false);
                 answ1.setEnabled(false);
+                que1.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ1.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -95,6 +112,7 @@ public class Test extends AppCompatActivity {
                 answ2.setEnabled(false);
                 cScore.setText("Current score: " + String.valueOf(temp));
                 //answ2.setBackgroundColor(getResources().getColor(R.color.bd));
+                que2.setBackgroundColor(Color.parseColor("#50008000"));
                 ans2.setBackgroundColor(getResources().getColor(R.color.green));
             }
         });
@@ -105,6 +123,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans2.setEnabled(false);
                 answ2.setEnabled(false);
+                que2.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ2.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans2.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -122,6 +141,7 @@ public class Test extends AppCompatActivity {
                 answ3.setEnabled(false);
                 cScore.setText("Current score: " + String.valueOf(temp));
                 //answ2.setBackgroundColor(getResources().getColor(R.color.bd));
+                que3.setBackgroundColor(Color.parseColor("#50008000"));
                 ans3.setBackgroundColor(getResources().getColor(R.color.green));
             }
         });
@@ -132,6 +152,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans3.setEnabled(false);
                 answ3.setEnabled(false);
+                que3.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ3.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans2.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -149,6 +170,7 @@ public class Test extends AppCompatActivity {
                 answ4.setEnabled(false);
                 cScore.setText("Current score: " + String.valueOf(temp));
                 //answ2.setBackgroundColor(getResources().getColor(R.color.bd));
+                que4.setBackgroundColor(Color.parseColor("#50008000"));
                 ans4.setBackgroundColor(getResources().getColor(R.color.green));
             }
         });
@@ -159,6 +181,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans4.setEnabled(false);
                 answ4.setEnabled(false);
+                que4.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ4.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans2.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -175,6 +198,7 @@ public class Test extends AppCompatActivity {
                 answ5.setEnabled(false);
                 cScore.setText("Current score: " + String.valueOf(temp));
                 //answ2.setBackgroundColor(getResources().getColor(R.color.bd));
+                que5.setBackgroundColor(Color.parseColor("#50008000"));
                 ans5.setBackgroundColor(getResources().getColor(R.color.green));
             }
         });
@@ -185,6 +209,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans5.setEnabled(false);
                 answ5.setEnabled(false);
+                que5.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ5.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans2.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -204,6 +229,7 @@ public class Test extends AppCompatActivity {
                 ans6.setEnabled(false);
                 answ6.setEnabled(false);
                 cScore.setText("Current score: " + String.valueOf(temp));
+                que6.setBackgroundColor(Color.parseColor("#50008000"));
                 ans6.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -215,6 +241,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans6.setEnabled(false);
                 answ6.setEnabled(false);
+                que6.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ6.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -233,6 +260,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 1;;
                 ans7.setEnabled(false);
                 answ7.setEnabled(false);
+                que7.setBackgroundColor(Color.parseColor("#50008000"));
                 ans7.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
                 cScore.setText("Current score: "+String.valueOf(temp));
@@ -245,6 +273,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans7.setEnabled(false);
                 answ7.setEnabled(false);
+                que7.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ7.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
 
@@ -260,6 +289,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 1;;
                 ans8.setEnabled(false);
                 answ8.setEnabled(false);
+                que8.setBackgroundColor(Color.parseColor("#50008000"));
                 ans8.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
                 cScore.setText("Current score: "+String.valueOf(temp));
@@ -272,6 +302,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans8.setEnabled(false);
                 answ8.setEnabled(false);
+                que8.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ8.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
 
@@ -295,6 +326,7 @@ public class Test extends AppCompatActivity {
                 ans9.setEnabled(false);
                 answ9.setEnabled(false);
                 cScore.setText("Current score: " + String.valueOf(temp));
+                que9.setBackgroundColor(Color.parseColor("#50008000"));
                 ans9.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -306,6 +338,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans9.setEnabled(false);
                 answ9.setEnabled(false);
+                que9.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ9.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -327,6 +360,7 @@ public class Test extends AppCompatActivity {
                 ans10.setEnabled(false);
                 answ10.setEnabled(false);
                 cScore.setText("Current score: " + String.valueOf(temp));
+                que10.setBackgroundColor(Color.parseColor("#50008000"));
                 ans10.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -338,23 +372,11 @@ public class Test extends AppCompatActivity {
                 temp = temp + 0;
                 ans10.setEnabled(false);
                 answ10.setEnabled(false);
+                que10.setBackgroundColor(Color.parseColor("#50FF0000"));
                 answ10.setBackgroundColor(getResources().getColor(R.color.red));
                 //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -396,18 +418,6 @@ public class Test extends AppCompatActivity {
     public void onBackPressed(){
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

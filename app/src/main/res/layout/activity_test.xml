@@ -19,8 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:orientation="horizontal"
-        android:background="#e5e4e2"
-        android:gravity="center_vertical">
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp">
 
         <TextView
             android:id="@+id/pScore"
@@ -48,8 +49,6 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,31 +80,29 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1. Correct answers will be marked by green"
-                            android:textSize="18sp"
+                            android:textSize="15sp"
                             android:textColor="#444444"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="2. Incorrect answers will be marked by red"
-                            android:textSize="18sp"
+                            android:textSize="15sp"
                             android:textColor="#444444"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="3. Previous score and current score are displayed above"
-                            android:textSize="18sp"
+                            android:textSize="15sp"
                             android:textColor="#444444"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="4. Click on done button at the bottom of page to exit Quiz"
-                            android:textSize="18sp"
+                            android:textSize="15sp"
                             android:textColor="#444444"/>
-
-
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -122,6 +119,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                        <LinearLayout
+                            android:id="@+id/que1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e5e4e2"
+                            android:orientation="vertical">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -129,6 +132,7 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+                        </LinearLayout>
 
                         <ImageView
                             android:id="@+id/Q1"
@@ -142,31 +146,29 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp">
 
                             <Button
                                 android:id="@+id/correct1"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="वारि"
                                 android:textColor="@color/textColor2"
                                 android:textSize="20sp"
-                                android:layout_marginRight="100dp" />
+                                android:layout_marginBottom="5dp"/>
 
                             <Button
                                 android:id="@+id/wrong1"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="#C5C6D0"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="भानु"
                                 android:textColor="@color/textColor2"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                android:layout_marginTop="5dp"/>
 
                         </LinearLayout>
 
@@ -186,6 +188,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                    <LinearLayout
+                        android:id="@+id/que2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -193,6 +202,7 @@
                             android:layout_margin="10dp"
                             android:textSize="18sp"
                             android:textColor="@color/text_color"/>
+                    </LinearLayout>
 
                         <ImageView
                             android:id="@+id/Q2"
@@ -206,28 +216,24 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center">
 
                             <Button
                                 android:id="@+id/wrong2"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="म्लयामि"
                                 android:textColor="@color/textColor2"
-                                android:textSize="20sp"
-                                android:layout_marginRight="100dp" />
+                                android:textSize="20sp" />
 
                             <Button
                                 android:id="@+id/correct2"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="उपविशसि"
                                 android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
@@ -248,6 +254,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                    <LinearLayout
+                        android:id="@+id/que3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -255,6 +268,7 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+                    </LinearLayout>
 
                         <TextView
                             android:id="@+id/Q3"
@@ -271,26 +285,22 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:gravity="center_horizontal">
+                            android:gravity="center">
 
                             <Button
                                 android:id="@+id/wrong3"
-                                android:layout_width="175dp"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="भवतः ग्रामः ?"
                                 android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
 
                             <Button
                                 android:id="@+id/correct3"
-                                android:layout_width="175dp"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="भवतः नाम किम् ?"
                                 android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
@@ -311,6 +321,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                    <LinearLayout
+                        android:id="@+id/que4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -318,6 +335,8 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+
+                    </LinearLayout>
 
                         <TextView
                             android:id="@+id/Q4"
@@ -338,11 +357,9 @@
 
                             <Button
                                 android:id="@+id/correct4"
-                                android:layout_width="210dp"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="Her name is Sharda"
                                 android:textAllCaps="false"
                                 android:textColor="@color/textColor2"
@@ -351,11 +368,9 @@
 
                             <Button
                                 android:id="@+id/wrong4"
-                                android:layout_width="210dp"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="His name is Sharad"
                                 android:textAllCaps="false"
                                 android:textColor="@color/textColor2"
@@ -378,6 +393,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                    <LinearLayout
+                        android:id="@+id/que5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -385,6 +406,8 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+
+                    </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -409,29 +432,24 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
 
                             <Button
                                 android:id="@+id/wrong5"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="Incorrect"
                                 android:textAllCaps="false"
                                 android:textColor="@color/textColor2"
-                                android:textSize="18sp"
-                                android:layout_marginRight="75dp" />
+                                android:textSize="18sp" />
 
                             <Button
                                 android:id="@+id/correct5"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="Correct"
                                 android:textAllCaps="false"
                                 android:textColor="@color/textColor2"
@@ -453,6 +471,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                    <LinearLayout
+                        android:id="@+id/que6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -460,6 +485,8 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+
+                    </LinearLayout>
 
                         <ImageView
                             android:id="@+id/Q6"
@@ -472,28 +499,23 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
 
                             <Button
                                 android:id="@+id/correct6"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="मयूरः"
                                 android:textColor="@color/textColor2"
-                                android:textSize="20sp"
-                                android:layout_marginRight="100dp" />
+                                android:textSize="20sp" />
 
                             <Button
                                 android:id="@+id/wrong6"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="शुकः"
                                 android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
@@ -514,6 +536,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                    <LinearLayout
+                        android:id="@+id/que7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -521,6 +549,7 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+                    </LinearLayout>
 
                         <ImageView
                             android:id="@+id/Q7"
@@ -533,28 +562,23 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
 
                             <Button
                                 android:id="@+id/correct7"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="अश्वः"
                                 android:textColor="@color/textColor2"
-                                android:textSize="20sp"
-                                android:layout_marginRight="100dp" />
+                                android:textSize="20sp" />
 
                             <Button
                                 android:id="@+id/wrong7"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="अजः"
                                 android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
@@ -575,6 +599,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                    <LinearLayout
+                        android:id="@+id/que8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -582,6 +612,7 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+                    </LinearLayout>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -606,29 +637,24 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
 
                             <Button
                                 android:id="@+id/wrong8"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="Correct"
                                 android:textAllCaps="false"
                                 android:textColor="@color/textColor2"
-                                android:textSize="20sp"
-                                android:layout_marginRight="75dp"/>
+                                android:textSize="20sp" />
 
                             <Button
                                 android:id="@+id/correct8"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="@color/btnclr"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="Incorrect"
                                 android:textAllCaps="false"
                                 android:textColor="@color/textColor2"
@@ -650,6 +676,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
+                    <LinearLayout
+                        android:id="@+id/que9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -657,6 +690,8 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+
+                    </LinearLayout>
 
                         <ImageView
                             android:id="@+id/Q9"
@@ -670,29 +705,24 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
 
                             <Button
                                 android:id="@+id/correct9"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="#C5C6D0"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="Husband"
                                 android:textAllCaps="false"
                                 android:textColor="@color/textColor2"
-                                android:textSize="20sp"
-                                android:layout_marginRight="100dp" />
+                                android:textSize="20sp" />
 
                             <Button
                                 android:id="@+id/wrong9"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="#C5C6D0"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="Wife"
                                 android:textAllCaps="false"
                                 android:textColor="@color/textColor2"
@@ -715,6 +745,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/que10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#e5e4e2"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -723,6 +759,8 @@
                             android:textSize="18sp"
                             android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
+
+                    </LinearLayout>
 
                         <ImageView
                             android:id="@+id/Q10"
@@ -735,28 +773,23 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
 
                             <Button
                                 android:id="@+id/wrong10"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="#C5C6D0"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="भानु"
                                 android:textColor="@color/textColor2"
-                                android:textSize="20sp"
-                                android:layout_marginRight="100dp"/>
+                                android:textSize="20sp" />
 
                             <Button
                                 android:id="@+id/correct10"
-                                android:layout_width="wrap_content"
+                                android:layout_width="300dp"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="8dp"
-                                android:paddingBottom="8dp"
-                                android:backgroundTint="#C5C6D0"
+                                android:backgroundTint="#e5e4e2"
                                 android:text="द्राक्षाफलम्"
                                 android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
@@ -775,10 +808,14 @@
 
                     <Button
                         android:id="@+id/submit"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Done"
-                        android:backgroundTint="#4776e6"
+                        android:text="Submit"
+                        android:textSize="18dp"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="#8e54e9"
                         android:textColor="#FFFFFF"
                         android:textAllCaps="false"/>
 
