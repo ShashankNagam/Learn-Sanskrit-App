@@ -657,6 +657,54 @@
                         android:src="@drawable/backarrow" />
                 </RelativeLayout>
 
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_marginRight="33dp"
+                    android:background="#C0C0C0" />
+
+                <RelativeLayout
+                    android:id="@+id/Rtest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/repple_effect">
+
+                    <ImageView
+                        android:id="@+id/itest"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/itest"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/test"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:text="TEST"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/backarrow" />
+                </RelativeLayout>
 
                 <TextView
                     android:layout_width="match_parent"
