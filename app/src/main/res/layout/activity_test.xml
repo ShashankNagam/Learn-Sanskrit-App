@@ -8,16 +8,26 @@
     android:orientation="vertical"
     android:background="#FFFFFF">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@drawable/quizback"/>
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="#e5e4e2"
+        android:gravity="center_vertical">
 
         <TextView
             android:id="@+id/pScore"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_margin="5dp"
             android:textSize="18sp"
             android:textColor="@color/text_color"/>
 
@@ -36,18 +46,76 @@
 
 
         <ScrollView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INSTRUCTIONS"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:textColor="#222222"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Correct answers will be marked by green"
+                            android:textSize="18sp"
+                            android:textColor="#444444"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2. Incorrect answers will be marked by red"
+                            android:textSize="18sp"
+                            android:textColor="#444444"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3. Previous score and current score are displayed above"
+                            android:textSize="18sp"
+                            android:textColor="#444444"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4. Click on done button at the bottom of page to exit Quiz"
+                            android:textSize="18sp"
+                            android:textColor="#444444"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -59,7 +127,7 @@
                             android:layout_height="wrap_content"
                             android:text="1. Recognize the audio"
                             android:textSize="18sp"
-                            android:layout_marginLeft="5dp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
 
                         <ImageView
@@ -83,9 +151,9 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="वारि"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp"
                                 android:layout_marginRight="100dp" />
 
@@ -95,9 +163,9 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="#C5C6D0"
                                 android:text="भानु"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -109,7 +177,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -120,6 +190,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="2. Recognize the audio"
+                            android:layout_margin="10dp"
                             android:textSize="18sp"
                             android:textColor="@color/text_color"/>
 
@@ -144,9 +215,9 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="म्लयामि"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp"
                                 android:layout_marginRight="100dp" />
 
@@ -156,9 +227,9 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="उपविशसि"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -168,7 +239,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -180,6 +253,7 @@
                             android:layout_height="wrap_content"
                             android:text="3. Find the correct Translation"
                             android:textSize="18sp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
 
                         <TextView
@@ -187,38 +261,38 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="What is your name?"
-                            android:textSize="15sp"
+                            android:textSize="18sp"
+                            android:textColor="@color/textColor2"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp" />
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal">
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal">
 
                             <Button
                                 android:id="@+id/wrong3"
-                                android:layout_width="wrap_content"
+                                android:layout_width="175dp"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="भवतः ग्रामः ?"
-                                android:textColor="#FFFFFF"
-                                android:textSize="20sp"
-                                android:layout_marginRight="75dp" />
+                                android:textColor="@color/textColor2"
+                                android:textSize="20sp" />
 
                             <Button
                                 android:id="@+id/correct3"
-                                android:layout_width="wrap_content"
+                                android:layout_width="175dp"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="भवतः नाम किम् ?"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -228,7 +302,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -240,6 +316,7 @@
                             android:layout_height="wrap_content"
                             android:text="4. Find the correct Translation"
                             android:textSize="18sp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
 
                         <TextView
@@ -247,39 +324,41 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="तस्या: नाम शारदा।"
-                            android:textSize="15sp"
+                            android:textColor="@color/textColor2"
+                            android:textSize="18sp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp" />
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal">
 
                             <Button
                                 android:id="@+id/correct4"
-                                android:layout_width="wrap_content"
+                                android:layout_width="210dp"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="Her name is Sharda"
                                 android:textAllCaps="false"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="16sp"
                                 android:layout_marginBottom="5dp"/>
 
                             <Button
                                 android:id="@+id/wrong4"
-                                android:layout_width="wrap_content"
+                                android:layout_width="210dp"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="His name is Sharad"
                                 android:textAllCaps="false"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="16sp"
                                 />
 
@@ -290,7 +369,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -302,12 +383,14 @@
                             android:layout_height="wrap_content"
                             android:text="5. Correct/Incorrect"
                             android:textSize="18sp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mother - माता"
+                            android:textColor="@color/textColor2"
                             android:textSize="18sp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
@@ -317,6 +400,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Father - पिता"
+                            android:textColor="@color/textColor2"
                             android:textSize="18sp"
                             android:layout_gravity="center_horizontal"
                             android:layout_marginTop="10dp"
@@ -334,10 +418,10 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="Incorrect"
                                 android:textAllCaps="false"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="18sp"
                                 android:layout_marginRight="75dp" />
 
@@ -347,10 +431,10 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="Correct"
                                 android:textAllCaps="false"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="18sp" />
 
                         </LinearLayout>
@@ -360,7 +444,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -372,6 +458,7 @@
                             android:layout_height="wrap_content"
                             android:text="6. Find correct answer"
                             android:textSize="18sp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
 
                         <ImageView
@@ -394,9 +481,9 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="मयूरः"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp"
                                 android:layout_marginRight="100dp" />
 
@@ -406,9 +493,9 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="शुकः"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -418,7 +505,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="15dp">
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -430,6 +519,7 @@
                             android:layout_height="wrap_content"
                             android:text="7. Find correct answer"
                             android:textSize="18sp"
+                            android:layout_margin="10dp"
                             android:textColor="@color/text_color"/>
 
                         <ImageView
@@ -452,9 +542,9 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="अश्वः"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp"
                                 android:layout_marginRight="100dp" />
 
@@ -464,26 +554,233 @@
                                 android:layout_height="wrap_content"
                                 android:paddingTop="8dp"
                                 android:paddingBottom="8dp"
-                                android:backgroundTint="#4776e6"
+                                android:backgroundTint="@color/btnclr"
                                 android:text="अजः"
-                                android:textColor="#FFFFFF"
+                                android:textColor="@color/textColor2"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8. Find correct answer"
+                            android:textSize="18sp"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/text_color"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Brother - भगिनी"
+                            android:textSize="18sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/textColor2"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Sister - भ्राता"
+                            android:textSize="18sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/textColor2"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/wrong8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:backgroundTint="@color/btnclr"
+                                android:text="Correct"
+                                android:textAllCaps="false"
+                                android:textColor="@color/textColor2"
+                                android:textSize="20sp"
+                                android:layout_marginRight="75dp"/>
+
+                            <Button
+                                android:id="@+id/correct8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:backgroundTint="@color/btnclr"
+                                android:text="Incorrect"
+                                android:textAllCaps="false"
+                                android:textColor="@color/textColor2"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="9. Recognize the audio"
+                            android:textSize="18sp"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/text_color"/>
+
+                        <ImageView
+                            android:id="@+id/Q9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_baseline_play_arrow_24"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/correct9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:backgroundTint="#C5C6D0"
+                                android:text="Husband"
+                                android:textAllCaps="false"
+                                android:textColor="@color/textColor2"
+                                android:textSize="20sp"
+                                android:layout_marginRight="100dp" />
+
+                            <Button
+                                android:id="@+id/wrong9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:backgroundTint="#C5C6D0"
+                                android:text="Wife"
+                                android:textAllCaps="false"
+                                android:textColor="@color/textColor2"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10. Recognize the audio"
+                            android:textSize="18sp"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/text_color"/>
+
+                        <ImageView
+                            android:id="@+id/Q10"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal">
+
+                            <Button
+                                android:id="@+id/wrong10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:backgroundTint="#C5C6D0"
+                                android:text="भानु"
+                                android:textColor="@color/textColor2"
+                                android:textSize="20sp"
+                                android:layout_marginRight="100dp"/>
+
+                            <Button
+                                android:id="@+id/correct10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="8dp"
+                                android:paddingBottom="8dp"
+                                android:backgroundTint="#C5C6D0"
+                                android:text="द्राक्षाफलम्"
+                                android:textColor="@color/textColor2"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
 
                     <Button
                         android:id="@+id/submit"
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Submit"/>
+                        android:text="Done"
+                        android:backgroundTint="#4776e6"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"/>
 
                 </LinearLayout>
 

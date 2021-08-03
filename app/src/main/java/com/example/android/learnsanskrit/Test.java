@@ -43,6 +43,7 @@ public class Test extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
+        TextView cScore = (TextView) findViewById(R.id.cScore);
 
         Button ans1 = (Button) findViewById(R.id.correct1);
         Button answ1 = (Button) findViewById(R.id.wrong1);
@@ -60,6 +61,7 @@ public class Test extends AppCompatActivity {
                 //score.setText(String.valueOf(temp));
                 ans1.setEnabled(false);
                 answ1.setEnabled(false);
+                cScore.setText("Current score: " + String.valueOf(temp));
                 ans1.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -91,6 +93,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 1;
                 ans2.setEnabled(false);
                 answ2.setEnabled(false);
+                cScore.setText("Current score: " + String.valueOf(temp));
                 //answ2.setBackgroundColor(getResources().getColor(R.color.bd));
                 ans2.setBackgroundColor(getResources().getColor(R.color.green));
             }
@@ -117,6 +120,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 1;
                 ans3.setEnabled(false);
                 answ3.setEnabled(false);
+                cScore.setText("Current score: " + String.valueOf(temp));
                 //answ2.setBackgroundColor(getResources().getColor(R.color.bd));
                 ans3.setBackgroundColor(getResources().getColor(R.color.green));
             }
@@ -143,6 +147,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 1;
                 ans4.setEnabled(false);
                 answ4.setEnabled(false);
+                cScore.setText("Current score: " + String.valueOf(temp));
                 //answ2.setBackgroundColor(getResources().getColor(R.color.bd));
                 ans4.setBackgroundColor(getResources().getColor(R.color.green));
             }
@@ -168,6 +173,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 1;
                 ans5.setEnabled(false);
                 answ5.setEnabled(false);
+                cScore.setText("Current score: " + String.valueOf(temp));
                 //answ2.setBackgroundColor(getResources().getColor(R.color.bd));
                 ans5.setBackgroundColor(getResources().getColor(R.color.green));
             }
@@ -197,6 +203,7 @@ public class Test extends AppCompatActivity {
                 temp = temp + 1;
                 ans6.setEnabled(false);
                 answ6.setEnabled(false);
+                cScore.setText("Current score: " + String.valueOf(temp));
                 ans6.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
             }
@@ -228,8 +235,7 @@ public class Test extends AppCompatActivity {
                 answ7.setEnabled(false);
                 ans7.setBackgroundColor(getResources().getColor(R.color.green));
                 //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
-                TextView cScore = (TextView) findViewById(R.id.cScore);
-                cScore.setText(String.valueOf(temp));
+                cScore.setText("Current score: "+String.valueOf(temp));
             }
         });
 
@@ -245,6 +251,112 @@ public class Test extends AppCompatActivity {
             }
         });
 
+        Button ans8 = (Button) findViewById(R.id.correct8);
+        Button answ8 = (Button) findViewById(R.id.wrong8);
+
+        ans8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                temp = temp + 1;;
+                ans8.setEnabled(false);
+                answ8.setEnabled(false);
+                ans8.setBackgroundColor(getResources().getColor(R.color.green));
+                //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
+                cScore.setText("Current score: "+String.valueOf(temp));
+            }
+        });
+
+        answ8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                temp = temp + 0;
+                ans8.setEnabled(false);
+                answ8.setEnabled(false);
+                answ8.setBackgroundColor(getResources().getColor(R.color.red));
+                //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
+
+            }
+        });
+
+        Button ans9 = (Button) findViewById(R.id.correct9);
+        Button answ9 = (Button) findViewById(R.id.wrong9);
+        ImageView q9 = (ImageView) findViewById(R.id.Q9);
+        q9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Family%20Relations%2Fhusband_denoised.MP3?alt=media&token=06ca5a8b-3e0c-47a0-86f8-3ba8f9de8b57");
+            }
+        });
+        ans9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                temp = temp + 1;
+                //score.setText(String.valueOf(temp));
+                ans9.setEnabled(false);
+                answ9.setEnabled(false);
+                cScore.setText("Current score: " + String.valueOf(temp));
+                ans9.setBackgroundColor(getResources().getColor(R.color.green));
+                //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
+            }
+        });
+
+        answ9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                temp = temp + 0;
+                ans9.setEnabled(false);
+                answ9.setEnabled(false);
+                answ9.setBackgroundColor(getResources().getColor(R.color.red));
+                //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
+            }
+        });
+
+        Button ans10 = (Button) findViewById(R.id.correct10);
+        Button answ10 = (Button) findViewById(R.id.wrong10);
+        ImageView q10 = (ImageView) findViewById(R.id.Q10);
+        Glide.with(this)
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Fruits%2FImages%2Fgrapes.png?alt=media&token=eadf902c-cdde-4f7e-8e49-f2f188603dcc")
+                .placeholder(R.drawable.blankblue)
+                .into(q10);
+
+        ans10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                temp = temp + 1;
+                //score.setText(String.valueOf(temp));
+                ans10.setEnabled(false);
+                answ10.setEnabled(false);
+                cScore.setText("Current score: " + String.valueOf(temp));
+                ans10.setBackgroundColor(getResources().getColor(R.color.green));
+                //answ1.setBackgroundColor(getResources().getColor(R.color.bd));
+            }
+        });
+
+        answ10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                temp = temp + 0;
+                ans10.setEnabled(false);
+                answ10.setEnabled(false);
+                answ10.setBackgroundColor(getResources().getColor(R.color.red));
+                //ans1.setBackgroundColor(getResources().getColor(R.color.bd));
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         submit = findViewById(R.id.submit);
 
@@ -255,13 +367,11 @@ public class Test extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView cScore = (TextView) findViewById(R.id.cScore);
-                cScore.setText("Current score: " + String.valueOf(temp));
-
                 String value = String.valueOf(temp);
 
                 // Push creates a unique id in database
                 demoRef.setValue(value);
+                finish();
             }
         });
 
@@ -278,8 +388,14 @@ public class Test extends AppCompatActivity {
                 pScore.setText("--");
             }
         });
-    }
 
+
+
+    }
+    @Override
+    public void onBackPressed(){
+
+    }
 
 
 

@@ -395,7 +395,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        ImageView alphabets, words, phrases, grammar, family;
+        ImageView alphabets, words, phrases, grammar, quiz;
         alphabets = (ImageView) findViewById(R.id.imgletter);
         Glide.with(this)
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Falpha.png?alt=media&token=af13eca5-be45-4818-8137-1f49a46e4f58")
@@ -419,6 +419,12 @@ public class MainActivity extends AppCompatActivity {
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fcoverpurp.png?alt=media&token=35d740b9-2fcf-4851-99d2-70409486a5e8")
                 .placeholder(R.drawable.blankblue)
                 .into(grammar);
+
+        quiz = (ImageView)findViewById(R.id.itest);
+        Glide.with(this)
+                .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Fquiz.png?alt=media&token=c1eb93f8-5583-472e-aede-1dba982b29cd")
+                .placeholder(R.drawable.blankblue)
+                .into(quiz);
 
         /*family = (ImageView)findViewById(R.id.family);
         Glide.with(this)
