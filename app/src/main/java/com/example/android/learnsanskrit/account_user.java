@@ -90,9 +90,6 @@ public class account_user extends AppCompatActivity {
                 startActivity(d);
             }
         });
-
-
-
     }
 
     public void signoutacc(View view) {

@@ -13,8 +13,6 @@
         android:layout_height="165dp"
         android:background="@drawable/quizback"/>
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"

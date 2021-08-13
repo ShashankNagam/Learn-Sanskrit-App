@@ -2,7 +2,10 @@ package com.example.android.learnsanskrit;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -10,6 +13,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -38,11 +42,25 @@ public class Test extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference rootRef, demoRef;
     Button submit;
+    Dialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+
+/*
+        delete11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent c = new Intent(SignIn.this, MainActivity.class);
+                c.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(c);
+                finish();
+            }
+        });
+        */
+
 
         LinearLayout que1 = (LinearLayout) findViewById(R.id.que1);
         LinearLayout que2 = (LinearLayout) findViewById(R.id.que2);
@@ -67,7 +85,6 @@ public class Test extends AppCompatActivity {
                 playAudio("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Words%2FNouns%2Fwater_denoised.MP3?alt=media&token=8c5b1f40-12dd-4759-895b-57dddfd4bf21");
             }
         });
-
 
         ans1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -380,6 +397,7 @@ public class Test extends AppCompatActivity {
 
 
 
+
         submit = findViewById(R.id.submit);
 
         FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
@@ -390,12 +408,48 @@ public class Test extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String value = String.valueOf(temp);
-
                 // Push creates a unique id in database
                 demoRef.setValue(value);
-                finish();
+
+
+
+
+                dialog = new Dialog(Test.this);
+                dialog.setContentView(R.layout.test_popup);
+                dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.delete_background));
+                dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+                dialog.setCancelable(true);
+                TextView ok = dialog.findViewById(R.id.ok_popup);
+                TextView gr = dialog.findViewById(R.id.greeting);
+                TextView scr = dialog.findViewById(R.id.scorepopup);
+                CardView bkcr = dialog.findViewById(R.id.testpopupcolor);
+
+                ok.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                        Intent a = new Intent(Test.this, MainActivity.class);
+                        a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                        startActivity(a);
+                        finish();
+                    }
+                });
+
+                if (temp < 4){
+                    bkcr.setCardBackgroundColor(Color.parseColor("#D10000"));
+                    gr.setText("Oops!!! \n You Failed \n Try again");
+                }
+                else {
+                    bkcr.setCardBackgroundColor(Color.parseColor("#008000"));
+                    gr.setText("Congratulations 🎉 \n You Pass");
+                }
+                scr.setText("Your Score : " + temp);
+
+                dialog.show();
             }
         });
+
+
 
         TextView pScore = findViewById(R.id.pScore);
         demoRef.addValueEventListener(new ValueEventListener() {
@@ -412,15 +466,11 @@ public class Test extends AppCompatActivity {
         });
 
 
-
     }
     @Override
     public void onBackPressed(){
 
     }
-
-
-
 
 
 
@@ -454,6 +504,12 @@ public class Test extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Sign In to access audio", Toast.LENGTH_LONG).show();
         }
     }
+
+
+
+
+
+
 
     private boolean haveNetwork(){
         boolean have_WIFI= false;
