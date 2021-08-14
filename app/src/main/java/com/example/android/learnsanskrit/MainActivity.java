@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.android.learnsanskrit.ui.main.History;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -96,16 +97,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView history = (ImageView) findViewById(R.id.history);
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    Intent a = new Intent(MainActivity.this, History.class);
+                    a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    startActivity(a);
+            }
+        });
+
 
         ImageView delete = (ImageView) findViewById(R.id.delete);
         TextView del = (TextView) findViewById(R.id.textdelete);
         TextView acc = (TextView) findViewById(R.id.textdelete1);
+        TextView te = (TextView) findViewById(R.id.texthistory1);
+        TextView his = (TextView) findViewById(R.id.texthistory2);
+
+
         FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
         if(currentUser != null)
         {
             delete.setVisibility(View.VISIBLE);
             del.setVisibility(View.VISIBLE);
             acc.setVisibility(View.VISIBLE);
+            history.setVisibility(View.VISIBLE);
+            te.setVisibility(View.VISIBLE);
+            his.setVisibility(View.VISIBLE);
             nevsign.setImageResource(R.drawable.nev_signout);
             textout.setText("SignOut");
         }
@@ -114,9 +132,13 @@ public class MainActivity extends AppCompatActivity {
             delete.setVisibility(View.GONE);
             del.setVisibility(View.GONE);
             acc.setVisibility(View.GONE);
+            history.setVisibility(View.GONE);
+            te.setVisibility(View.GONE);
+            his.setVisibility(View.GONE);
             nevsign.setImageResource(R.drawable.nev_signout);
             textout.setText("SignIn");
         }
+
 
 
         RelativeLayout abc = (RelativeLayout) findViewById(R.id.abc);
@@ -390,8 +412,6 @@ public class MainActivity extends AppCompatActivity {
                 dialog.show();
             }
         });
-
-
 
 
 

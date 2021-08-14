@@ -12,6 +12,7 @@ import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -22,6 +23,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -31,8 +35,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
 
 public class Test extends AppCompatActivity {
 
@@ -410,8 +420,48 @@ public class Test extends AppCompatActivity {
                 String value = String.valueOf(temp);
                 // Push creates a unique id in database
                 demoRef.setValue(value);
+                Calendar calendar = Calendar.getInstance();
+                //String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MMMM YYYY  HH:MM");
+                String currentDate = simpleDateFormat.format(calendar.getTime());
+                String PF;
 
+                FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+                String x = currentUser.getEmail();
 
+                if (temp >= 4){
+                    PF = "PASS";
+                }else{
+                    PF = "FAILED";
+                }
+
+                /*
+                pass/failed
+                score
+                date/time
+                */
+                HashMap<String,Object> map = new HashMap<>();
+
+                map.put("Time",currentDate.toString());
+                map.put("Score",temp);
+                map.put("Status",PF);
+                map.put("User",x);
+
+                FirebaseDatabase.getInstance().getReference().child("Test").push()
+                        .setValue(map)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull @NotNull Task<Void> task) {
+                                Toast.makeText(getApplicationContext(), "Test Submitted Successfully", Toast.LENGTH_LONG).show();
+                                Log.i("Pass","onComplete");
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull @NotNull Exception e) {
+                        Toast.makeText(getApplicationContext(), "Test submission Failed", Toast.LENGTH_LONG).show();
+                        Log.i("Failed","onCompleteFailed");
+                    }
+                });
 
 
                 dialog = new Dialog(Test.this);
@@ -422,7 +472,10 @@ public class Test extends AppCompatActivity {
                 TextView ok = dialog.findViewById(R.id.ok_popup);
                 TextView gr = dialog.findViewById(R.id.greeting);
                 TextView scr = dialog.findViewById(R.id.scorepopup);
+                TextView datee = dialog.findViewById(R.id.popupdate);
+
                 CardView bkcr = dialog.findViewById(R.id.testpopupcolor);
+                ImageView popupImage = dialog.findViewById(R.id.popupImage);
 
                 ok.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -436,19 +489,21 @@ public class Test extends AppCompatActivity {
                 });
 
                 if (temp < 4){
+                    popupImage.setImageResource(R.drawable.popupwrong);
                     bkcr.setCardBackgroundColor(Color.parseColor("#D10000"));
                     gr.setText("Oops!!! \n You Failed \n Try again");
                 }
                 else {
+                    popupImage.setImageResource(R.drawable.popupright);
                     bkcr.setCardBackgroundColor(Color.parseColor("#008000"));
                     gr.setText("Congratulations 🎉 \n You Pass");
                 }
                 scr.setText("Your Score : " + temp);
+                datee.setText(currentDate);
 
                 dialog.show();
             }
         });
-
 
 
         TextView pScore = findViewById(R.id.pScore);
