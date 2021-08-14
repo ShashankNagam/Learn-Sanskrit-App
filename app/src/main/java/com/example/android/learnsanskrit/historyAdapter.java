@@ -22,14 +22,13 @@ public class historyAdapter extends FirebaseRecyclerAdapter<testHistory,historyA
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull @NotNull testViewHolder Holder, int i, @NonNull @NotNull testHistory testHistory) {
+    protected void onBindViewHolder(@NonNull @NotNull testViewHolder Holder, int i,  @NotNull testHistory testHistory) {
         Holder.dateAndTime.setText(testHistory.getTime());
         Holder.statusHistory.setText(testHistory.getStatus());
         Holder.scoreHistory.setText(testHistory.getScore());
     }
 
     @NonNull
-    @NotNull
     @Override
     public testViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
