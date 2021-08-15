@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnSanskrit">
-        <activity android:name=".ui.main.History"></activity>
+        <activity android:name=".Historyquiz"></activity>
+        <activity android:name=".ui.main.History" />
         <activity android:name=".Test" />
         <activity android:name=".pronouns" />
         <activity android:name=".account_user" />

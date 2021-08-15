@@ -40,7 +40,6 @@ public class historyAdapter extends FirebaseRecyclerAdapter<testHistory,historyA
     class testViewHolder extends RecyclerView.ViewHolder {
         TextView dateAndTime,statusHistory,scoreHistory;
 
-
         public testViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
             dateAndTime = itemView.findViewById(R.id.dateAndTime);

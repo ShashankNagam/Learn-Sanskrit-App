@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#00000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="50dp"
+        android:layout_gravity="center">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/testpopupcolor"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardBackgroundColor="#D10000"
+            app:cardCornerRadius="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp">
+            <ImageView
+                android:id="@+id/popupImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-42dp"
+        android:background="@drawable/timepass"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/text_color"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/scorepopup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/text_color"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/popupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:textColor="#80808080"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="8dp"/>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#908e54e9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#908e54e9"/>
+
+            <TextView
+                android:id="@+id/ok_popup"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="OK"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:background="@drawable/repple_effect"
+                android:textColor="@color/text_color"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#908e54e9"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#908e54e9"/>
+
+    </LinearLayout>
+
+</LinearLayout>

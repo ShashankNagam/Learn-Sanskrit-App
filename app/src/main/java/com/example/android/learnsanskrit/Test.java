@@ -444,8 +444,8 @@ public class Test extends AppCompatActivity {
 
                 map.put("Time",currentDate.toString());
                 map.put("Score",temp);
-                map.put("Status",PF);
-                map.put("User",x);
+                map.put("Status",PF.toString());
+                map.put("User",x.toString());
 
                 FirebaseDatabase.getInstance().getReference().child("Test").push()
                         .setValue(map)
