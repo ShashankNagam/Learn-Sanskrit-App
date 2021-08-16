@@ -857,14 +857,14 @@ public class Test extends AppCompatActivity {
                 demoRef.setValue(value);
                 Calendar calendar = Calendar.getInstance();
                 //String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
-                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd MMMM YYYY  HH:MM");
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMMM-YYYY/HH:MM");
                 String currentDate = simpleDateFormat.format(calendar.getTime());
                 String PF;
 
                 FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
                 String x = currentUser.getEmail();
 
-                if (temp >= 4){
+                if (temp >= 8){
                     PF = "PASS";
                 }else{
                     PF = "FAILED";
@@ -876,9 +876,11 @@ public class Test extends AppCompatActivity {
                 date/time
                 */
                 HashMap<String,Object> map = new HashMap<>();
+                String z = String.valueOf(temp);
+                String a = String.valueOf(currentDate);
 
-                map.put("Time",currentDate.toString());
-                map.put("Score",temp);
+                map.put("Time",a);
+                map.put("Score",z);
                 map.put("Status",PF.toString());
                 map.put("User",x.toString());
 
@@ -923,7 +925,7 @@ public class Test extends AppCompatActivity {
                     }
                 });
 
-                if (temp < 4){
+                if (temp < 8){
                     popupImage.setImageResource(R.drawable.popupwrong);
                     bkcr.setCardBackgroundColor(Color.parseColor("#D10000"));
                     gr.setText("Oops!!! \n You Failed \n Try again");

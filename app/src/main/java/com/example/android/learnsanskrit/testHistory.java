@@ -8,6 +8,7 @@ public class testHistory {
     public testHistory() {
     }
 
+    /*
     @Override
     public String toString() {
         return "testHistory{" +
@@ -16,6 +17,14 @@ public class testHistory {
                 ", Status='" + Status + '\'' +
                 '}';
     }
+     */
+
+    public testHistory(String time, String score, String status) {
+        this.Time = time;
+        this.Score = score;
+        this.Status = status;
+    }
+
 
     public String getTime() {
         return Time;
@@ -24,6 +33,18 @@ public class testHistory {
     public void setTime(String time) {
         Time = time;
     }
+
+
+    /*
+    public Object getTime() {
+        return Time;
+    }
+
+    public void setOptionA(Object Time) {
+        this.Time = (String) Time;
+    }
+
+     */
 
     public String getScore() {
         return Score;

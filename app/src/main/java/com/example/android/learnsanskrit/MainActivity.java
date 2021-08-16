@@ -16,7 +16,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.android.learnsanskrit.ui.main.History;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -101,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Intent a = new Intent(MainActivity.this, History.class);
+                    Intent a = new Intent(MainActivity.this, Historyquiz.class);
                     a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(a);
             }
