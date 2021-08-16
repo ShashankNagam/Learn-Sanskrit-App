@@ -233,18 +233,22 @@
                             android:layout_width="300dp"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#e5e4e2"
+                            android:text="भानु"
                             android:textColor="@color/textColor2"
-                            android:textSize="16sp"
-                            android:textAllCaps="false"/>
+                            android:textSize="20sp"
+                            android:layout_marginTop="5dp"/>
 
                         <Button
                             android:id="@+id/correct2"
                             android:layout_width="300dp"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#e5e4e2"
+                            android:text="वारि"
                             android:textColor="@color/textColor2"
-                            android:textSize="16sp"
-                            android:textAllCaps="false"/>
+                            android:textSize="20sp"
+                            android:layout_marginBottom="5dp"/>
+
+
 
                     </LinearLayout>
                 </LinearLayout>

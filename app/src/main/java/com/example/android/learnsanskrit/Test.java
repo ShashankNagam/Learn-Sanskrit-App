@@ -13,6 +13,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -236,6 +237,8 @@ public class Test extends AppCompatActivity {
                 });
                 ans2.setText("to sing");
                 answ2.setText("to move");
+                ans2.setTextSize(TypedValue.COMPLEX_UNIT_SP,16);
+                answ2.setTextSize(TypedValue.COMPLEX_UNIT_SP,16);
                 break;
 
             case 3:
@@ -247,6 +250,8 @@ public class Test extends AppCompatActivity {
                 });
                 ans2.setText("to sing");
                 answ2.setText("to move");
+                ans2.setTextSize(TypedValue.COMPLEX_UNIT_SP,16);
+                answ2.setTextSize(TypedValue.COMPLEX_UNIT_SP,16);
                 break;
 
             case 4:
@@ -258,6 +263,8 @@ public class Test extends AppCompatActivity {
                 });
                 ans2.setText("to write");
                 answ2.setText("to move");
+                ans2.setTextSize(TypedValue.COMPLEX_UNIT_SP,16);
+                answ2.setTextSize(TypedValue.COMPLEX_UNIT_SP,16);
                 break;
         }
 
@@ -954,6 +961,18 @@ public class Test extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 pScore.setText("--");
+            }
+        });
+
+
+
+
+
+        Button quit = (Button) findViewById(R.id.quit);
+        quit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
