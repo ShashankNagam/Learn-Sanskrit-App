@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="To access audio and video files you must SignIn \n\n Are you sure you want to Skip this step ?"
+        android:text="To access quiz, audio and video files you must SignIn \n\n Are you sure you want to Skip this step ?"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="15dp"

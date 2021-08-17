@@ -56,8 +56,14 @@ public class Consonants_1 extends AppCompatActivity {
 
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
+
+
         VideoView videoView = findViewById(R.id.videoViewC);
-        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2Fmyconsonants.mp4?alt=media&token=7608d7f4-ccc5-42b1-bd02-e9a78227763d");
+        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+        if(currentUser != null)
+        {
+            videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2Fmyconsonants.mp4?alt=media&token=7608d7f4-ccc5-42b1-bd02-e9a78227763d");
+        }
 
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);

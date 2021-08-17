@@ -98,6 +98,7 @@ public class Historyquiz extends AppCompatActivity {
         Intent intent = new Intent(Historyquiz.this, Test.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
+        finish();
     }
 }
 

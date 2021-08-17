@@ -398,7 +398,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(), "Sign in to access test", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Sign in to access quiz", Toast.LENGTH_LONG).show();
                 }
             }
         });

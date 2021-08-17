@@ -59,7 +59,12 @@ public class Vowels_1 extends AppCompatActivity {
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         VideoView videoView = findViewById(R.id.videoViewV);
-        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2Fmyvowels.mp4?alt=media&token=19fe2a3e-bb30-4a24-b4e6-4b0b14c2d328");
+
+        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+        if(currentUser != null)
+        {
+            videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2Fmyvowels.mp4?alt=media&token=19fe2a3e-bb30-4a24-b4e6-4b0b14c2d328");
+        }
 
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);
