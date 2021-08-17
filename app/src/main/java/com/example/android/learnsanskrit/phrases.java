@@ -59,7 +59,12 @@ public class phrases extends AppCompatActivity {
 
 
         VideoView videoView = findViewById(R.id.videoViewPhr);
-        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2FPhrases.mp4?alt=media&token=a9acc8f0-ef87-4a36-96b0-5970c203f0be");
+
+        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+        if(currentUser != null)
+        {
+            videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/Videos%2FPhrases.mp4?alt=media&token=a9acc8f0-ef87-4a36-96b0-5970c203f0be");
+        }
 
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);
