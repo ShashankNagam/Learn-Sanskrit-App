@@ -60,7 +60,7 @@
             android:id="@+id/abc"
             android:layout_width="70dp"
             android:layout_height="match_parent"
-            android:visibility="visible"
+            android:visibility="gone"
             android:background="@drawable/gradient_drawable3">
 
             <RelativeLayout
@@ -104,36 +104,6 @@
                     android:layout_below="@+id/exit"
                     android:layout_centerHorizontal="true"
                     android:textColor="@color/background"/>
-
-                <ImageView
-                    android:id="@+id/history"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:src="@drawable/history"
-                    android:layout_below="@+id/textexit"
-                    android:layout_marginTop="10dp"
-                    android:layout_centerHorizontal="true"/>
-
-                <TextView
-                    android:id="@+id/texthistory1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Test"
-                    android:textSize="13dp"
-                    android:layout_below="@+id/history"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@color/background"/>
-
-                <TextView
-                    android:id="@+id/texthistory2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="history"
-                    android:textSize="13dp"
-                    android:layout_below="@+id/texthistory1"
-                    android:layout_centerHorizontal="true"
-                    android:textColor="@color/background"/>
-
 
             </RelativeLayout>
 
@@ -204,6 +174,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

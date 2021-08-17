@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -17,15 +18,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.util.HashMap;
 
 public class Signup extends AppCompatActivity {
 
-    private EditText email, pw1, pw2;
+    private EditText name,email, pw1, pw2;
     private Button reg;
-    private String mail, pass1, pass2;
+    private String uname,mail, pass1, pass2;
     private FirebaseAuth mAuth;
     private TextView sgnin;
     Dialog dialog;
@@ -57,10 +64,14 @@ public class Signup extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
+
+                //name = (EditText)findViewById(R.id.editTextTextName);
                 email = (EditText)findViewById(R.id.editTextTextEmailAddress2);
                 pw1 = (EditText)findViewById(R.id.editTextTextPassword);
                 pw2 = (EditText)findViewById(R.id.editTextTextPassword2);
 
+
+                //uname = name.getText().toString();
                 mail = email.getText().toString();
                 pass1 = pw1.getText().toString();
                 pass2 = pw2.getText().toString();
@@ -73,6 +84,27 @@ public class Signup extends AppCompatActivity {
                 {
                     add(mail,pass1);
                 }
+
+                /*
+                HashMap<String,Object> map = new HashMap<>();
+
+                map.put("Name",uname);
+                map.put("Mail",mail);
+
+                FirebaseDatabase.getInstance().getReference().child("Account").push()
+                        .setValue(map)
+                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull @NotNull Task<Void> task) {
+                                Log.i("Pass","onComplete");
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull @NotNull Exception e) {
+                        Log.i("Failed","onCompleteFailed");
+                    }
+                });
+                 */
 
             }
         });

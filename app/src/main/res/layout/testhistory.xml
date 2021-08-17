@@ -9,13 +9,13 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:cardBackgroundColor="@color/background"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="5dp"
         tools:layout_editor_absoluteX="5dp"
         tools:layout_editor_absoluteY="5dp">
 
@@ -39,57 +39,66 @@
                     android:textColor="@color/text_color"/>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="15dp"
-                android:layout_marginLeft="15dp"
-                android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <LinearLayout
+                    android:id="@+id/liftside"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Score : "
-                        android:textColor="@color/text_color"
-                        android:textSize="15dp"/>
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/scoreHistory"
-                        android:layout_width="wrap_content"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Score : "
+                            android:textColor="@color/text_color"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/scoreHistory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textColor="@color/text_color"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15dp"
-                        android:textColor="@color/text_color"/>
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status : "
+                            android:textColor="@color/text_color"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/statusHistory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textColor="@color/text_color"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+            </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Status : "
-                        android:textColor="@color/text_color"
-                        android:textSize="15dp"/>
 
-                    <TextView
-                        android:id="@+id/statusHistory"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="15dp"
-                        android:textColor="@color/text_color"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
 
         </LinearLayout>
 

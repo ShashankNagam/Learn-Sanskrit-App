@@ -61,65 +61,6 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 app:cardBackgroundColor="@color/background"
-                app:cardCornerRadius="10dp"
-                android:elevation="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_margin="10dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="INSTRUCTIONS"
-                        android:textStyle="bold"
-                        android:layout_margin="5dp"
-                        android:textColor="#222222"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="1. Correct answers will be marked by green"
-                        android:textSize="15sp"
-                        android:textColor="#444444"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="2. Incorrect answers will be marked by red"
-                        android:textSize="15sp"
-                        android:textColor="#444444"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="3. Previous score and current score are displayed above"
-                        android:textSize="15sp"
-                        android:textColor="#444444"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4. Click on quit to quit Quiz"
-                        android:textSize="15sp"
-                        android:textColor="#444444"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="5. Click on submit to submit Quiz"
-                        android:textSize="15sp"
-                        android:textColor="#444444"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                app:cardBackgroundColor="@color/background"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout

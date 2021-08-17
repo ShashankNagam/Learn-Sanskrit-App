@@ -1,5 +1,6 @@
 package com.example.android.learnsanskrit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -18,11 +19,22 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import org.jetbrains.annotations.NotNull;
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button sout, da, button;
     Dialog dialog;
+    private FirebaseDatabase database;
+    private DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
 
     @Override
@@ -30,6 +42,39 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         setContentView(R.layout.activity_main);
+
+
+        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+
+
+        /*String x = currentUser.getEmail();
+
+        TextView name = (TextView) findViewById(R.id.name);
+        database = FirebaseDatabase.getInstance();
+        databaseReference = database.getReference().child("Account");
+
+        //database = FirebaseDatabase.getInstance().getReference("Test");
+        Query query = databaseReference.orderByChild("Mail").equalTo(x);
+
+        //for(DataSnapshot ds : snapshot.getChildren()){
+
+
+            query.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
+                    for (DataSnapshot ds : snapshot.getChildren()){
+                        name.setText(ds.child("Name").getValue(String.class));
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull @NotNull DatabaseError error) {
+
+                }
+            });
+
+         */
+
 
 
         dialog = new Dialog(MainActivity.this);
@@ -96,6 +141,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /*
         ImageView history = (ImageView) findViewById(R.id.history);
         history.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,24 +151,19 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(a);
             }
         });
-
+         */
 
         ImageView delete = (ImageView) findViewById(R.id.delete);
         TextView del = (TextView) findViewById(R.id.textdelete);
         TextView acc = (TextView) findViewById(R.id.textdelete1);
-        TextView te = (TextView) findViewById(R.id.texthistory1);
-        TextView his = (TextView) findViewById(R.id.texthistory2);
 
 
-        FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
+        //FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
         if(currentUser != null)
         {
             delete.setVisibility(View.VISIBLE);
             del.setVisibility(View.VISIBLE);
             acc.setVisibility(View.VISIBLE);
-            history.setVisibility(View.VISIBLE);
-            te.setVisibility(View.VISIBLE);
-            his.setVisibility(View.VISIBLE);
             nevsign.setImageResource(R.drawable.nev_signout);
             textout.setText("SignOut");
         }
@@ -131,9 +172,6 @@ public class MainActivity extends AppCompatActivity {
             delete.setVisibility(View.GONE);
             del.setVisibility(View.GONE);
             acc.setVisibility(View.GONE);
-            history.setVisibility(View.GONE);
-            te.setVisibility(View.GONE);
-            his.setVisibility(View.GONE);
             nevsign.setImageResource(R.drawable.nev_signout);
             textout.setText("SignIn");
         }
@@ -354,8 +392,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
                 if(currentUser != null) {
-
-                    Intent intent = new Intent(MainActivity.this, Test.class);
+                    Intent intent = new Intent(MainActivity.this, Historyquiz.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(intent);
                 }
@@ -450,4 +487,21 @@ public class MainActivity extends AppCompatActivity {
                 .load("https://firebasestorage.googleapis.com/v0/b/learnsanskrit-af209.appspot.com/o/MainActivity%2Ffamily.png?alt=media&token=daa48800-bf8c-45b6-8c49-3c0cf3c8432e")
                 .into(family);*/
     }
+
+    private static final int TIME_INTERVAL = 2000; // # milliseconds, desired time passed between two back presses.
+    private long mBackPressed;
+    @Override
+    public void onBackPressed()
+    {
+        if (mBackPressed + TIME_INTERVAL > System.currentTimeMillis())
+        {
+            super.onBackPressed();
+            return;
+        }
+        else { Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT).show(); }
+
+        mBackPressed = System.currentTimeMillis();
+    }
+
+
 }

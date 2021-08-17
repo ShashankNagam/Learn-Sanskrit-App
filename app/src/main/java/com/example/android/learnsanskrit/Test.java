@@ -16,6 +16,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -39,10 +40,12 @@ import com.google.firebase.storage.FirebaseStorage;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
+import java.sql.Time;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Random;
 
@@ -59,6 +62,7 @@ public class Test extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_test);
 
 /*
@@ -864,15 +868,20 @@ public class Test extends AppCompatActivity {
                 demoRef.setValue(value);
                 Calendar calendar = Calendar.getInstance();
                 //String currentDate = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
+                String currentDate = DateFormat.getDateTimeInstance().format(new Date());
+
+                /*
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMMM-YYYY/HH:MM");
                 String currentDate = simpleDateFormat.format(calendar.getTime());
+                 */
                 String PF;
+
 
                 FirebaseUser currentUser = mAuth.getInstance().getCurrentUser();
                 String x = currentUser.getEmail();
 
                 if (temp >= 8){
-                    PF = "PASS";
+                    PF = "PASSED";
                 }else{
                     PF = "FAILED";
                 }
@@ -912,7 +921,7 @@ public class Test extends AppCompatActivity {
                 dialog.setContentView(R.layout.test_popup);
                 dialog.getWindow().setBackgroundDrawable(getDrawable(R.drawable.delete_background));
                 dialog.getWindow().setLayout(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-                dialog.setCancelable(true);
+                dialog.setCancelable(false);
                 TextView ok = dialog.findViewById(R.id.ok_popup);
                 TextView gr = dialog.findViewById(R.id.greeting);
                 TextView scr = dialog.findViewById(R.id.scorepopup);
@@ -925,9 +934,6 @@ public class Test extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         dialog.dismiss();
-                        Intent a = new Intent(Test.this, MainActivity.class);
-                        a.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                        startActivity(a);
                         finish();
                     }
                 });
@@ -940,7 +946,7 @@ public class Test extends AppCompatActivity {
                 else {
                     popupImage.setImageResource(R.drawable.popupright);
                     bkcr.setCardBackgroundColor(Color.parseColor("#008000"));
-                    gr.setText("Congratulations 🎉 \n You Pass");
+                    gr.setText("Congratulations 🎉 \n You Passed");
                 }
                 scr.setText("Your Score : " + temp);
                 datee.setText(currentDate);
@@ -1015,10 +1021,6 @@ public class Test extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Sign In to access audio", Toast.LENGTH_LONG).show();
         }
     }
-
-
-
-
 
 
 
