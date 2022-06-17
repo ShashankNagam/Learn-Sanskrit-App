@@ -21,7 +21,6 @@ public class ForegetPassword extends AppCompatActivity {
     private EditText mail;
     private Button sl, nxt;
     private FirebaseAuth mAuth;
-
     private String email;
 
     @Override

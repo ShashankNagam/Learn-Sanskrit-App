@@ -1,6 +1,7 @@
 package com.example.android.learnsanskrit;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,10 +9,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -42,6 +49,23 @@ public class historyAdapter extends RecyclerView.Adapter<historyAdapter.Myviewho
         holder.dateAndTime.setText(testHistory.getTime());
         holder.statusHistory.setText(testHistory.getStatus());
         holder.scoreHistory.setText(testHistory.getScore());
+
+        String pp,p,f;
+
+        p = "PASSED";
+        f = "FAILED";
+
+        pp = testHistory.getStatus();
+
+        if (pp.equals(p))
+        {
+            holder.cardView.setCardBackgroundColor(Color.parseColor("#50008000"));
+        }
+        if (pp.equals(f))
+        {
+            holder.cardView.setCardBackgroundColor(Color.parseColor("#50FF0000"));
+        }
+        
     }
 
     @Override
@@ -52,9 +76,11 @@ public class historyAdapter extends RecyclerView.Adapter<historyAdapter.Myviewho
     public static class Myviewholder extends RecyclerView.ViewHolder {
 
         TextView dateAndTime,statusHistory,scoreHistory;
+        CardView cardView;
 
         public Myviewholder(@NonNull @NotNull View itemView) {
             super(itemView);
+            cardView = itemView.findViewById(R.id.historyCardView);
             dateAndTime = itemView.findViewById(R.id.dateAndTime);
             statusHistory = itemView.findViewById(R.id.statusHistory);
             scoreHistory = itemView.findViewById(R.id.scoreHistory);
