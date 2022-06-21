@@ -49,6 +49,8 @@ public class account_user extends AppCompatActivity {
 
         ///*android:fontFamily="@font/adamina"*/
 
+        ///*android:fontFamily="@font/adamina"*/
+
         delete1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
